@@ -6,7 +6,7 @@ function App() {
   const [color0, setColor0] = useState("url(#img0)");
   const [color1, setColor1] = useState("url(#img1)");
 
-
+  //change for a save
   return (
     <div className={"container"}>
       <img id="logo" src="EifertDesign-Logo"></img>
