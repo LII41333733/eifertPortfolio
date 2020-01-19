@@ -31,7 +31,7 @@ function App() {
             <image id={"imageB"} href="Textiles.png" x="-30" y="-90" />
           </pattern>
           <pattern id={"imgBB"} width={"100%"} height={"100%"}>
-            <image id={"imageBB"} href={"Textiles-overlay.png"} x="-60" y="-75" />
+            <image id={"imageBB"} href={"Textiles-overlay.png"} x="-65" y="-75" />
           </pattern>
           <pattern id={"imgC"} width={"100%"} height={"100%"}>
             <image id={"imageC"} href="Harlem.png" x="-200" y="0" />
