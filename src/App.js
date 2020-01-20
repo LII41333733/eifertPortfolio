@@ -5,10 +5,6 @@ import './App.css';
 function App() {
   return (
     <div className={"container"}>
-
-
-
-
       <div className={"header"}>
         <img id="logo" src="EifertDesign-Logo"></img>
         <div id="navList">
