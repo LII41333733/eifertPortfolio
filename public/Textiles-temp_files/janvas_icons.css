@@ -1,0 +1,183 @@
+
+.small-icon {background-image : url('../images/icons/janvas_small_icons.svg'); background-repeat: no-repeat; }
+.item-visible_icon{background-position: -0px 0px;}
+.item-locked_icon{background-position: -16px 0px;}
+
+
+
+.icon {background-image : url('../images/icons/janvas_icons.svg'); background-repeat: no-repeat; }
+.buttonList > li > a {background-image : url('../images/icons/janvas_icons.svg'); background-repeat: no-repeat;}
+
+/* GLOBAL TOOLBAR */
+.logo_icon{background-position: 0px 0px;}
+.newDocument_icon{background-position: -32px 0px;}
+.openDocument_icon{background-position: -64px 0px;}
+/*.saveDocument_icon{background-position: -96px 0px;}*/
+.hardDrive_icon{background-position: -96px 0px;}
+.print_icon{background-position: -128px 0px;}
+.email_icon{background-position: -160px 0px;}
+.preferences_icon{background-position: -192px 0px;}
+.menu_icon{background-position: -224px 0px;}
+.snapSettings_icon{background-position: -256px 0px;}
+.selection_icon{background-position: -288px 0px;}
+.pageTemplates_icon{background-position: -320px 0px;}
+
+.link_icon{background-position: -352px 0px;}
+.layers_icon{background-position: -384px 0px;}
+.library_icon{background-position: -416px 0px;}
+.pages_icon{background-position: -448px 0px;}
+.newPage_icon{background-position: -480px 0px;}
+.bringPageUp_icon{background-position: -512px 0px;}
+.sendPageDown_icon{background-position: -544px 0px;}
+.pageSize_icon{background-position: -576px 0px;}
+.pagePreferences_icon{background-position: -608px 0px;}
+
+.newLayer_icon{background-position: -480px -64px;}
+.bringLayerUp_icon{background-position: -512px -64px;}
+.sendLayerDown_icon{background-position: -544px -64px;}
+.placeInsideLayer_icon{background-position: -576px -64px;}
+.mantainAspectRatio_icon{background-position: -608px -64px;}
+.reflectHorizontally_icon{background-position: -640px -64px;}
+.reflectVertically_icon{background-position: -672px -64px;}
+.arrowRight_icon{background-position: -704px -64px;}
+.arrowBottom_icon{background-position: -736px -64px;}
+/*.rotate_icon{background-position: -768px -64px;}*/
+.user_icon{background-position: -800px -64px;}
+
+.help_icon{background-position: -768px -96px;}
+
+.symbolLibrary2D_icon{background-position: -512px -96px;}
+.maskLibrary2D_icon{background-position: -544px -96px;}
+.shapeLibrary2D_icon{background-position: -576px -96px;}
+.filterLibrary2D_icon{background-position: -608px -96px;}
+.markerLibrary2D_icon{background-position: -640px -96px;}
+.colorLibrary2D_icon{background-position: -672px -96px;}
+.gradientLibrary2D_icon{background-position: -704px -96px;}
+.patternLibrary2D_icon{background-position: -736px -96px;}
+
+.database2D_icon{background-position: -704px -128px;}
+
+.return_icon{background-position: -640px 0px;}
+.createDir_icon{background-position: -672px 0px;}
+
+
+
+/* library icons */
+.pixabay_icon{background-position: -800px -96px;}
+.openclipart_icon{background-position: -800px -128px;}
+
+
+
+
+/* MAIN TOOLS */
+[toolName="selectionGlobal2D_tool"]>a { background-position: 0px -32px; }
+[toolName="selectionPoint2D_tool"]>a { background-position: -32px -32px; }
+[toolName="panView2D_tool"]>a { background-position: -64px -32px; }
+[toolName="zoomView2D_tool"]>a { background-position: -96px -32px; }
+
+[toolName="drawRectangle2D_tool"]>a { background-position: 0px -64px; }
+[toolName="drawEllipse2D_tool"]>a { background-position: -32px -64px; }
+[toolName="drawLine2D_tool"]>a { background-position: -64px -64px; }
+[toolName="drawArc2D_tool"]>a { background-position: -192px -96px; }
+[toolName="drawRegularPolygon2D_tool"]>a { background-position: -224px -96px; }
+[toolName="drawTextBox2D_tool"]>a { background-position: -96px -64px; }
+
+[toolName="drawFreehand2D_tool"]>a { background-position:  0px -96px; }
+[toolName="drawBrush2D_tool"]>a { background-position:  -448px -96px; }
+[toolName="drawForeignObject2D_tool"]>a { background-position:  -448px -96px; }
+
+
+
+[toolName="drawPath2D_tool"]>a { background-position: -32px -96px; }
+[toolName="dividePath2D_tool"]>a { background-position:  -64px -96px; }
+/*[toolName="removePathSegment2D_tool"]>a { background-position:  -96px -96px; }*/
+[toolName="splitPath2D_tool"]>a { background-position:  -96px -96px;; }
+[toolName="roundPathCorner2D_tool"]>a { background-position:  -128px -96px; }
+[toolName="convertPathPoint2D_tool"]>a { background-position: -160px -96px; }
+
+
+[toolName="filling2D_tool"]>a { background-position:-128px -64px;  }
+[toolName="eyeDropper2D_tool"]>a { background-position:-160px -64px;  }
+[toolName="editGradientPoints2D_tool"]>a { background-position:-192px -64px; }
+[toolName="rotate2D_tool"]>a { background-position:  -768px -64px; }
+[toolName="scale2D_tool"]>a { background-position: -480px -96px; }
+
+[toolName="perspectiveDeform2D_tool"]>a { background-position: -768px -128px; }
+
+/*.joinPaths2D_icon{background-position: -160px -96px;}*/
+
+
+/* EDIT SELECTION TOOLBAR */
+.redo_icon{background-position: -128px -32px;}
+.undo_icon{background-position: -160px -32px;}
+.delete_icon{background-position: -192px -32px;}
+.bringToFront_icon{background-position: -224px -32px;}
+.sendToBack_icon{background-position: -256px -32px;}
+.bringUp_icon{background-position: -288px -32px;}
+.sendDown_icon{background-position: -320px -32px;}
+.group_icon{background-position: -352px -32px;}
+.ungroup_icon{background-position: -384px -32px;}
+.lock_icon{background-position: -416px -32px;}
+.unlock_icon{background-position: -448px -32px;}
+
+.clipPath_icon{background-position: -192px -96px;}
+.mask_icon{background-position: -224px -96px;}
+.textPath_icon{background-position: -256px -96px;}
+.stroke_icon{background-position: -288px -96px;}
+.fill_icon{background-position: -320px -96px;}
+
+
+/* ALIGN */
+.alignLeft_icon{background-position: -480px -32px;}
+.alignVCenter_icon{background-position: -512px -32px;}
+.alignRight_icon{background-position: -544px -32px;}
+
+.alignTop_icon{background-position: -576px -32px;}
+.alignHCenter_icon{background-position: -608px -32px;}
+.alignBottom_icon{background-position: -640px -32px;}
+
+.distribuiteCenterX_icon{background-position: -672px -32px;}
+.distribuiteCenterY_icon{background-position: -704px -32px;}
+.distribuiteHSpace_icon{background-position: -736px -32px;}
+.distribuiteVSpace_icon{background-position: -768px -32px;}
+.swapFillStroke_icon{background-position: -800px -32px;}
+
+
+.strokeWidth_icon{background-position: -224px -64px;}
+.strokeDashArray_icon{background-position: -256px -64px;}
+.strokeLineCap_butt_icon{background-position: -288px -64px;}
+.strokeLineCap_square_icon{background-position: -320px -64px;}
+.strokeLineCap_round_icon{background-position: -352px -64px;}
+.strokeLineJoin_miter_icon{background-position: -384px -64px;}
+.strokeLineJoin_bevel_icon{background-position: -416px -64px;}
+.strokeLineJoin_round_icon{background-position: -448px -64px;}
+
+
+.booleanUnite2D_icon{background-position: -288px -96px;}
+.booleanSubtract2D_icon{background-position: -320px -96px;}
+.booleanIntersect2D_icon{background-position: -352px -96px;}
+.booleanExclude2D_icon{background-position: -384px -96px;}
+.booleanDivide2D_icon{background-position: -416px -96px;}
+
+
+
+/*.item-visible_icon{background-position: -0px -160px;}*/
+/*.item-locked_icon{background-position: -16px -160px;}*/
+
+.fontFamily_icon { background-position: -480px -128px; }
+.fontVariants_icon { background-position:  -320px -128px; }
+.textProperties_icon { background-position: -96px -64px; }
+.fontSize_icon { background-position: -352px -128px; }
+.textLineHeight_icon { background-position: -384px -128px; }
+.letterSpacing_icon { background-position: -416px -128px; }
+.textUnderline_icon { background-position:  -256px -128px; }
+
+
+.textAlignLeft_icon { background-position: 0px -128px; }
+.textAlignCenter_icon { background-position: -32px -128px; }
+.textAlignRight_icon { background-position: -64px -128px; }
+.textAlignJustify { background-position: -96px -128px; }
+
+.reload_icon { background-position: -704px 0px; }
+.gdrive_icon { background-position: -736px 0px; }
+.sharedWithMe_icon { background-position: -768px 0px; }
