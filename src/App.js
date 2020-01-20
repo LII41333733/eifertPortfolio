@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 
 
@@ -25,73 +25,73 @@ function App() {
             <image id={"imageA"} href={"PLCC.png"} x="-20" y="-60" />
           </pattern>
           <pattern id={"imgAA"} width={"100%"} height={"100%"}>
-            <image id={"imageAA"} href={"PLCC-overlay.png"} x="-135" y="-100" />
+            <image id={"imageAA"} href={"PLCC-overlay.png"} x="-90" y="-90" />
           </pattern>
           <pattern id={"imgB"} width={"100%"} height={"100%"}>
             <image id={"imageB"} href="Textiles.png" x="-30" y="-90" />
           </pattern>
           <pattern id={"imgBB"} width={"100%"} height={"100%"}>
-            <image id={"imageBB"} href={"Textiles-overlay.png"} x="-20" y="-120" />
+            <image id={"imageBB"} href={"Textiles-overlay.png"} x="-15" y="-110" />
           </pattern>
           <pattern id={"imgC"} width={"100%"} height={"100%"}>
             <image id={"imageC"} href="Harlem.png" x="-200" y="0" />
           </pattern>
           <pattern id={"imgCC"} width={"100%"} height={"100%"}>
-            <image id={"imageCC"} href={"Harlem-overlay.png"} x="0" y="-120" />
+            <image id={"imageCC"} href={"Harlem-overlay.png"} x="-155" y="-50" />
           </pattern>
           <pattern id={"imgD"} width={"100%"} height={"100%"}>
             <image id={"imageD"} href="BabyDepot.png" x="0" y="20" />
           </pattern>
           <pattern id={"imgDD"} width={"100%"} height={"100%"}>
-            <image id={"imageDD"} href={"BabyDepot-overlay.png"} x="0" y="0" />
+            <image id={"imageDD"} href={"BabyDepot-overlay.png"} x="-30" y="-50" />
           </pattern>
           <pattern id={"imgE"} width={"100%"} height={"100%"}>
             <image id={"imageE"} href="Treats.png" x="-15" y="0" />
           </pattern>
           <pattern id={"imgEE"} width={"100%"} height={"100%"}>
-            <image id={"imageEE"} href={"Treats-overlay.png"} x="-30" y="-120" />
+            <image id={"imageEE"} href={"Treats-overlay.png"} x="-100" y="-110" />
           </pattern>
           <pattern id={"imgF"} width={"100%"} height={"100%"}>
             <image id={"imageF"} href="Animations.png" x="10" y="0" />
           </pattern>
           <pattern id={"imgFF"} width={"100%"} height={"100%"}>
-            <image id={"imageFF"} href={"Animations-overlay.png"} x="0" y="-120" />
+            <image id={"imageFF"} href={"Animations-overlay.png"} x="-30" y="-30" />
           </pattern>
           <pattern id={"imgG"} width={"100%"} height={"100%"}>
             <image id={"imageG"} href="Holiday.png" x="5" y="0" />
           </pattern>
           <pattern id={"imgGG"} width={"100%"} height={"100%"}>
-            <image id={"imageGG"} href={"Holiday-overlay.png"} x="0" y="-120" />
+            <image id={"imageGG"} href={"Holiday-overlay.png"} x="-90" y="-120" />
           </pattern>
           <pattern id={"imgH"} width={"100%"} height={"100%"}>
             <image id={"imageH"} href="AOE.png" x="-35" y="-10" />
           </pattern>
           <pattern id={"imgHH"} width={"100%"} height={"100%"}>
-            <image id={"imageHH"} href={"AOE-overlay.png"} x="0" y="-120" />
+            <image id={"imageHH"} href={"AOE-overlay.png"} x="-80" y="-210" />
           </pattern>
           <pattern id={"imgI"} width={"100%"} height={"100%"}>
             <image id={"imageI"} href="Beauty.png" x="0" y="0" />
           </pattern>
           <pattern id={"imgII"} width={"100%"} height={"100%"}>
-            <image id={"imageII"} href={"Beauty-overlay.png"} x="0" y="-120" />
+            <image id={"imageII"} href={"Beauty-overlay.png"} x="-90" y="-105" />
           </pattern>
           <pattern id={"imgJ"} width={"100%"} height={"100%"}>
             <image id={"imageJ"} href="Home.png" x="0" y="0" />
           </pattern>
           <pattern id={"imgJJ"} width={"100%"} height={"100%"}>
-            <image id={"imageJJ"} href={"Home-overlay.png"} x="0" y="-120" />
+            <image id={"imageJJ"} href={"Home-overlay.png"} x="-60" y="-110" />
           </pattern>
           <pattern id={"imgK"} width={"100%"} height={"100%"}>
             <image id={"imageK"} href="PMGSC.png" x="11" y="0" />
           </pattern>
           <pattern id={"imgKK"} width={"100%"} height={"100%"}>
-            <image id={"imageKK"} href={"PMGSC-overlay.png"} x="0" y="-120" />
+            <image id={"imageKK"} href={"PMGSC-overlay.png"} x="-85" y="-175" />
           </pattern>
           <pattern id={"imgL"} width={"100%"} height={"100%"}>
             <image id={"imageL"} href="WomenHeart.png" x="-100" y="5" />
           </pattern>
           <pattern id={"imgLL"} width={"100%"} height={"100%"}>
-            <image id={"imageLL"} href={"WomenHeart-overlay.png"} x="0" y="-120" />
+            <image id={"imageLL"} href={"WomenHeart-overlay.png"} x="-30" y="-10" />
           </pattern>
         </defs>
 

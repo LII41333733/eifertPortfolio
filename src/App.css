@@ -27,7 +27,7 @@ body, html {
   padding-left: 10px;
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
 }
 
 #navList span {
@@ -128,7 +128,6 @@ svg line {
 
 #polyA {
   fill: url("#imgA");
-  /* fill: url("#imgA"); */
 }
 
 #polyAA {
@@ -141,7 +140,6 @@ svg line {
 
 #polyBB {
   fill: url("#imgBB");
-  /* fill: #444445; */
 }
 
 #polyC {
@@ -149,8 +147,7 @@ svg line {
 }
 
 #polyCC {
-  fill: #444445;
-  /* fill: url("#imgCC"); */
+  fill: url("#imgCC");
 }
 
 #polyD {
@@ -158,8 +155,7 @@ svg line {
 }
 
 #polyDD {
-  fill: #444445;
-  /* fill: url("#imgDD"); */
+  fill: url("#imgDD");
 }
 
 #polyE {
@@ -167,8 +163,7 @@ svg line {
 }
 
 #polyEE {
-  fill: #444445;
-  /* fill: url("#imgEE"); */
+  fill: url("#imgEE");
 }
 
 #polyF {
@@ -176,8 +171,7 @@ svg line {
 }
 
 #polyFF {
-  fill: #444445;
-  /* fill: url("#imgFF"); */
+  fill: url("#imgFF");
 }
 
 #polyG {
@@ -185,8 +179,7 @@ svg line {
 }
 
 #polyGG {
-  fill: #444445;
-  /* fill: url("#imgGG"); */
+  fill: url("#imgGG");
 }
 
 #polyH {
@@ -194,8 +187,7 @@ svg line {
 }
 
 #polyHH {
-  fill: #444445;
-  /* fill: url("#imgHH"); */
+  fill: url("#imgHH");
 }
 
 #polyI {
@@ -203,8 +195,7 @@ svg line {
 }
 
 #polyII {
-  fill: #444445;
-  /* fill: url("#imgII"); */
+  fill: url("#imgII");
 }
 
 #polyJ {
@@ -212,8 +203,7 @@ svg line {
 }
 
 #polyJJ {
-  fill: #444445;
-  /* fill: url("#imgJJ"); */
+  fill: url("#imgJJ");
 }
 
 #polyK {
@@ -221,8 +211,7 @@ svg line {
 }
 
 #polyKK {
-  fill: #444445;
-  /* fill: url("#imgKK"); */
+  fill: url("#imgKK");
 }
 
 #polyL {
@@ -230,8 +219,7 @@ svg line {
 }
 
 #polyLL {
-  fill: #444445;
-  /* fill: url("#imgLL"); */
+  fill: url("#imgLL");
 }
 
 #polyAA:hover, #polyBB:hover, #polyCC:hover, #polyDD:hover, #polyEE:hover, #polyFF:hover, #polyGG:hover, #polyHH:hover, #polyII:hover, #polyJJ:hover, #polyKK:hover, #polyLL:hover {
