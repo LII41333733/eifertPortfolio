@@ -52,7 +52,7 @@ function App() {
             <image id={"imageEE"} href={"Treats-overlay.png"} x="-30" y="-120" />
           </pattern>
           <pattern id={"imgF"} width={"100%"} height={"100%"}>
-            <image id={"imageF"} href="Animations.png" x="10" y="0" />
+            <image id={"imageF"} href="Animation.gif" x="10" y="0" />
           </pattern>
           <pattern id={"imgFF"} width={"100%"} height={"100%"}>
             <image id={"imageFF"} href={"Animations-overlay.png"} x="0" y="-120" />
