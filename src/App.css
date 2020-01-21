@@ -28,6 +28,7 @@ body, html {
   position: absolute;
   top: 20px;
   right: 20px;
+  text-align: left;
 }
 
 #navList span {
@@ -127,7 +128,7 @@ svg line {
 /*-----*/
 
 #polyA {
-  fill: url("#imgA");
+  fill: black;
 }
 
 #polyAA {
@@ -135,7 +136,7 @@ svg line {
 }
 
 #polyB {
-  fill: url("#imgB");
+  fill: black;
 }
 
 #polyBB {
@@ -143,7 +144,7 @@ svg line {
 }
 
 #polyC {
-  fill: url("#imgC");
+  fill: black;
 }
 
 #polyCC {
@@ -151,7 +152,7 @@ svg line {
 }
 
 #polyD {
-  fill: url("#imgD");
+  fill: black;
 }
 
 #polyDD {
@@ -159,7 +160,7 @@ svg line {
 }
 
 #polyE {
-  fill: url("#imgE");
+  fill: black;
 }
 
 #polyEE {
@@ -167,7 +168,7 @@ svg line {
 }
 
 #polyF {
-  fill: url("#imgF");
+  fill: black;
 }
 
 #polyFF {
@@ -175,7 +176,7 @@ svg line {
 }
 
 #polyG {
-  fill: url("#imgG");
+  fill: black;
 }
 
 #polyGG {
@@ -183,7 +184,7 @@ svg line {
 }
 
 #polyH {
-  fill: url("#imgH");
+  fill: black;
 }
 
 #polyHH {
@@ -191,7 +192,7 @@ svg line {
 }
 
 #polyI {
-  fill: url("#imgI");
+  fill: black;
 }
 
 #polyII {
@@ -199,7 +200,7 @@ svg line {
 }
 
 #polyJ {
-  fill: url("#imgJ");
+  fill: black;
 }
 
 #polyJJ {
@@ -207,7 +208,7 @@ svg line {
 }
 
 #polyK {
-  fill: url("#imgK");
+  fill: black;
 }
 
 #polyKK {
@@ -215,7 +216,7 @@ svg line {
 }
 
 #polyL {
-  fill: url("#imgL");
+  fill: black;
 }
 
 #polyLL {
