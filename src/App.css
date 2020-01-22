@@ -51,7 +51,7 @@ a {
 
 .container {
   width: 960px;
-  height: 4000px;
+  height: 3700px;
   margin: 36px auto;
   text-align: center;
   position: relative;
@@ -71,9 +71,9 @@ svg line {
   stroke-width: 4;
 }
 
-/* #ln0-0, #ln0-3, #ln1-0, #ln1-1 {
-  stroke-width: 6
-} */
+.whiteline {
+  stroke: white;
+}
 
 #imageA {
   height: 415px;
