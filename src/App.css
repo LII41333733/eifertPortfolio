@@ -95,6 +95,11 @@ svg line {
   width: auto;
 }
 
+#imageE {
+  height: auto;
+  width: 490px;
+}
+
 #imageF {
   height: 650px;
   width: auto;
@@ -128,7 +133,7 @@ svg line {
 /*-----*/
 
 #polyA {
-  fill: black;
+  fill: url("#imgA");
 }
 
 #polyAA {
@@ -136,7 +141,7 @@ svg line {
 }
 
 #polyB {
-  fill: black;
+  fill: url("#imgB");
 }
 
 #polyBB {
@@ -144,7 +149,7 @@ svg line {
 }
 
 #polyC {
-  fill: black;
+  fill: url("#imgC");
 }
 
 #polyCC {
@@ -152,7 +157,7 @@ svg line {
 }
 
 #polyD {
-  fill: black;
+  fill: url("#imgD");
 }
 
 #polyDD {
@@ -160,7 +165,7 @@ svg line {
 }
 
 #polyE {
-  fill: black;
+  fill: url("#imgE");
 }
 
 #polyEE {
@@ -168,7 +173,7 @@ svg line {
 }
 
 #polyF {
-  fill: black;
+  fill: url("#imgF");
 }
 
 #polyFF {
@@ -176,7 +181,7 @@ svg line {
 }
 
 #polyG {
-  fill: black;
+  fill: url("#imgG");
 }
 
 #polyGG {
@@ -184,7 +189,7 @@ svg line {
 }
 
 #polyH {
-  fill: black;
+  fill: url("#imgH");
 }
 
 #polyHH {
@@ -192,7 +197,7 @@ svg line {
 }
 
 #polyI {
-  fill: black;
+  fill: url("#imgI");
 }
 
 #polyII {
@@ -200,7 +205,7 @@ svg line {
 }
 
 #polyJ {
-  fill: black;
+  fill: url("#imgJ");
 }
 
 #polyJJ {
@@ -208,7 +213,7 @@ svg line {
 }
 
 #polyK {
-  fill: black;
+  fill: url("#imgK");
 }
 
 #polyKK {
@@ -216,7 +221,7 @@ svg line {
 }
 
 #polyL {
-  fill: black;
+  fill: url("#imgL");
 }
 
 #polyLL {

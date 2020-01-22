@@ -43,7 +43,7 @@ function App() {
             <image id="imageA" href="PLCC.png" x="-20" y="-60"></image>
           </pattern>
           <pattern id="imgAA" width="100%" height="100%">
-            <image id="imageAA" href="PLCC-overlay.png" x="-90" y="-90"></image>
+            <image id="imageAA" href="PLCC-overlay.png" x="-185" y="-190"></image>
           </pattern>
           <pattern id="imgB" width="100%" height="100%">
             <image id="imageB" href="Textiles.png" x="-30" y="-90"></image>
@@ -55,55 +55,55 @@ function App() {
             <image id="imageC" href="Harlem.png" x="-200" y="0"></image>
           </pattern>
           <pattern id="imgCC" width="100%" height="100%">
-            <image id="imageCC" href="Harlem-overlay.png" x="-155" y="-50"></image>
+            <image id="imageCC" href="Harlem-overlay.png" x="-160" y="-70"></image>
           </pattern>
           <pattern id="imgD" width="100%" height="100%">
             <image id="imageD" href="BabyDepot.png" x="0" y="20"></image>
           </pattern>
           <pattern id="imgDD" width="100%" height="100%">
-            <image id="imageDD" href="BabyDepot-overlay.png" x="-30" y="-50"></image>
+            <image id="imageDD" href="BabyDepot-overlay.png" x="-35" y="-50"></image>
           </pattern>
           <pattern id="imgE" width="100%" height="100%">
-            <image id="imageE" href="Treats.png" x="-15" y="0"></image>
+            <image id="imageE" href="Beauty.png" x="0" y="0"></image>
           </pattern>
           <pattern id="imgEE" width="100%" height="100%">
-            <image id="imageEE" href="Treats-overlay.png" x="-100" y="-110"></image>
+            <image id="imageEE" href="Treats-overlay.png" x="-120" y="-110"></image>
           </pattern>
           <pattern id="imgF" width="100%" height="100%">
-            <image id="imageF" href="Animations.png" x="10" y="0"></image>
+            <image id="imageF" href="Animations-overlay.gif" x="10" y="0"></image>
           </pattern>
           <pattern id="imgFF" width="100%" height="100%">
-            <image id="imageFF" href="Animations-overlay.png" x="-30" y="-30"></image>
+            <image id="imageFF" href="Animations-overlay.png" x="-15" y="-30"></image>
           </pattern>
           <pattern id="imgG" width="100%" height="100%">
             <image id="imageG" href="Holiday.png" x="5" y="0"></image>
           </pattern>
           <pattern id="imgGG" width="100%" height="100%">
-            <image id="imageGG" href="Holiday-overlay.png" x="-90" y="-120"></image>
+            <image id="imageGG" href="Holiday-overlay.png" x="-115" y="-120"></image>
           </pattern>
           <pattern id="imgH" width="100%" height="100%">
-            <image id="imageH" href="AOE.png" x="-35" y="-10"></image>
+            <image id="imageH" href="AOE.png" x="10" y="-10"></image>
           </pattern>
           <pattern id="imgHH" width="100%" height="100%">
-            <image id="imageHH" href="AOE-overlay.png" x="-80" y="-210"></image>
+            <image id="imageHH" href="AOE-overlay.png" x="-32" y="-124"></image>
           </pattern>
           <pattern id="imgI" width="100%" height="100%">
-            <image id="imageI" href="Beauty.png" x="0" y="0"></image>
+            <image id="imageI" href="Treats.png" x="-50" y="-18"></image>
           </pattern>
           <pattern id="imgII" width="100%" height="100%">
-            <image id="imageII" href="Beauty-overlay.png" x="-90" y="-105"></image>
+            <image id="imageII" href="Beauty-overlay.png" x="-120" y="-105"></image>
           </pattern>
           <pattern id="imgJ" width="100%" height="100%">
             <image id="imageJ" href="Home.png" x="0" y="0"></image>
           </pattern>
           <pattern id="imgJJ" width="100%" height="100%">
-            <image id="imageJJ" href="Home-overlay.png" x="-60" y="-110"></image>
+            <image id="imageJJ" href="Home-overlay.png" x="-30" y="-90"></image>
           </pattern>
           <pattern id="imgK" width="100%" height="100%">
-            <image id="imageK" href="PMGSC.png" x="11" y="0"></image>
+            <image id="imageK" href="PMGSC.png" x="-30" y="0"></image>
           </pattern>
           <pattern id="imgKK" width="100%" height="100%">
-            <image id="imageKK" href="PMGSC-overlay.png" x="-85" y="-175"></image>
+            <image id="imageKK" href="PMGSC-overlay.png" x="-110" y="-195"></image>
           </pattern>
           <pattern id="imgL" width="100%" height="100%">
             <image id="imageL" href="WomenHeart.png" x="-100" y="5"></image>
@@ -163,8 +163,8 @@ function App() {
         <line id="ln7-2" x1="504" y1="2403" x2="960" y2="2403"></line>
         <line id="ln7-3" x1="506" y1="2405" x2="569" y2="2085"></line>
         <line id="ln7-4" x1="521" y1="1892" x2="569" y2="2086"></line>
-        <polygon id="polyH" points="543,1910 941,1910 941,2388 526,2388 585,2084"></polygon>
-        <polygon id="polyHH" points="543,1910 941,1910 941,2388 526,2388 585,2084"></polygon>
+        <polygon id="polyH" points="543,1910 941,1910 941,2388 526,2388 585,2086"></polygon>
+        <polygon id="polyHH" points="543,1910 941,1910 941,2388 526,2388 585,2086"></polygon>
         <line id="ln8-0" x1="-3" y1="2104" x2="547" y2="2104"></line>
         <line id="ln8-1" x1="547" y1="2101" x2="445" y2="2620"></line>
         <line id="ln8-2" x1="-1" y1="2620" x2="448" y2="2620"></line>
