@@ -212,7 +212,7 @@ function App() {
         <line id="wln-5" className="whiteline" x1="460" y1="513" x2="420" y2="386"></line>
         <line id="wln-6" className="whiteline" x1="449" y1="514" x2="414" y2="383"></line>
         <line id="wln-7" className="whiteline" x1="-9" y1="384" x2="420" y2="384"></line>
-        <line id="wln-8" className="whiteline" x1="-9" y1="1052" x2="342" y2="1052"></line>
+        <line id="wln-8" className="whiteline" x1="-9" y1="1053" x2="342" y2="1053"></line>
         <line id="wln-9" className="whiteline" x1="320" y1="1151" x2="960" y2="1151"></line>
         <line id="wln-10" className="whiteline" x1="314" y1="1179" x2="960" y2="1180"></line>
         <line id="wln-11" className="whiteline" x1="303" y1="1187" x2="328" y2="1065"></line>
@@ -224,6 +224,7 @@ function App() {
         <line id="wln-17" className="whiteline" x1="-6" y1="3006" x2="960" y2="3006"></line>
         <line id="wln-18" className="whiteline" x1="490" y1="2437" x2="960" y2="2436"></line>
         <line id="wln-19" className="whiteline" x1="-6" y1="2626" x2="450" y2="2626"></line>
+        <line id="wln-20" className="whiteline" x1="-9" y1="1020" x2="347" y2="1020"></line>
       </svg>
     </div>
   );
