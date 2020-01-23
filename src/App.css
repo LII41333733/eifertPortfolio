@@ -15,6 +15,10 @@ body, html {
   margin: 0 auto;
 }
 
+polygon {
+  cursor: pointer;
+}
+
 #logo {
   height: 185px;
   margin-bottom: 25px;
@@ -235,4 +239,10 @@ svg line {
 #polyAA, #polyBB, #polyCC, #polyDD, #polyEE, #polyFF, #polyGG, #polyHH, #polyII, #polyJJ, #polyKK, #polyLL {
   opacity: 0.9;
   transition: opacity 0.7s ease;
+}
+
+#pageUp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }

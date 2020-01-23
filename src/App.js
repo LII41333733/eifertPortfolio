@@ -5,6 +5,11 @@ import './App.css';
 function App() {
   return (
     <div className={"container"}>
+
+      <div id="pageUp">
+        <i class="far fa-arrow-alt-circle-up"></i>
+      </div>
+
       <div className={"header"}>
         <img id="logo" src="EifertDesign-Logo" alt="logo"></img>
         <div id="navList">
