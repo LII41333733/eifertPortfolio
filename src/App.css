@@ -13,6 +13,7 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 polygon {
@@ -105,8 +106,8 @@ svg line {
 }
 
 #imageF {
-  height: 650px;
-  width: auto;
+  height: 700px;
+  width: 500px;
 }
 
 #imageG {
@@ -245,4 +246,56 @@ svg line {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+.mobileDiv {
+  border: 2px solid black;
+  margin-bottom: 8px;
+  padding: 6px;
+}
+
+.mobile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #3f3f3f;
+  box-sizing: border-box;
+}
+
+#mobile {
+  display: none;
+}
+
+.mobile-line-left {
+  height: 0px;
+  border: 1px solid black;
+  margin-bottom: 8px;
+  margin-left: -20px;
+}
+
+.mobile-line-right {
+  height: 0px;
+  border: 1px solid black;
+  margin-bottom: 8px;
+  width: 315px;
+}
+
+#logo-mobile {
+  width: 100%;
+  margin: 30px 0 20px 0;
+}
+
+@media (max-width: 991px) {
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+  .container {
+    width: 300px;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+  }
 }
