@@ -20,9 +20,10 @@ polygon {
   cursor: pointer;
 }
 
-#logo {
+.logo {
   height: 185px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 #navList {
@@ -57,7 +58,7 @@ a {
 .container {
   width: 960px;
   height: 3700px;
-  margin: 36px auto;
+  margin: 36px auto 0 auto;
   text-align: center;
   position: relative;
 }
@@ -242,11 +243,59 @@ svg line {
   transition: opacity 0.7s ease;
 }
 
-#pageUp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.details-container {
+  border-top: 1px solid #c1c1c3;
+  font-size: 15px;
+  text-align: initial;
+  display: flex;
 }
+
+#details-info-div {
+  height: 820px;
+  width: 300px;
+  background-color: #E7E7E9;
+  color: #3A3A3D;
+  padding: 50px 40px 90px 50px;
+  text-align: left;
+  font-family: "Montserrat";
+  display: inline-block;
+}
+
+#details-info-div li {
+  font-weight: bold;
+}
+
+#details-info-div ul {
+  padding-left: 20px;
+}
+
+#details-info-div p {
+  margin: 10px 0 20px 0;
+}
+
+#details-name {
+  font-size: 35px;
+  font-family: "Rockwell";
+}
+
+#details-image-div {
+  height: 4000px;
+  width: 540px;
+  display: inline-block;
+  border: 1px solid #c1c1c3;
+  margin: 25px;
+}
+
+.desktop-images {
+  position: absolute;
+  height: 4000px;
+  width: 545px;
+  right: 0;
+  top: 225px;
+  display: none;
+}
+
+/* MOBILE */
 
 .mobileDiv {
   border: 2px solid black;
@@ -262,7 +311,7 @@ svg line {
   box-sizing: border-box;
 }
 
-#mobile {
+.mobile {
   display: none;
 }
 
@@ -277,7 +326,7 @@ svg line {
   height: 0px;
   border: 1px solid black;
   margin-bottom: 8px;
-  width: 315px;
+  width: 565px;
 }
 
 #logo-mobile {
@@ -285,11 +334,20 @@ svg line {
   margin: 30px 0 20px 0;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
 @media (max-width: 991px) {
-  #desktop {
+  .desktop {
     display: none;
   }
-  #mobile {
+  .desktop-images {
+    display: none;
+  }
+  .mobile {
     display: block;
   }
   .container {
@@ -297,5 +355,8 @@ svg line {
     height: auto;
     margin: 0px auto;
     text-align: center;
+  }
+  .mobile-line-right {
+    width: 315px;
   }
 }
