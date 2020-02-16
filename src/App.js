@@ -237,7 +237,7 @@ export const PLCC_Details = () => {
 export const PLCC_Images = () => {
   return (<>
     <div id="m-0" className="mobileDiv">
-      <img className="mobile-image" src="PLCC.png"></img>
+      <img className="mobile-image" src="harlem_mobile_0.jpg"></img>
     </div>
     <div className="mobile-line-left"></div>
     <div id="m-1" className="mobileDiv">
@@ -288,7 +288,6 @@ export const PLCC_Images = () => {
 
 function App() {
   const [page, setPage] = useState("home");
-
   let details, images, desktopImages;
   switch (page) {
     case "home":
@@ -298,7 +297,6 @@ function App() {
     case "PLCC":
       details = PLCC_Details(setPage);
       images = PLCC_Images(setPage);
-
       break;
     // case "textiles":
     // component =   
@@ -370,8 +368,6 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => navScroll());
   })
-
-  console.log(details, images)
 
   return (
     <div className={"container"}>
