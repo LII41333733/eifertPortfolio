@@ -44,7 +44,7 @@ export default (page, func) => {
 
                         <h3>Like my work? Send me a message and let's get started!</h3>
                         <a href="mailto:e.eifert@hotmail.com" class="cta"> eifertdesign@gmail.com</a>
-                        <h3 className="mt-50">Check out my other website featuring my collection of wedding invitation packages at <a href="http://wbeinvitations.com"><h2><em>wbeinvitations.com</em></h2></a></h3>
+                        <h3 className="mt-50">Check out my other website featuring my collection of wedding invitation packages at <a className="wbe" href="http://wbeinvitations.com"><h2><em>wbeinvitations.com</em></h2></a></h3>
 
                     </div>
                 </div>

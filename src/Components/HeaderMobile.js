@@ -4,7 +4,8 @@ export default ({ page, func }) => {
         <img
             onClick={() => func("home")}
             id="logo-mobile"
-            src="images/main/desktop/EifertDesign-Logo"
-            alt="logo"></img>
+            className="mobileLogo"
+            src="images/main/mobile/mobileLogo.png"
+            alt="logo" ></img >
     )
 }

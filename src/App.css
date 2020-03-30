@@ -16,6 +16,10 @@ body, html {
   box-sizing: border-box;
 }
 
+#navList span:hover, .wbe:hover {
+  color: #f9ef20;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -26,6 +30,13 @@ polygon {
 
 .logo {
   height: 170px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.mobileLogo {
+  height: 175px;
+  width: auto;
   margin-bottom: 25px;
   cursor: pointer;
 }
@@ -415,11 +426,6 @@ svg line {
   width: 385px;
 }
 
-#logo-mobile {
-  width: 100%;
-  margin: 30px 0 20px 0;
-}
-
 .fixed {
   position: fixed;
   top: 0;
@@ -477,11 +483,10 @@ svg line {
 }
 
 .lead {
-  margin: 0% 0%;
-  padding: 0% 3% 0% 0%;
-  font-family: 'Arvo', serif;
-  font-size: 100px;
-  line-height: 86%;
+  margin-top: 7px;
+  padding: 4% 3% 0% 0%;
+  font-size: 83px;
+  line-height: 60%;
   font-weight: 400;
   float: left;
 }
@@ -508,7 +513,7 @@ svg line {
   padding: 0% 0% 6% 0%;
   width: 137%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 150%;
   font-weight: 300;
   text-align: left;
@@ -528,6 +533,12 @@ svg line {
 
 .article-inner h2 {
   color: yellow;
+  letter-spacing: 1.1px;
+}
+
+.article-inner h2, .lead {
+  font-family: "Rockwell";
+  font-weight: 500;
 }
 
 /* ---------------------------------------- CONTACT */

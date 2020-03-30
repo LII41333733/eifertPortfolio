@@ -7,7 +7,7 @@ import { ProfileDetailsDesktop, ProfileDetailsMobile, ProfileImages } from './Pa
 import { Contact, About } from './Pages';
 
 function App() {
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("home");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,36 +56,30 @@ function App() {
           <About />
         }
       </div>
-      <div className="mobile">
+      <div className="mobile textCenter">
         <HeaderMobile
           page={page}
-          func={setPage}
-        />
+          func={setPage} />
         {page === "home" &&
           <HomeMobile
             page={page}
+            func={setPage} />}
+        {page !== "home" && page !== "contact" && page !== "about" && <>
+          <ProfileDetailsMobile
+            page={page}
             func={setPage}
           />
-        }
-        {page !== "home" && page !== "contact" && page !== "about" &&
-          <>
-            <ProfileDetailsMobile
-              page={page}
-              func={setPage}
-            />
-            <ProfileImages
-              page={page}
-              func={setPage}
-              isMobile={true}
-            />
-          </>
+          <ProfileImages
+            page={page}
+            func={setPage}
+            isMobile={true}
+          /></>
         }
       </div>
       {page !== "home" && page !== "contact" && page !== "about" &&
         <ProfileImages
           page={page}
-          func={setPage}
-        />
+          func={setPage} />
       }
     </div>
   );

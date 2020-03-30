@@ -18,10 +18,19 @@ export default ({ page, func }) => {
                     onClick={() => {
                         func("home");
                         resetDesktop(true);
-                    }}
-                >WORK</span>
-                <span className="cursor" onClick={() => func("contact")}>CONTACT</span>
-                <span className="cursor" onClick={() => func("about")}>ABOUT</span>
+                    }}>
+                    WORK
+                    </span>
+                <span
+                    className="cursor"
+                    onClick={() => func("contact")}>
+                    CONTACT
+                    </span>
+                <span
+                    className="cursor"
+                    onClick={() => func("about")}>
+                    ABOUT
+                    </span>
             </div>
         </div>
     )
