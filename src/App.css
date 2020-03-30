@@ -122,7 +122,7 @@ svg line {
 
 #imageI {
   height: auto;
-  width: 575px;
+  width: 530px;
 }
 
 #imageJ {
@@ -247,13 +247,22 @@ svg line {
   transition: opacity 0.7s ease;
 }
 
-.overlay-div:focus {
+.fade-wrapper {
+  transition: opacity ease-in-out;
+}
+
+.fade-out {
   opacity: 0;
 }
 
-.overlay-div {
-  opacity: 0.8;
-  transition: opacity 0.7s ease;
+.fade-in {
+  opacity: 1;
+}
+
+.mobile-overlay {
+  position: absolute;
+  z-index: 0;
+  width: 360px;
 }
 
 .profile-container {
@@ -417,18 +426,6 @@ svg line {
   z-index: 1;
 }
 
-.mobile-overlay {
-  position: absolute;
-  z-index: 0;
-  width: 360px;
-}
-
-.mobile-overlay-PLCC {}
-
-.overlay-div:hover {
-  display: none;
-}
-
 .backBtnCircle {
   border: 3px solid black;
   height: 50px;
@@ -463,6 +460,10 @@ svg line {
   margin: 0 auto;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 /* ---------------------------------------- ABOUT */
 
 .profileImg {
@@ -479,7 +480,7 @@ svg line {
   margin: 0% 0%;
   padding: 0% 3% 0% 0%;
   font-family: 'Arvo', serif;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 86%;
   font-weight: 400;
   float: left;
@@ -489,7 +490,7 @@ svg line {
   display: block;
   margin: 0% auto;
   padding: 0% 11% 0% 0%;
-  max-height: 300px;
+  max-height: 340px;
   width: 350px;
   background: url('/images/about/bg-article-top.png');
   background-repeat: no-repeat;
@@ -503,7 +504,7 @@ svg line {
 .article p {
   display: block;
   /* margin: 0% auto; */
-  margin-left: -54px;
+  margin-left: -40px;
   padding: 0% 0% 6% 0%;
   width: 137%;
   font-family: 'Montserrat', sans-serif;
@@ -517,7 +518,7 @@ svg line {
 .article-inner {
   display: block;
   margin: 0% auto;
-  padding: 10% 22% 12% 24%;
+  padding: 10% 23% 12% 24%;
   width: 83%;
   background: url('/images/about/bg-article-bottom.png') no-repeat;
   background-repeat: no-repeat;
