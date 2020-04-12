@@ -81,24 +81,11 @@ export const ProfileImages = ({ page, func, isMobile }) => {
         const isLast = count === i;
         const isGif =
             (page === "Holiday" && i === 2)
-            || (page === "Animations" && i === 5)
-            || (page === "Animations" && i === 6);
-        const isVideo =
-            (page === "Animations" && i === 1)
-            || (page === "Animations" && i === 2)
-            || (page === "Animations" && i === 3)
-            || (page === "Animations" && i === 4)
-            || (page === "Animations" && i === 7)
-            || (page === "Animations" && i === 8)
-            || (page === "Animations" && i === 9)
-            || (page === "Animations" && i === 10);
+            || (page === "Animations");
 
-        const media = isVideo
-            ? (<video className="animationVideo" width="500" autoplay muted loop>
-                <source src={`images/profiles/${page}/${page}-${i}.mp4`} type="video/mp4"></source></video>)
-            : (<img
-                className="profile-img"
-                src={`images/profiles/${page}/${page}-${i}.${isGif ? "gif" : "jpg"}`}></img>);
+        const media = <img
+            className="profile-img"
+            src={`images/profiles/${page}/${page}-${i}.${isGif ? "gif" : "jpg"}`}></img>;
 
         images.push(
             <>
@@ -149,8 +136,7 @@ export const ProfileDetailsDesktop = ({ page, func }) => {
                                 : func(nextPage)
                             scrollPastHeader();
                         }}
-                        className="control-right control cursor
-          ">
+                        className="control-right control cursor">
                         {"NEXT  >"}
                     </span>
                 </div>
@@ -159,19 +145,84 @@ export const ProfileDetailsDesktop = ({ page, func }) => {
     )
 }
 
-export const ProfileDetailsMobile = ({ page, func }) => {
+export const ProfileDetailsMobile = ({ page, func, isMobile }) => {
     const { title, caption } = profileLibrary[page];
+    const currentIndex = pageArr.indexOf(page);
+    const prevPage = pageArr[currentIndex - 1];
+    const nextPage = pageArr[currentIndex + 1];
+    const lastPage = pageArr[pageArr.length - 1];
+    const firstPage = pageArr[0];
+
     return (
-        <div className="profile-container-mobile">
-            <div className="profile-info-div-mobile">
-                <div className="profile-name-mobile">{title}</div>
-                <p>{caption}</p>
+        !isMobile
+            ? <div className="profile-container-mobile">
+                <div className="profile-info-div-mobile">
+                    <div className="profile-name-mobile">{title}</div>
+                    <p>{caption}</p>
+                    <div className={"controls textCenter mx-auto"}>
+                        <span
+                            onClick={() => {
+                                prevPage === undefined
+                                    ? func(lastPage)
+                                    : func(prevPage)
+                                scrollPastHeader();
+                            }}
+                            className="control-left control cursor">
+                            {"<  PREV"}
+                        </span>
+                        {"/"}
+                        <span
+                            onClick={() => {
+                                nextPage === undefined
+                                    ? func(firstPage)
+                                    : func(nextPage)
+                                scrollPastHeader();
+                            }}
+                            className="control-right control cursor">
+                            {"NEXT  >"}
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
+            : <div className="profile-container-mobile">
+                <div className="profile-info-div-mobile">
+                    <div className="profile-name-mobile textCenter">{title}</div>
+                    <p>{caption}</p>
+                    <div className={"controls textCenter mx-auto"}>
+                        <span
+                            onClick={() => {
+                                prevPage === undefined
+                                    ? func(lastPage)
+                                    : func(prevPage)
+                                scrollPastHeader();
+                            }}
+                            className="control-left control cursor">
+                            {"<  PREV"}
+                        </span>
+                        {"/"}
+                        <span
+                            onClick={() => {
+                                nextPage === undefined
+                                    ? func(firstPage)
+                                    : func(nextPage)
+                                scrollPastHeader();
+                            }}
+                            className="control-right control cursor">
+                            {"NEXT  >"}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
     )
 }
 
-export default { profileLibrary, ProfileImages, ProfileDetailsDesktop, ProfileDetailsMobile };
+export default {
+    profileLibrary,
+    ProfileImages,
+    ProfileDetailsDesktop,
+    ProfileDetailsMobile
+};
 
 {/* <ul>
     <li>Exterior</li>

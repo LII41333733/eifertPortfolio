@@ -9,12 +9,11 @@
   src: url(/fonts/Rockwell/RockwellStd.otf);
 }
 
-body, html {
-  height: 100%;
+/* body, html {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-}
+} */
 
 #navList span:hover, .wbe:hover {
   color: #f9ef20;
@@ -30,14 +29,13 @@ polygon {
 
 .logo {
   height: 170px;
-  margin-bottom: 25px;
+  margin-top: 8px;
   cursor: pointer;
 }
 
 .mobileLogo {
   height: 175px;
   width: auto;
-  margin-bottom: 25px;
   cursor: pointer;
 }
 
@@ -48,7 +46,7 @@ polygon {
   padding-left: 10px;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 45px;
   text-align: left;
 }
 
@@ -80,6 +78,7 @@ a {
 
 svg {
   overflow: visible;
+  zoom: 0.9;
 }
 
 svg line {
@@ -100,6 +99,8 @@ svg line {
   height: 415px;
   width: 400px;
 }
+
+/* 141995 */
 
 #imageB {
   height: 800px;
@@ -258,10 +259,6 @@ svg line {
   transition: opacity 0.7s ease;
 }
 
-.fade-wrapper {
-  transition: opacity ease-in-out;
-}
-
 .fade-out {
   opacity: 0;
 }
@@ -273,7 +270,8 @@ svg line {
 .mobile-overlay {
   position: absolute;
   z-index: 0;
-  width: 360px;
+  width: 354px;
+  opacity: 0.9;
 }
 
 .profile-container {
@@ -376,18 +374,36 @@ svg line {
 .mobile-img-div, .profile-img-div {
   border: 2px solid black;
   margin-bottom: 8px;
-  padding: 6px;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.mobile-img, .profile-img {
-  width: 100%;
-  height: auto;
+.mobile-img-div {
+  padding: 9px;
+}
+
+.profile-img-div {
+  padding: 6px;
+}
+
+.profile-img {
   display: block;
   border: 1px solid #3f3f3f;
   box-sizing: border-box;
+}
+
+.mobile .profile-img {
+  width: 360px;
+}
+
+.mobile-img {
+  display: block;
+  border: 1px solid #3f3f3f;
+  box-sizing: border-box;
+  width: 354px;
+  height: auto;
+  align-self: center;
 }
 
 .desktop {
@@ -396,6 +412,14 @@ svg line {
 
 .mobile {
   display: none;
+}
+
+.line-across-mobile {
+  height: 0px;
+  border: 1px solid black;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  width: 565px;
 }
 
 .line-left {
@@ -409,7 +433,7 @@ svg line {
   height: 0px;
   border: 1px solid black;
   margin-bottom: 8px;
-  margin-left: -15px;
+  margin-left: -35px;
 }
 
 .line-right {
@@ -450,6 +474,27 @@ svg line {
 
 /* ---------------------------------------- UTILITIES */
 
+.fontSize-4 {
+  font-size: 0.9rem;
+}
+
+.fontSize-10 {
+  font-size: 1rem !important;
+}
+
+.fontSize-6 {
+  font-size: 1.1rem;
+}
+
+.fontWeightLighter {
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .bgGrey {
   background-color: #eeeef1;
 }
@@ -470,6 +515,22 @@ svg line {
   margin-top: 50px;
 }
 
+.dFlex {
+  display: flex !important;
+}
+
+.dFlexColumn {
+  flex-direction: column;
+}
+
+.justifyContentCenter {
+  justify-content: center;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
 /* ---------------------------------------- ABOUT */
 
 .profileImg {
@@ -483,13 +544,20 @@ svg line {
 }
 
 .lead {
-  margin-top: 7px;
+  margin-top: 8px;
   padding: 4% 3% 0% 0%;
   font-size: 83px;
-  line-height: 60%;
+  line-height: 58%;
   font-weight: 400;
   float: left;
 }
+
+/* margin-top: 11px;
+padding: 4% 3% 0 0;
+font-size: 78px;
+line-height: 58%;
+font-weight: 400;
+float: left; */
 
 .article {
   display: block;
@@ -544,7 +612,7 @@ svg line {
 /* ---------------------------------------- CONTACT */
 
 .contact-inner {
-  margin: 0% auto 3% auto;
+  margin: 0 auto 25px auto;
   padding: 3% 0%;
   width: 94%;
   text-align: center;
@@ -583,28 +651,21 @@ svg line {
   width: 25%;
 }
 
-.steps .num {
-  display: block;
-  margin: 0% auto;
-  padding: 0% 0%;
-  width: 100%;
-  max-width: 45px;
-}
-
 .steps .num p {
-  display: block;
   margin: 0% auto;
-  padding: 40% 0% 20% 0%;
-  width: 100%;
+  width: 47px;
+  height: 47px;
+  display: block;
   color: #f9ef20;
-  font-size: 18px;
-  line-height: 100%;
+  font-size: 1rem;
   font-family: "Rockwell";
   font-weight: 400;
   background-color: #444;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  align-self: center;
+  line-height: 52px;
 }
 
 .steps p {
@@ -632,7 +693,6 @@ svg line {
   max-width: 30%;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  line-height: 100%;
   color: #444;
   background-color: #fff;
   text-decoration: none;
@@ -650,7 +710,6 @@ nav img {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75%;
-  line-height: 100%;
   color: #27aae1;
   opacity: 0.5;
 }
@@ -662,7 +721,6 @@ nav a {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75%;
-  line-height: 100%;
 }
 
 nav img:hover {
@@ -673,6 +731,54 @@ nav img:hover {
   color: white;
 }
 
+.burgerMenu {
+  height: 60px;
+  display: inline-block;
+}
+
+.mobileNavOuter {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mobileNavOuter ul {
+  margin-bottom: 25px;
+}
+
+.mobileNavItem {
+  font-size: 20px;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.navMenu {
+  height: 0;
+  transition: height 0.7s ease;
+}
+
+.navMenuExpanded {
+  height: 125px;
+  transition: height 0.5s ease;
+}
+
+.navMenuHidden {
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.navMenuDisplayed {
+  margin: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 991px) {
   .desktop {
     display: none !important;
@@ -681,11 +787,11 @@ nav img:hover {
     display: block !important;
     width: 375px;
     margin: 0 auto;
-    text-align: centers;
+    text-align: center;
+    padding-top: 25px;
   }
   .container {
     width: 100%;
-    height: auto;
     margin: 0px auto;
     text-align: left;
   }
@@ -694,5 +800,61 @@ nav img:hover {
   }
   .profile-img-container-desktop {
     display: none !important;
+  }
+  .contact-inner .intro {
+    padding: 6% 2% 5% 2%;
+  }
+  .contact-inner .intro h2 {
+    font-size: 1.7rem;
+  }
+  .intro p {
+    font-size: 0.9rem;
+    margin: 5px 6px;
+  }
+  .steps {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 10px 0;
+  }
+  .cta {
+    padding: 20px 0;
+    max-width: initial;
+  }
+  .contact-inner h3 {
+    font-size: 1rem;
+  }
+  .profileImg {
+    width: 100%;
+  }
+  .profilePicDiv {
+    height: 380px;
+  }
+  .article {
+    transform: scale(0.6);
+    left: -60px;
+    top: 0px;
+    /*
+    margin: 0% auto;
+    padding: 0% 11% 0% 0%;
+    display: block;
+    max-height: 340px;
+    width: 350px;
+    background: url('/images/about/bg-article-top.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    position: absolute;
+     */
+  }
+  .article-inner {
+    transform: scale(1);
+    padding: 10% 7% 12% 24%;
+  }
+  .article-inner h2 {
+    margin-left: -28px;
+  }
+  .article p {
+    margin-left: -75px;
   }
 }

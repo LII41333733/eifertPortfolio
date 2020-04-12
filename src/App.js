@@ -8,9 +8,13 @@ import { Contact, About } from './Pages';
 
 function App() {
   const [page, setPage] = useState("home");
+  const isHome = page === "home";
+  const isContact = page === "contact";
+  const isAbout = page === "about";
+  const isWork = !isHome && !isContact && !isAbout;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    !isWork && window.scrollTo(0, 0);
     const scrollFunc = navScroll(page);
     if (page !== "home") {
       window.addEventListener("scroll", scrollFunc);
@@ -20,13 +24,12 @@ function App() {
 
     const container = document.getElementsByClassName("container");
     let a = document.getElementsByClassName("profile-img-container-desktop")[0];
-    setTimeout(() => { container[0].style.height = a && `${a.offsetHeight}px`; }, 500);
-
-    const videos = document.getElementsByClassName('animationVideo');
-    for (let i = 0; i < videos.length; i++) {
-      videos[i].play();
-    }
+    setTimeout(() => {
+      container[0].style.height = a && `${a.offsetHeight}px`;
+      container[0].style.height = isAbout && "800px";
+    }, 500);
   });
+
 
   return (
     <div className="container">
@@ -43,18 +46,14 @@ function App() {
             />
           </>
         }
-        {page !== "home" && page !== "contact" && page !== "about" &&
+        {isWork &&
           <ProfileDetailsDesktop
             page={page}
             func={setPage}
           />
         }
-        {page === "contact" &&
-          <Contact />
-        }
-        {page === "about" &&
-          <About />
-        }
+        {isContact && <Contact />}
+        {isAbout && <About />}
       </div>
       <div className="mobile textCenter">
         <HeaderMobile
@@ -62,26 +61,31 @@ function App() {
           func={setPage} />
         {page === "home" &&
           <HomeMobile
-            page={page}
             func={setPage} />}
-        {page !== "home" && page !== "contact" && page !== "about" && <>
-          <ProfileDetailsMobile
-            page={page}
-            func={setPage}
-          />
-          <ProfileImages
-            page={page}
-            func={setPage}
-            isMobile={true}
-          /></>
-        }
+        {isWork &&
+          <>
+            <ProfileDetailsMobile
+              page={page}
+              func={setPage}
+            />
+            <ProfileImages
+              page={page}
+              func={setPage}
+              isMobile={true}
+            />
+          </>}
+        {isContact && <Contact
+          isMobile={true}
+        />}
+        {isAbout && <About
+          isMobile={true}
+        />}
       </div>
-      {page !== "home" && page !== "contact" && page !== "about" &&
+      {isWork &&
         <ProfileImages
           page={page}
-          func={setPage} />
-      }
-    </div>
+          func={setPage} />}
+    </div >
   );
 }
 
