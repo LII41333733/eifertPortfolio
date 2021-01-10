@@ -1,6 +1,5 @@
 {
   "name": "eifert-portfolio",
-  "homepage": "https://LII41333733.github.io/eifertPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +7,7 @@
     "react": "^16.12.0",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.0",
     "react-transition-group": "^4.3.0",
     "serialize-javascript": "^2.1.2"
   },

@@ -377,6 +377,7 @@ svg line {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .mobile-img-div {
@@ -391,6 +392,11 @@ svg line {
   display: block;
   border: 1px solid #3f3f3f;
   box-sizing: border-box;
+  width: 530px;
+}
+
+.translated {
+    transform: scale(0.85);
 }
 
 .mobile .profile-img {
