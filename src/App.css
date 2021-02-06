@@ -391,6 +391,7 @@ svg line {
   display: block;
   border: 1px solid #3f3f3f;
   box-sizing: border-box;
+  width: 530px;
 }
 
 .mobile .profile-img {

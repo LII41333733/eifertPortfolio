@@ -6,76 +6,76 @@ export const HomeDesktop = ({ func }) => {
         <svg height="auto" width="960px">
             <defs>
                 <pattern id="imgA" width="100%" height="100%">
-                    <image id="imageA" href="images/main/desktop/PLCC.png" x="-20" y="-60"></image>
+                    <image id="imageA" xlinkHref="images/main/desktop/PLCC.png" x="-20" y="-60"></image>
                 </pattern>
                 <pattern id="imgAA" width="100%" height="100%">
-                    <image id="imageAA" href="images/overlays/desktopOverlays/PLCC-overlay.png" x="-185" y="-190"></image>
+                    <image id="imageAA" xlinkHref="images/overlays/desktopOverlays/PLCC-overlay.png" x="-185" y="-190"></image>
                 </pattern>
                 <pattern id="imgB" width="100%" height="100%">
-                    <image id="imageB" href="images/main/desktop/Textiles.png" x="-30" y="-90"></image>
+                    <image id="imageB" xlinkHref="images/main/desktop/Textiles.png" x="-30" y="-90"></image>
                 </pattern>
                 <pattern id="imgBB" width="100%" height="100%">
-                    <image id="imageBB" href="images/overlays/desktopOverlays/Textiles-overlay.png" x="-15" y="-110"></image>
+                    <image id="imageBB" xlinkHref="images/overlays/desktopOverlays/Textiles-overlay.png" x="-15" y="-110"></image>
                 </pattern>
                 <pattern id="imgC" width="100%" height="100%">
-                    <image id="imageC" href="images/main/desktop/Harlem.png" x="-200" y="0"></image>
+                    <image id="imageC" xlinkHref="images/main/desktop/Harlem.png" x="-200" y="0"></image>
                 </pattern>
                 <pattern id="imgCC" width="100%" height="100%">
-                    <image id="imageCC" href="images/overlays/desktopOverlays/Harlem-overlay.png" x="-160" y="-70"></image>
+                    <image id="imageCC" xlinkHref="images/overlays/desktopOverlays/Harlem-overlay.png" x="-160" y="-70"></image>
                 </pattern>
                 <pattern id="imgD" width="100%" height="100%">
-                    <image id="imageD" href="images/main/desktop/BabyDepot.png" x="0" y="20"></image>
+                    <image id="imageD" xlinkHref="images/main/desktop/BabyDepot.png" x="0" y="20"></image>
                 </pattern>
                 <pattern id="imgDD" width="100%" height="100%">
-                    <image id="imageDD" href="images/overlays/desktopOverlays/BabyDepot-overlay.png" x="-35" y="-50"></image>
+                    <image id="imageDD" xlinkHref="images/overlays/desktopOverlays/BabyDepot-overlay.png" x="-35" y="-50"></image>
                 </pattern>
                 <pattern id="imgE" width="100%" height="100%">
-                    <image id="imageE" href="images/main/desktop/Beauty.png" x="0" y="0"></image>
+                    <image id="imageE" xlinkHref="images/main/desktop/Beauty.png" x="0" y="0"></image>
                 </pattern>
                 <pattern id="imgEE" width="100%" height="100%">
-                    <image id="imageEE" href="images/overlays/desktopOverlays/Treats-overlay.png" x="-120" y="-110"></image>
+                    <image id="imageEE" xlinkHref="images/overlays/desktopOverlays/Treats-overlay.png" x="-120" y="-110"></image>
                 </pattern>
                 <pattern id="imgF" width="100%" height="100%">
-                    <image id="imageF" href="images/main/desktop/Animations.gif" x="0" y="0"></image>
+                    <image id="imageF" xlinkHref="images/main/desktop/Animations.gif" x="0" y="0"></image>
                 </pattern>
                 <pattern id="imgFF" width="100%" height="100%">
-                    <image id="imageFF" href="images/overlays/desktopOverlays/Animations-overlay.png" x="-15" y="-30"></image>
+                    <image id="imageFF" xlinkHref="images/overlays/desktopOverlays/Animations-overlay.png" x="-15" y="-30"></image>
                 </pattern>
                 <pattern id="imgG" width="100%" height="100%">
-                    <image id="imageG" href="images/main/desktop/Holiday.png" x="5" y="0"></image>
+                    <image id="imageG" xlinkHref="images/main/desktop/Holiday.png" x="5" y="0"></image>
                 </pattern>
                 <pattern id="imgGG" width="100%" height="100%">
-                    <image id="imageGG" href="images/overlays/desktopOverlays/Holiday-overlay.png" x="-115" y="-120"></image>
+                    <image id="imageGG" xlinkHref="images/overlays/desktopOverlays/Holiday-overlay.png" x="-115" y="-120"></image>
                 </pattern>
                 <pattern id="imgH" width="100%" height="100%">
-                    <image id="imageH" href="images/main/desktop/AOE.png" x="10" y="-10"></image>
+                    <image id="imageH" xlinkHref="images/main/desktop/AOE.png" x="10" y="-10"></image>
                 </pattern>
                 <pattern id="imgHH" width="100%" height="100%">
-                    <image id="imageHH" href="images/overlays/desktopOverlays/AOE-overlay.png" x="-32" y="-124"></image>
+                    <image id="imageHH" xlinkHref="images/overlays/desktopOverlays/AOE-overlay.png" x="-32" y="-124"></image>
                 </pattern>
                 <pattern id="imgI" width="100%" height="100%">
-                    <image id="imageI" href="images/main/desktop/Peace.jpg" x="-5" y="-10"></image>
+                    <image id="imageI" xlinkHref="images/main/desktop/Peace.jpg" x="-5" y="-10"></image>
                 </pattern>
                 <pattern id="imgII" width="100%" height="100%">
-                    <image id="imageII" href="images/overlays/desktopOverlays/Peace-overlay.png" x="-120" y="-105"></image>
+                    <image id="imageII" xlinkHref="images/overlays/desktopOverlays/Peace-overlay.png" x="-120" y="-105"></image>
                 </pattern>
                 <pattern id="imgJ" width="100%" height="100%">
-                    <image id="imageJ" href="images/main/desktop/Home.png" x="0" y="0"></image>
+                    <image id="imageJ" xlinkHref="images/main/desktop/Home.png" x="0" y="0"></image>
                 </pattern>
                 <pattern id="imgJJ" width="100%" height="100%">
-                    <image id="imageJJ" href="images/overlays/desktopOverlays/Home-overlay.png" x="-30" y="-90"></image>
+                    <image id="imageJJ" xlinkHref="images/overlays/desktopOverlays/Home-overlay.png" x="-30" y="-90"></image>
                 </pattern>
                 <pattern id="imgK" width="100%" height="100%">
-                    <image id="imageK" href="images/main/desktop/PMGSC.png" x="-30" y="0"></image>
+                    <image id="imageK" xlinkHref="images/main/desktop/PMGSC.png" x="-30" y="0"></image>
                 </pattern>
                 <pattern id="imgKK" width="100%" height="100%">
-                    <image id="imageKK" href="images/overlays/desktopOverlays/PMGSC-overlay.png" x="-110" y="-195"></image>
+                    <image id="imageKK" xlinkHref="images/overlays/desktopOverlays/PMGSC-overlay.png" x="-110" y="-195"></image>
                 </pattern>
                 <pattern id="imgL" width="100%" height="100%">
-                    <image id="imageL" href="images/main/desktop/WomenHeart.png" x="-100" y="0"></image>
+                    <image id="imageL" xlinkHref="images/main/desktop/WomenHeart.png" x="-100" y="0"></image>
                 </pattern>
                 <pattern id="imgLL" width="100%" height="100%">
-                    <image id="imageLL" href="images/overlays/desktopOverlays/WomenHeart-overlay.png" x="-30" y="-10"></image>
+                    <image id="imageLL" xlinkHref="images/overlays/desktopOverlays/WomenHeart-overlay.png" x="-30" y="-10"></image>
                 </pattern>
             </defs>
 
