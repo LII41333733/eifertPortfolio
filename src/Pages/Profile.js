@@ -79,13 +79,19 @@ export const ProfileImages = ({ page, func, isMobile }) => {
                     ? 'line-right-mobile'
                     : `line-right`;
         const isLast = count === i;
+        const isAnimations = page === "Animations";
         const isGif =
             (page === "Holiday" && i === 2)
-            || (page === "Animations");
+            || (isAnimations);
 
-        const media = <img
-            className="profile-img"
-            src={`images/profiles/${page}/${page}-${i}.${isGif ? "gif" : "jpg"}`}></img>;
+        console.log(i)
+
+        const media = (
+            <img
+                alt=""
+                className={`profile-img ${isAnimations && (i > 1 && i < 8) ? "translated" : ""}`}
+                src={`images/profiles/${page}/${page}-${i}.${isGif ? "gif" : "jpg"}`}></img>
+        );
 
         images.push(
             <>
