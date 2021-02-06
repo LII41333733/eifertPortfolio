@@ -393,13 +393,10 @@ svg line {
   border: 1px solid #3f3f3f;
   box-sizing: border-box;
   width: 530px;
-<<<<<<< HEAD
-=======
 }
 
 .translated {
     transform: scale(0.93);
->>>>>>> bc9ca6d75d17098a873e645086a28bad3a8f036b
 }
 
 .mobile .profile-img {
