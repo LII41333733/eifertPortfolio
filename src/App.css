@@ -1,21 +1,48 @@
 @font-face {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   src: url(/fonts/Rockwell/RockwellStd-Light.otf);
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   src: url(/fonts/Rockwell/RockwellStd.otf);
 }
 
-/* body, html {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-} */
+/** New stuff **/
 
-#navList span:hover, .wbe:hover {
+#desktop-body {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#left-column,
+#right-column {
+  width: 476px;
+  height: auto;
+}
+
+#zoneA,
+#zoneB,
+#zoneC {
+  background-color: #f1f2f2;
+}
+
+#zoneA,
+#zoneB {
+  height: 400px;
+}
+
+#zoneC {
+  height: 400px;
+}
+
+/****/
+
+#navList span:hover,
+.wbe:hover {
   color: #f9ef20;
 }
 
@@ -40,14 +67,14 @@ polygon {
 }
 
 #navList {
-  border-left: 2px solid black;
-  font-family: 'Rockwell';
-  font-weight: lighter;
-  padding-left: 10px;
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  text-align: left;
+  font-family: "Montserrat";
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #939598;
+  margin: 0 8rem 3rem 8rem;
 }
 
 #navList span {
@@ -59,7 +86,7 @@ polygon {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #f1f2f2;
 }
 
 .header {
@@ -250,11 +277,33 @@ svg line {
   fill: url("#imgLL");
 }
 
-#polyAA:hover, #polyBB:hover, #polyCC:hover, #polyDD:hover, #polyEE:hover, #polyFF:hover, #polyGG:hover, #polyHH:hover, #polyII:hover, #polyJJ:hover, #polyKK:hover, #polyLL:hover {
+#polyAA:hover,
+#polyBB:hover,
+#polyCC:hover,
+#polyDD:hover,
+#polyEE:hover,
+#polyFF:hover,
+#polyGG:hover,
+#polyHH:hover,
+#polyII:hover,
+#polyJJ:hover,
+#polyKK:hover,
+#polyLL:hover {
   opacity: 0;
 }
 
-#polyAA, #polyBB, #polyCC, #polyDD, #polyEE, #polyFF, #polyGG, #polyHH, #polyII, #polyJJ, #polyKK, #polyLL {
+#polyAA,
+#polyBB,
+#polyCC,
+#polyDD,
+#polyEE,
+#polyFF,
+#polyGG,
+#polyHH,
+#polyII,
+#polyJJ,
+#polyKK,
+#polyLL {
   opacity: 0.9;
   transition: opacity 0.7s ease;
 }
@@ -292,8 +341,8 @@ svg line {
 .profile-info-div {
   height: 1000px;
   width: 300px;
-  background-color: #E7E7E9;
-  color: #3A3A3D;
+  background-color: #e7e7e9;
+  color: #3a3a3d;
   padding: 50px 40px 90px 50px;
   text-align: left;
   font-family: "Montserrat";
@@ -304,8 +353,8 @@ svg line {
   height: auto;
   width: 100%;
   padding: 0;
-  background-color: #E7E7E9;
-  color: #3A3A3D;
+  background-color: #e7e7e9;
+  color: #3a3a3d;
   padding: 50px 30px 30px 30px;
   text-align: left;
   font-family: "Montserrat";
@@ -336,9 +385,11 @@ svg line {
   padding: 10px;
 }
 
-.control-left {}
+.control-left {
+}
 
-.control-right {}
+.control-right {
+}
 
 .profile-name {
   font-size: 35px;
@@ -371,7 +422,8 @@ svg line {
 
 /* MOBILE */
 
-.mobile-img-div, .profile-img-div {
+.mobile-img-div,
+.profile-img-div {
   border: 2px solid black;
   margin-bottom: 8px;
   overflow: hidden;
@@ -396,7 +448,7 @@ svg line {
 }
 
 .translated {
-    transform: scale(0.93);
+  transform: scale(0.93);
 }
 
 .mobile .profile-img {
@@ -506,7 +558,7 @@ ul {
 }
 
 .rockwell {
-  font-family: "Rockwell"
+  font-family: "Rockwell";
 }
 
 .textCenter {
@@ -571,7 +623,7 @@ float: left; */
   padding: 0% 11% 0% 0%;
   max-height: 340px;
   width: 350px;
-  background: url('/images/about/bg-article-top.png');
+  background: url("/images/about/bg-article-top.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
@@ -586,7 +638,7 @@ float: left; */
   margin-left: -40px;
   padding: 0% 0% 6% 0%;
   width: 137%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 300;
@@ -599,7 +651,7 @@ float: left; */
   margin: 0% auto;
   padding: 10% 23% 12% 24%;
   width: 83%;
-  background: url('/images/about/bg-article-bottom.png') no-repeat;
+  background: url("/images/about/bg-article-bottom.png") no-repeat;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
@@ -610,7 +662,8 @@ float: left; */
   letter-spacing: 1.1px;
 }
 
-.article-inner h2, .lead {
+.article-inner h2,
+.lead {
   font-family: "Rockwell";
   font-weight: 500;
 }
@@ -679,7 +732,7 @@ float: left; */
   margin: 0% auto;
   padding: 0% 0%;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 150%;
@@ -697,7 +750,7 @@ float: left; */
   padding: 2% 2%;
   width: 100%;
   max-width: 30%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #444;
   background-color: #fff;
