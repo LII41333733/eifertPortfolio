@@ -1,6 +1,6 @@
 import React from "react";
 import { resetDesktop } from "../Utilities";
-export default ({ page, func }) => {
+export default ({ page, func, layer, setLayer }) => {
   return (
     <>
       <div className={"header"}>
@@ -8,6 +8,7 @@ export default ({ page, func }) => {
           onClick={() => {
             func("home");
             resetDesktop();
+            setLayer(0);
           }}
           className="logo"
           src="images/main/desktop/EifertDesign-Logo.jpeg"

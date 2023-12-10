@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Rockwell";
-  src: url(/fonts/Rockwell/RockwellStd-Light.otf);
+  src: url(../public//fonts/Rockwell/RockwellStd-Light.otf);
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Rockwell";
-  src: url(/fonts/Rockwell/RockwellStd.otf);
+  src: url(../public//fonts/Rockwell/RockwellStd.otf);
 }
 
 /** New stuff **/
@@ -20,30 +20,60 @@
 
 #left-column,
 #right-column {
-  width: 476px;
+  width: 477.5px;
   height: auto;
 }
 
-#zoneA,
-#zoneB,
-#zoneC {
+#desktop-body #zoneA,
+#desktop-body #zoneB,
+#desktop-body #zoneC {
   background-color: #f1f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#zoneA,
-#zoneB {
-  height: 400px;
+#desktop-body #zoneA img,
+#desktop-body #zoneB img,
+#desktop-body #zoneC img {
+  width: 100%;
+  transition: opacity 0.5s ease;
+  position: relative;
+  z-index: 9;
 }
 
-#zoneC {
-  height: 400px;
+#desktop-body #zoneA span,
+#desktop-body #zoneB span,
+#desktop-body #zoneC span {
+  position: absolute;
+  font-family: "Montserrat";
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+/* #desktop-body #zoneB span {
+  width: 8.7rem;
+} */
+
+#desktop-body #zoneA img:hover,
+#desktop-body #zoneB img:hover,
+#desktop-body #zoneC img:hover {
+  opacity: 0;
+}
+
+#desktop-body #zoneA {
+  margin-bottom: 5px;
+}
+
+#desktop-body #zoneC {
+  /* height: 610px; */
 }
 
 /****/
 
 #navList span:hover,
 .wbe:hover {
-  color: #f9ef20;
+  color: #3d3c2a;
 }
 
 .cursor {
@@ -55,7 +85,7 @@ polygon {
 }
 
 .logo {
-  height: 170px;
+  height: 150px;
   margin-top: 8px;
   cursor: pointer;
 }
@@ -90,7 +120,6 @@ a {
 }
 
 .header {
-  height: 200px;
   width: 960px;
   position: relative;
 }
@@ -480,6 +509,13 @@ svg line {
   width: 565px;
 }
 
+.line {
+  height: 0px;
+  border: 1px solid black;
+  margin-bottom: 8px;
+  margin-left: 0;
+}
+
 .line-left {
   height: 0px;
   border: 1px solid black;
@@ -623,7 +659,7 @@ float: left; */
   padding: 0% 11% 0% 0%;
   max-height: 340px;
   width: 350px;
-  background: url("/images/about/bg-article-top.png");
+  background: url(../public/images/about/bg-article-top.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
@@ -651,7 +687,7 @@ float: left; */
   margin: 0% auto;
   padding: 10% 23% 12% 24%;
   width: 83%;
-  background: url("/images/about/bg-article-bottom.png") no-repeat;
+  background: url(../public/images/about/bg-article-bottom.png) no-repeat;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;

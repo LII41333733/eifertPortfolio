@@ -11,6 +11,8 @@ import {
 import { Contact, About } from "./Pages";
 
 function App() {
+  const [layer, setLayer] = React.useState(0);
+
   const [page, setPage] = useState("home");
   const isHome = page === "home";
   const isContact = page === "contact";
@@ -38,10 +40,15 @@ function App() {
   return (
     <div className="container">
       <div className="desktop">
-        <HeaderDesktop page={page} func={setPage} />
+        <HeaderDesktop
+          page={page}
+          func={setPage}
+          layer={layer}
+          setLayer={setLayer}
+        />
         {page === "home" && (
           <>
-            <HomeDesktop page={page} func={setPage} />
+            <HomeDesktop layer={layer} setLayer={setLayer} />
           </>
         )}
         {isWork && <ProfileDetailsDesktop page={page} func={setPage} />}
@@ -50,7 +57,9 @@ function App() {
       </div>
       <div className="mobile textCenter">
         <HeaderMobile page={page} func={setPage} />
-        {page === "home" && <HomeMobile func={setPage} />}
+        {page === "home" && (
+          <HomeMobile func={setPage} layer={layer} setLayer={setLayer} />
+        )}
         {isWork && (
           <>
             <ProfileDetailsMobile page={page} func={setPage} />
