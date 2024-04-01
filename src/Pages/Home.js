@@ -82,6 +82,7 @@ const spanWidth = {
   },
 };
 export const HomeDesktop = ({ layer, setLayer }) => {
+  console.log(layer);
   return (
     <div id="desktop-body">
       <div id="left-column">
