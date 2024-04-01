@@ -1,9 +1,9 @@
 {
   "name": "eifert-portfolio",
+  "homepage": "https://lii41333733.github.io/eifertPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.12.0",
@@ -35,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "webpack": "^5.89.0"
   }
 }
