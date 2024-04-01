@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/eifertPortfolio/static/css/main.f102b38c.chunk.css",
-    "main.js": "/eifertPortfolio/static/js/main.89ae5734.chunk.js",
-    "main.js.map": "/eifertPortfolio/static/js/main.89ae5734.chunk.js.map",
-    "runtime-main.js": "/eifertPortfolio/static/js/runtime-main.18712141.js",
-    "runtime-main.js.map": "/eifertPortfolio/static/js/runtime-main.18712141.js.map",
-    "static/js/2.db71c8af.chunk.js": "/eifertPortfolio/static/js/2.db71c8af.chunk.js",
-    "static/js/2.db71c8af.chunk.js.map": "/eifertPortfolio/static/js/2.db71c8af.chunk.js.map",
+    "main.css": "/eifertPortfolio/static/css/main.21010654.css",
+    "main.js": "/eifertPortfolio/static/js/main.afd554af.js",
+    "static/media/markle.svg": "/eifertPortfolio/static/media/markle.0900a9cf75460640df7d0af3fd3166cc.svg",
+    "static/media/pool_colors.gif": "/eifertPortfolio/static/media/pool_colors.c4495fd4930e7fed1bae.gif",
+    "static/media/markle_logo.gif": "/eifertPortfolio/static/media/markle_logo.36892bf8e1f5d5b04301.gif",
+    "static/media/RockwellStd-Light.otf": "/eifertPortfolio/static/media/RockwellStd-Light.7ba035f926bf3cac48a8.otf",
+    "static/media/RockwellStd.otf": "/eifertPortfolio/static/media/RockwellStd.ad245957bc3ea717675b.otf",
     "index.html": "/eifertPortfolio/index.html",
-    "precache-manifest.048fbc57a56a64d3cba01155d4553291.js": "/eifertPortfolio/precache-manifest.048fbc57a56a64d3cba01155d4553291.js",
-    "service-worker.js": "/eifertPortfolio/service-worker.js",
-    "static/css/main.f102b38c.chunk.css.map": "/eifertPortfolio/static/css/main.f102b38c.chunk.css.map",
-    "static/js/2.db71c8af.chunk.js.LICENSE.txt": "/eifertPortfolio/static/js/2.db71c8af.chunk.js.LICENSE.txt"
+    "main.21010654.css.map": "/eifertPortfolio/static/css/main.21010654.css.map",
+    "main.afd554af.js.map": "/eifertPortfolio/static/js/main.afd554af.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.18712141.js",
-    "static/js/2.db71c8af.chunk.js",
-    "static/css/main.f102b38c.chunk.css",
-    "static/js/main.89ae5734.chunk.js"
+    "static/css/main.21010654.css",
+    "static/js/main.afd554af.js"
   ]
 }
