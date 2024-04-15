@@ -11,6 +11,11 @@
 
 /** Markle **/
 
+#markle-svg {
+  position: relative;
+  top: 20px;
+}
+
 #markle-svg a {
   color: #599bff;
   text-decoration: underline;
@@ -18,20 +23,20 @@
 
 #markle-svg .markle-text {
   position: absolute;
-  top: 42rem;
+  top: 40rem;
   padding: 0 3rem;
   font-size: 0.9rem;
 }
 
 #markle-svg #pool-colors {
   position: absolute;
-  top: 76rem;
+  top: 69rem;
   left: 10rem;
 }
 
 #markle-svg #markle-logo {
   position: absolute;
-  top: 398.5rem;
+  top: 395.5rem;
   z-index: 5;
   left: 42.6rem;
 }
@@ -127,7 +132,7 @@ polygon {
 }
 
 .logo {
-  height: 150px;
+  height: 180px;
   margin-top: 8px;
   cursor: pointer;
 }
@@ -146,7 +151,7 @@ polygon {
   align-items: center;
   justify-content: space-evenly;
   color: #939598;
-  margin: 0 8rem 3rem 8rem;
+  margin: 0 8rem 2rem 8rem;
 }
 
 #navList span {
@@ -922,13 +927,6 @@ nav img:hover {
 
 .footer {
   margin-bottom: 50px;
-}
-
-/*  MarkleSvg  */
-
-#markle-svg {
-  position: relative;
-  top: -80px;
 }
 
 @media (max-width: 991px) {

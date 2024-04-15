@@ -4,6 +4,7 @@ import { navScroll } from "./Utilities";
 import "./App.css";
 import { HomeDesktop, HomeMobile } from "./Pages/Home";
 import { ReactComponent as MarkleSvg } from "./TEST/SVG/markle.svg";
+import MarklePng from "./TEST/SVG/markle.png";
 import poolColorsGif from "./TEST/SVG/pool_colors.gif";
 import markleLogo from "./TEST/SVG/markle_logo.gif";
 // import commercial from "./TEST/SVG/commercial.mp4";
@@ -60,8 +61,8 @@ function App() {
           layer={layer}
           setLayer={setLayer}
         />
-
         <div id="markle-svg">
+          <img src={MarklePng} alt="Eifert_Design_Panel" />
           <section className="markle-text">
             <p>
               Steve “Philly Flash” Markle, a trick shot pool artist in the
@@ -124,7 +125,8 @@ function App() {
               Your browser does not support the video tag.
             </video>
           </section> */}
-          <MarkleSvg />
+          {/* <MarkleSvg /> */}
+          {/* <MarklePng /> */}
         </div>
 
         {/* {page === "home" && <HomeDesktop layer={layer} setLayer={setLayer} />} */}
