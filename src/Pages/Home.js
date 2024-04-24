@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import markle from "../views/markle";
 import { scrollPastHeader, pageArr } from "../Utilities";
 
 const desktopHomeImages = "images/home/desktop/";
@@ -81,18 +82,76 @@ const spanWidth = {
     c: "12rem",
   },
 };
+
+const RenderPage = ({ page }) => {
+  switch (page) {
+    case "kay":
+      return <></>;
+
+    case "markle":
+      return markle;
+
+    case "wed":
+      return <></>;
+
+    case "branded":
+      return <></>;
+
+    case "harlem":
+      return <></>;
+
+    case "vegas":
+      return <></>;
+
+    case "summer":
+      return <></>;
+
+    case "holiday":
+      return <></>;
+
+    case "spring":
+      return <></>;
+  }
+};
+
 export const HomeDesktop = ({ layer, setLayer }) => {
   console.log(layer);
-  return (
+  console.log(imageTags[layer].a);
+  console.log(imageTags[layer].b);
+  console.log(imageTags[layer].c);
+
+  const [page, setPage] = React.useState("");
+
+  return page ? (
+    <RenderPage page={page} />
+  ) : (
     <div id="desktop-body">
       <div id="left-column">
-        <div id="zoneA" onClick={() => setLayer(1)}>
+        <div
+          id="zoneA"
+          onClick={() => {
+            if (layer === 0) {
+              setLayer(1);
+            } else {
+              setPage(imageTags[layer].a);
+            }
+          }}
+        >
           <img src={`${desktopHomeImages}${imageTags[layer].a}.png`} alt="" />
           <span style={{ width: spanWidth[layer].a || "initial" }}>
             {titles[layer].a}
           </span>
         </div>
-        <div id="zoneB" onClick={() => setLayer(2)}>
+        <div
+          id="zoneB"
+          onClick={() => {
+            if (layer === 0) {
+              setLayer(2);
+            } else {
+              setPage(imageTags[layer].b);
+            }
+          }}
+        >
           <img src={`${desktopHomeImages}${imageTags[layer].b}.png`} alt="" />
           <span style={{ width: spanWidth[layer].b || "initial" }}>
             {titles[layer].b}
@@ -100,7 +159,16 @@ export const HomeDesktop = ({ layer, setLayer }) => {
         </div>
       </div>
       <div id="right-column">
-        <div id="zoneC" onClick={() => setLayer(3)}>
+        <div
+          id="zoneC"
+          onClick={() => {
+            if (layer === 0) {
+              setLayer(3);
+            } else {
+              setPage(imageTags[layer].c);
+            }
+          }}
+        >
           <img src={`${desktopHomeImages}${imageTags[layer].c}.png`} alt="" />
           <span style={{ width: spanWidth[layer].c || "initial" }}>
             {titles[layer].c}
@@ -111,7 +179,7 @@ export const HomeDesktop = ({ layer, setLayer }) => {
   );
 };
 
-export const HomeMobile = ({ func, layer, setLayer }) => {
+export const HomeMobile = ({ layer, setLayer }) => {
   //   const [mobilePage, setMobilePage] = useState("");
   const [fadeState, setFadeState] = useState("fade-in");
   const [fadeTransition, setFadeTransition] = useState("null");
@@ -132,28 +200,6 @@ export const HomeMobile = ({ func, layer, setLayer }) => {
       setActiveIndex(index);
     }
   };
-
-  //  <div id="zoneA" onClick={() => setLayer(1)}>
-  //         <img src={`${desktopHomeImages}${imageTags[layer].a}.png`} alt="" />
-  //         <span style={{ width: spanWidth[layer].a || "initial" }}>
-  //           {titles[layer].a}
-  //         </span>
-  //       </div>
-  //       <div id="zoneB" onClick={() => setLayer(2)}>
-  //         <img src={`${desktopHomeImages}${imageTags[layer].b}.png`} alt="" />
-  //         <span style={{ width: spanWidth[layer].b || "initial" }}>
-  //           {titles[layer].b}
-  //         </span>
-  //       </div>
-  //     </div>
-  //     <div id="right-column">
-  //       <div id="zoneC" onClick={() => setLayer(3)}>
-  //         <img src={`${desktopHomeImages}${imageTags[layer].c}.png`} alt="" />
-  //         <span style={{ width: spanWidth[layer].c || "initial" }}>
-  //           {titles[layer].c}
-  //         </span>
-  //       </div>
-  //     </div>
 
   return (
     <div className="mobile-img-div">

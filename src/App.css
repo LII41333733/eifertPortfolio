@@ -22,37 +22,38 @@
 }
 
 #markle-svg .markle-text {
+  font-family: "Montserrat";
   position: absolute;
-  top: 40rem;
-  padding: 0 3rem;
-  font-size: 0.9rem;
+  top: 51rem;
+  padding: 0;
+  font-size: 1.1rem;
 }
 
 #markle-svg #pool-colors {
   position: absolute;
-  top: 69rem;
+  top: 93rem;
   left: 10rem;
 }
 
 #markle-svg #markle-logo {
   position: absolute;
-  top: 395.5rem;
+  top: 516rem;
   z-index: 5;
-  left: 42.6rem;
+  left: 48.5rem;
 }
 
 #markle-svg #commercial {
   position: absolute;
   z-index: 5;
-  top: 576rem;
-  left: 11rem;
+  top: 743rem;
+  left: 3rem;
 }
 
 #markle-svg #video {
   position: absolute;
   z-index: 5;
-  top: 614rem;
-  left: 11rem;
+  top: 796rem;
+  left: 3rem;
 }
 
 /** New stuff **/
@@ -96,6 +97,7 @@
   font-family: "Montserrat";
   z-index: 1;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* #desktop-body #zoneB span {
@@ -109,7 +111,7 @@
 }
 
 #desktop-body #zoneA {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 #desktop-body #zoneC {
@@ -690,6 +692,7 @@ ul {
 .profilePicDiv {
   height: 900px;
   position: relative;
+  text-align: center;
 }
 
 .lead {
