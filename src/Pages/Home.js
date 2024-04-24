@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import markle from "../views/markle";
+import markle from "../views/markle/markle";
+import summer from "../views/summer/summer";
 import { scrollPastHeader, pageArr } from "../Utilities";
 
 const desktopHomeImages = "images/home/desktop/";
@@ -104,7 +105,7 @@ const RenderPage = ({ page }) => {
       return <></>;
 
     case "summer":
-      return <></>;
+      return summer;
 
     case "holiday":
       return <></>;

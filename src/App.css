@@ -9,12 +9,13 @@
   src: url(../public//fonts/Rockwell/RockwellStd.otf);
 }
 
-/** Markle **/
-
-#markle-svg {
+#markle-svg,
+#summer-svg {
   position: relative;
   top: 20px;
 }
+
+/** Markle **/
 
 #markle-svg a {
   color: #599bff;
@@ -54,6 +55,48 @@
   z-index: 5;
   top: 796rem;
   left: 3rem;
+}
+
+/** Summer **/
+
+#summer-svg #hero {
+  position: absolute;
+  top: 10rem;
+  left: 38rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 5;
+}
+
+#hero img {
+  height: 60rem;
+}
+
+#summer-svg #summer {
+  position: absolute;
+  top: 146rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 5;
+  left: 2rem;
+}
+
+#summer img {
+  height: 15rem;
+}
+
+#summer-svg #left-video {
+  z-index: 5;
+  top: 934rem;
+  left: 6rem;
+  position: absolute;
+}
+
+#summer-svg #right-video {
+  z-index: 5;
+  top: 934rem;
+  left: 38rem;
+  position: absolute;
 }
 
 /** New stuff **/
