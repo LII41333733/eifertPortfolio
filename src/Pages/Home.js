@@ -34,7 +34,7 @@ const imageTags = {
 
 const titles = {
   0: {
-    a: "CASE STUDIES",
+    a: "BRAND IDENTITY",
     b: "ILLUSTRATIONS + MORE",
     c: "ART DIRECTION",
   },
