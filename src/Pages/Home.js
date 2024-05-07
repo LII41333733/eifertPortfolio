@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import markle from "../views/markle/markle";
 import summer from "../views/summer/summer";
+import spring from "../views/spring/spring";
+import holiday from "../views/holiday/holiday";
 import { scrollPastHeader, pageArr } from "../Utilities";
 
 const desktopHomeImages = "images/home/desktop/";
@@ -108,19 +110,14 @@ const RenderPage = ({ page }) => {
       return summer;
 
     case "holiday":
-      return <></>;
+      return holiday;
 
     case "spring":
-      return <></>;
+      return spring;
   }
 };
 
 export const HomeDesktop = ({ layer, setLayer }) => {
-  console.log(layer);
-  console.log(imageTags[layer].a);
-  console.log(imageTags[layer].b);
-  console.log(imageTags[layer].c);
-
   const [page, setPage] = React.useState("");
 
   return page ? (

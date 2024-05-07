@@ -85,6 +85,13 @@
   height: 15rem;
 }
 
+#summer-svg #video {
+  z-index: 5;
+  top: 440rem;
+  left: -2rem;
+  position: absolute;
+}
+
 #summer-svg #left-video {
   z-index: 5;
   top: 934rem;
@@ -96,6 +103,28 @@
   z-index: 5;
   top: 934rem;
   left: 38rem;
+  position: absolute;
+}
+
+/** Spring **/
+
+#spring-gif {
+  z-index: 5;
+  top: 340.4rem;
+  left: -0.2rem;
+  position: absolute;
+}
+
+#spring-gif img {
+  width: 15rem;
+}
+
+/** Holiday **/
+
+#holiday-gif {
+  z-index: 5;
+  top: 198rem;
+  left: 1.8rem;
   position: absolute;
 }
 
