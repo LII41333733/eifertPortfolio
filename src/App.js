@@ -46,6 +46,10 @@ function App() {
   //   navScroll(page);
   // }, [page]);
 
+  useEffect(() => {
+    document.title = "Eifert Design";
+  }, []);
+
   const setters = {
     page,
     setPage,

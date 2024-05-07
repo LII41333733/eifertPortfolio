@@ -95,14 +95,14 @@
 #summer-svg #left-video {
   z-index: 5;
   top: 934rem;
-  left: 6rem;
+  left: 4rem;
   position: absolute;
 }
 
 #summer-svg #right-video {
   z-index: 5;
   top: 934rem;
-  left: 38rem;
+  left: 35rem;
   position: absolute;
 }
 
@@ -115,9 +115,18 @@
   position: absolute;
 }
 
-#spring-gif img {
-  height: 477px;
-  width: 238px;
+#spring-svg #video1 {
+  z-index: 5;
+  top: 1037rem;
+  left: 43rem;
+  position: absolute;
+}
+
+#spring-svg #video2 {
+  z-index: 5;
+  top: 484rem;
+  left: 0rem;
+  position: absolute;
 }
 
 /** Holiday **/
