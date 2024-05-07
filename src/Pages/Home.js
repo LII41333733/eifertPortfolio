@@ -117,12 +117,8 @@ const RenderPage = ({ page }) => {
   }
 };
 
-export const HomeDesktop = ({ layer, setLayer }) => {
-  const [page, setPage] = React.useState("");
-
-  return page ? (
-    <RenderPage page={page} />
-  ) : (
+export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
+  return page === "home" ? (
     <div id="desktop-body">
       <div id="left-column">
         <div
@@ -174,6 +170,8 @@ export const HomeDesktop = ({ layer, setLayer }) => {
         </div>
       </div>
     </div>
+  ) : (
+    <RenderPage page={page} />
   );
 };
 

@@ -1,13 +1,13 @@
 import React from "react";
-import { resetDesktop } from "../Utilities";
-export default ({ page, func, layer, setLayer }) => {
+import { navScroll, resetDesktop } from "../Utilities";
+export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
   return (
     <>
       <div className={"header"}>
         <img
           onClick={() => {
-            func("home");
-            resetDesktop();
+            setPage("home");
+            resetDesktop(false);
             setLayer(0);
           }}
           className="logo"
@@ -19,22 +19,29 @@ export default ({ page, func, layer, setLayer }) => {
         <span
           className="cursor"
           onClick={() => {
-            func("home");
+            setPage("home");
             resetDesktop(true);
+            setLayer(0);
           }}
         >
           Work
         </span>
-        <span className="cursor" onClick={() => func("about")}>
+        <span
+          className="cursor"
+          onClick={() => {
+            setPage("about");
+            navScroll("about");
+          }}
+        >
           About
         </span>
-        <span className="cursor" onClick={() => func("contact")}>
+        <span className="cursor" onClick={() => setPage("contact")}>
           Contact
         </span>
-        <span className="cursor" onClick={() => func("testimonials")}>
+        <span className="cursor" onClick={() => setPage("testimonials")}>
           Testimonials
         </span>
       </div>
     </>
   );
-};
+}

@@ -116,7 +116,8 @@
 }
 
 #spring-gif img {
-  width: 15rem;
+  height: 477px;
+  width: 238px;
 }
 
 /** Holiday **/
@@ -124,6 +125,24 @@
 #holiday-gif {
   z-index: 5;
   top: 198rem;
+  left: 1.8rem;
+  position: absolute;
+}
+
+#holiday-gif img {
+  width: 66rem;
+}
+
+#holiday-gif1 {
+  z-index: 5;
+  top: 978rem;
+  left: 13.8rem;
+  position: absolute;
+}
+
+#holiday-svg #video {
+  z-index: 5;
+  top: 446rem;
   left: 1.8rem;
   position: absolute;
 }

@@ -12,45 +12,53 @@ import { Contact, About } from "./Pages";
 
 function App() {
   const [layer, setLayer] = React.useState(0);
-
   const [page, setPage] = useState("home");
+
   const isHome = page === "home";
   const isContact = page === "contact";
   const isAbout = page === "about";
   const isTestimonials = page === "testimonials";
   const isWork = !isHome && !isContact && !isAbout && !isTestimonials;
 
-  useEffect(() => {
-    !isWork && window.scrollTo(0, 0);
-    const scrollFunc = navScroll(page);
-    if (page !== "home") {
-      window.addEventListener("scroll", scrollFunc);
-    } else {
-      window.removeEventListener("scroll", scrollFunc);
-    }
+  console.log(page);
+  console.log(layer);
 
-    const container = document.getElementsByClassName("container");
-    let a = document.getElementsByClassName("profile-img-container-desktop")[0];
+  // useEffect(() => {
+  //   !isWork && window.scroll(0, 0);
+
+  //   navScroll(page);
+
+  //   const container = document.getElementsByClassName("container");
+  //   let a = document.getElementsByClassName("profile-img-container-desktop")[0];
+  //   setTimeout(() => {
+  //     container[0].style.height = a && `${a.offsetHeight}px`;
+  //     container[0].style.height = isAbout && "800px";
+  //   }, 500);
+  // });
+
+  useEffect(() => {
     setTimeout(() => {
-      container[0].style.height = a && `${a.offsetHeight}px`;
-      container[0].style.height = isAbout && "800px";
+      window.scroll(0, 0);
     }, 500);
-  });
+  }, []);
+
+  // useEffect(() => {
+  //   navScroll(page);
+  // }, [page]);
+
+  const setters = {
+    page,
+    setPage,
+    layer,
+    setLayer,
+  };
 
   return (
     <div className="container">
       <div className="desktop">
-        <HeaderDesktop
-          page={page}
-          func={setPage}
-          layer={layer}
-          setLayer={setLayer}
-        />
-
-        {isHome && <HomeDesktop layer={layer} setLayer={setLayer} />}
-
+        <HeaderDesktop {...setters} />
+        {!isContact && !isAbout && <HomeDesktop {...setters} />}
         {isContact && <Contact />}
-
         {isAbout && <About />}
       </div>
 
