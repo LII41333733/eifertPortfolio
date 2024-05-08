@@ -38,7 +38,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
         <span className="cursor" onClick={() => setPage("contact")}>
           Contact
         </span>
-        <span className="cursor" onClick={() => setPage("testimonials")}>
+        <span className="cursor" onClick={() => {}}>
           Testimonials
         </span>
       </div>

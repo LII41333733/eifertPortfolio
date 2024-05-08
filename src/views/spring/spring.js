@@ -9,7 +9,7 @@ export default (
     <section id="video1">
       <video controls>
         <source
-          src="http://www.eifertdesign.com/videos/spring1.mp4"
+          src="http://www.eifertdesign.com/videos/spring2.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -18,7 +18,7 @@ export default (
     <section id="video2">
       <video controls>
         <source
-          src="http://www.eifertdesign.com/videos/spring2.mp4"
+          src="http://www.eifertdesign.com/videos/spring1.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

@@ -11,6 +11,10 @@ import {
 import { Contact, About } from "./Pages";
 
 function App() {
+  useEffect(() => {
+    document.title = "Eifert Design";
+  }, []);
+
   const [layer, setLayer] = React.useState(0);
   const [page, setPage] = useState("home");
 
@@ -45,10 +49,6 @@ function App() {
   // useEffect(() => {
   //   navScroll(page);
   // }, [page]);
-
-  useEffect(() => {
-    document.title = "Eifert Design";
-  }, []);
 
   const setters = {
     page,
