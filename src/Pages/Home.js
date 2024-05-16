@@ -3,6 +3,9 @@ import markle from "../views/markle/markle";
 import summer from "../views/summer/summer";
 import spring from "../views/spring/spring";
 import holiday from "../views/holiday/holiday";
+import vegas from "../views/vegas/vegas";
+import kay from "../views/kay/kay";
+import branded from "../views/branded/branded";
 import { scrollPastHeader, pageArr } from "../Utilities";
 
 const desktopHomeImages = "images/home/desktop/";
@@ -89,7 +92,7 @@ const spanWidth = {
 const RenderPage = ({ page }) => {
   switch (page) {
     case "kay":
-      return <></>;
+      return kay;
 
     case "markle":
       return markle;
@@ -98,13 +101,13 @@ const RenderPage = ({ page }) => {
       return <></>;
 
     case "branded":
-      return <></>;
+      return branded;
 
     case "harlem":
       return <></>;
 
     case "vegas":
-      return <></>;
+      return vegas;
 
     case "summer":
       return summer;

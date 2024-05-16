@@ -9,6 +9,12 @@
   src: url(../public//fonts/Rockwell/RockwellStd.otf);
 }
 
+#branded-svg {
+  position: relative;
+  top: -28rem;
+}
+
+#vegas-svg,
 #markle-svg,
 #summer-svg {
   position: relative;
@@ -130,6 +136,54 @@
   z-index: 5;
   top: 484rem;
   left: -3rem;
+  position: absolute;
+}
+
+/** Kay **/
+
+#kay-gif {
+  z-index: 5;
+  top: 20.3rem;
+  left: -5.7rem;
+  position: absolute;
+}
+
+/** Vegas **/
+
+#vegas-svg #video1 {
+  z-index: 5;
+  top: 146rem;
+  left: 37rem;
+  position: absolute;
+}
+
+#vegas-svg #video2 {
+  z-index: 5;
+  top: 146rem;
+  left: 3rem;
+  position: absolute;
+}
+
+/** Branded **/
+
+#branded-svg #video1 {
+  z-index: 5;
+  top: 345rem;
+  left: 4rem;
+  position: absolute;
+}
+
+#branded-svg #video2 {
+  z-index: 5;
+  top: 345rem;
+  left: 4rem;
+  position: absolute;
+}
+
+#branded-svg #video3 {
+  z-index: 5;
+  top: 345rem;
+  left: 4rem;
   position: absolute;
 }
 
