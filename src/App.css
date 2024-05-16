@@ -115,6 +115,10 @@
   position: absolute;
 }
 
+#spring-gif img {
+  border: 1px solid darkgray;
+}
+
 #spring-svg #video1 {
   z-index: 5;
   top: 1037rem;
