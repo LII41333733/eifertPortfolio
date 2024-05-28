@@ -11,7 +11,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
             setLayer(0);
           }}
           className="logo"
-          src="images/main/desktop/EifertDesign-Logo.jpeg"
+          src="images/main/desktop/logo.svg"
           alt="logo"
         />
       </div>
@@ -24,7 +24,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
             setLayer(0);
           }}
         >
-          Work
+          work
         </span>
         <span
           className="cursor"
@@ -33,13 +33,10 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
             navScroll("about");
           }}
         >
-          About
+          about
         </span>
         <span className="cursor" onClick={() => setPage("contact")}>
-          Contact
-        </span>
-        <span className="cursor" onClick={() => {}}>
-          Testimonials
+          contact
         </span>
       </div>
     </>

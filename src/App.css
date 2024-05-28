@@ -217,15 +217,16 @@
 /** New stuff **/
 
 #desktop-body {
-  width: 1065px;
+  width: 1365px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 13rem;
 }
 
 #left-column,
 #right-column {
-  width: 477.5px;
+  width: 50%;
   height: auto;
 }
 
@@ -280,7 +281,7 @@
 
 #navList span:hover,
 .wbe:hover {
-  color: #3d3c2a;
+  color: #939598;
 }
 
 .cursor {
@@ -293,7 +294,6 @@ polygon {
 
 .logo {
   height: 180px;
-  margin-top: 8px;
   cursor: pointer;
 }
 
@@ -310,15 +310,18 @@ polygon {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  color: #939598;
+  color: #3d3c2a;
   margin: 0 8rem 2rem 8rem;
+  position: fixed;
+  right: 0;
+  top: 4.5rem;
 }
 
 #navList span {
   font-size: 20px;
   display: block;
   padding: 5px;
-  margin: 10px;
+  margin: 10px 3rem;
 }
 
 a {
@@ -327,15 +330,21 @@ a {
 }
 
 .header {
-  width: 1065px;
-  position: relative;
+  position: fixed;
   text-align: center;
+  overflow: hidden;
+  top: 0;
+}
+
+#navList,
+.header {
+  z-index: 20;
 }
 
 .container {
-  width: 1065px;
+  width: 1385.15px;
   height: 3700px;
-  margin: 36px auto 0 auto;
+  margin: 0 auto;
   text-align: left;
   position: relative;
 }
@@ -343,9 +352,8 @@ a {
 svg {
   overflow: visible;
   zoom: 1;
-  width: 130%;
+  width: 100%;
   position: relative;
-  left: -160px;
 }
 
 svg line {
@@ -711,6 +719,14 @@ svg line {
   height: auto;
   flex-direction: column;
 }
+
+div[id*="svg"] {
+  margin-top: 13rem;
+}
+
+/* .desktop div:last-child {
+  margin-top: 13rem;
+} */
 
 .mobile {
   display: none;
