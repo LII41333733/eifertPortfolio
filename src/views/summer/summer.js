@@ -1,4 +1,3 @@
-import { ReactComponent as SummerSVG } from "../../views/summer/summer.svg";
 import heroGif from "../../views/summer/heroGif.gif";
 import summerGif from "../../views/summer/summerGif.gif";
 // import leftVideo from "../../views/summer/Swim.mp4";
@@ -11,6 +10,12 @@ export default (
     </section>
     <section id="summer">
       <img src={summerGif} alt="Summer Gif" />
+    </section>
+    <section id="summer-swim">
+      <img
+        src="http://www.eifertdesign.com/images/summer_swim.gif"
+        alt="Summer Swim Gif"
+      />
     </section>
     <section id="video">
       <video controls>
@@ -39,6 +44,11 @@ export default (
         Your browser does not support the video tag.
       </video>
     </section>
-    <SummerSVG />
+    <img src="http://www.eifertdesign.com/images/summer1.svg" alt="summer1" />
+    <img
+      className="email"
+      src="http://www.eifertdesign.com/images/summer2.svg"
+      alt="summer2"
+    />
   </div>
 );

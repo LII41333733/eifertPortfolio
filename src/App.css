@@ -68,7 +68,7 @@
 #summer-svg #hero {
   position: absolute;
   top: 10rem;
-  left: 38rem;
+  left: 48rem;
   padding: 0;
   font-size: 1.1rem;
   z-index: 5;
@@ -84,31 +84,54 @@
   padding: 0;
   font-size: 1.1rem;
   z-index: 5;
-  left: 2rem;
+  left: 12rem;
 }
 
 #summer img {
   height: 15rem;
 }
 
+#summer-svg .email {
+  position: absolute;
+  bottom: 183.24rem;
+  padding: 0;
+  /* font-size: 1.1rem; */
+  z-index: 10;
+  left: 2.1rem;
+  height: 102rem;
+}
+
+#summer-svg #summer-swim {
+  position: absolute;
+  bottom: 185.24rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 15;
+  left: 59.45rem;
+}
+
+#summer-swim img {
+  height: 96.1rem;
+}
+
 #summer-svg #video {
   z-index: 5;
-  top: 438rem;
-  left: -1.9rem;
+  top: 437.8rem;
+  left: 8rem;
   position: absolute;
 }
 
 #summer-svg #left-video {
   z-index: 5;
   top: 934rem;
-  left: 4rem;
+  left: 14rem;
   position: absolute;
 }
 
 #summer-svg #right-video {
   z-index: 5;
   top: 934rem;
-  left: 35rem;
+  left: 45rem;
   position: absolute;
 }
 
@@ -146,6 +169,19 @@
   top: 16rem;
   left: 3.7rem;
   position: absolute;
+}
+
+/** WomenHeart **/
+
+#womenheart-gif {
+  z-index: 5;
+  top: 588.6rem;
+  left: 43.4rem;
+  position: absolute;
+}
+
+#womenheart-gif img {
+  height: 783px;
 }
 
 /** Vegas **/
