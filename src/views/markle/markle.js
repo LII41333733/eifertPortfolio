@@ -1,6 +1,5 @@
 import poolColorsGif from "../../views/markle/pool_colors.gif";
 import markleLogo from "../../views/markle/markle_logo.gif";
-import { ReactComponent as MarkleSVG } from "../../views/markle/markle.svg";
 
 export default (
   <div id="markle-svg">
@@ -72,6 +71,6 @@ export default (
         allowFullScreen
       ></iframe>
     </section>
-    <MarkleSVG />
+    <img src="http://www.eifertdesign.com/images/markle.svg" alt="markle" />
   </div>
 );

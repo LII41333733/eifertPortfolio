@@ -39,28 +39,28 @@
 #markle-svg #pool-colors {
   position: absolute;
   top: 93rem;
-  left: 10rem;
+  left: 14rem;
 }
 
 #markle-svg #markle-logo {
   position: absolute;
-  top: 516rem;
+  top: 516.8rem;
   z-index: 5;
-  left: 48.5rem;
+  left: 58.3rem;
 }
 
 #markle-svg #commercial {
   position: absolute;
   z-index: 5;
   top: 743rem;
-  left: 3rem;
+  left: 13rem;
 }
 
 #markle-svg #video {
   position: absolute;
   z-index: 5;
   top: 796rem;
-  left: 3rem;
+  left: 13rem;
 }
 
 /** Summer **/
@@ -143,8 +143,8 @@
 
 #kay-gif {
   z-index: 5;
-  top: 20.3rem;
-  left: -5.7rem;
+  top: 16rem;
+  left: 3.7rem;
   position: absolute;
 }
 
@@ -221,7 +221,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 13rem;
+  margin-top: 11rem;
 }
 
 #left-column,
@@ -311,9 +311,9 @@ polygon {
   align-items: center;
   justify-content: space-evenly;
   color: #3d3c2a;
-  margin: 0 8rem 2rem 8rem;
-  position: fixed;
-  right: 0;
+  margin: 0;
+  position: absolute;
+  right: 13rem;
   top: 4.5rem;
 }
 
@@ -334,6 +334,11 @@ a {
   text-align: center;
   overflow: hidden;
   top: 0;
+  width: 1500px;
+}
+
+.header img {
+  margin-left: -10rem;
 }
 
 #navList,
@@ -343,7 +348,7 @@ a {
 
 .container {
   width: 1385.15px;
-  height: 3700px;
+  /* height: 3700px; */
   margin: 0 auto;
   text-align: left;
   position: relative;
@@ -425,135 +430,6 @@ svg line {
 #imageL {
   height: 325px;
   width: auto;
-}
-
-/*-----*/
-
-#polyA {
-  fill: url("#imgA");
-}
-
-#polyAA {
-  fill: url("#imgAA");
-}
-
-#polyB {
-  fill: url("#imgB");
-}
-
-#polyBB {
-  fill: url("#imgBB");
-}
-
-#polyC {
-  fill: url("#imgC");
-}
-
-#polyCC {
-  fill: url("#imgCC");
-}
-
-#polyD {
-  fill: url("#imgD");
-}
-
-#polyDD {
-  fill: url("#imgDD");
-}
-
-#polyE {
-  fill: url("#imgE");
-}
-
-#polyEE {
-  fill: url("#imgEE");
-}
-
-#polyF {
-  fill: url("#imgF");
-}
-
-#polyFF {
-  fill: url("#imgFF");
-}
-
-#polyG {
-  fill: url("#imgG");
-}
-
-#polyGG {
-  fill: url("#imgGG");
-}
-
-#polyH {
-  fill: url("#imgH");
-}
-
-#polyHH {
-  fill: url("#imgHH");
-}
-
-#polyI {
-  fill: url("#imgI");
-}
-
-#polyII {
-  fill: url("#imgII");
-}
-
-#polyJ {
-  fill: url("#imgJ");
-}
-
-#polyJJ {
-  fill: url("#imgJJ");
-}
-
-#polyK {
-  fill: url("#imgK");
-}
-
-#polyKK {
-  fill: url("#imgKK");
-}
-
-#polyL {
-  fill: url("#imgL");
-}
-
-#polyLL {
-  fill: url("#imgLL");
-}
-
-#polyAA:hover,
-#polyBB:hover,
-#polyCC:hover,
-#polyDD:hover,
-#polyEE:hover,
-#polyFF:hover,
-#polyGG:hover,
-#polyHH:hover,
-#polyII:hover,
-#polyJJ:hover,
-#polyKK:hover,
-#polyLL:hover {
-  opacity: 0;
-}
-
-#polyAA,
-#polyBB,
-#polyCC,
-#polyDD,
-#polyEE,
-#polyFF,
-#polyGG,
-#polyHH,
-#polyII,
-#polyJJ,
-#polyKK,
-#polyLL {
-  opacity: 0.9;
-  transition: opacity 0.7s ease;
 }
 
 .fade-out {

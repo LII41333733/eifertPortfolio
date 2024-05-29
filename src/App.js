@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { HeaderDesktop, HeaderMobile } from "./Components";
-import { navScroll } from "./Utilities";
+import { HeaderDesktop } from "./Components";
 import "./App.css";
-import { HomeDesktop, HomeMobile } from "./Pages/Home";
-import {
-  ProfileDetailsDesktop,
-  ProfileDetailsMobile,
-  ProfileImages,
-} from "./Pages/Profile";
+import { HomeDesktop } from "./Pages/Home";
 import { Contact, About } from "./Pages";
+
+export const SOURCE = "http://www.eifertdesign.com";
+export const SOURCE_IMAGES = `${SOURCE}/images`;
+export const SOURCE_IMAGES_DESKTOP = `${SOURCE_IMAGES}/desktop`;
+export const SOURCE_IMAGES_MOBILE = `${SOURCE_IMAGES}/mobile`;
+export const SOURCE_VIDEOS_DESKTOP = `${SOURCE}/videos`;
+
+export const getHomePageImage = (imageName, isDesktop) => {
+  if (isDesktop) {
+    return `${SOURCE_IMAGES_DESKTOP}/${imageName}.png`;
+  }
+  return `${SOURCE_IMAGES_MOBILE}/${imageName}.png`;
+};
 
 function App() {
   useEffect(() => {
@@ -18,74 +25,26 @@ function App() {
   const [layer, setLayer] = React.useState(0);
   const [page, setPage] = useState("home");
 
-  const isHome = page === "home";
   const isContact = page === "contact";
   const isAbout = page === "about";
-  const isTestimonials = page === "testimonials";
-  const isWork = !isHome && !isContact && !isAbout && !isTestimonials;
-
-  console.log(page);
-  console.log(layer);
-
-  // useEffect(() => {
-  //   !isWork && window.scroll(0, 0);
-
-  //   navScroll(page);
-
-  //   const container = document.getElementsByClassName("container");
-  //   let a = document.getElementsByClassName("profile-img-container-desktop")[0];
-  //   setTimeout(() => {
-  //     container[0].style.height = a && `${a.offsetHeight}px`;
-  //     container[0].style.height = isAbout && "800px";
-  //   }, 500);
-  // });
-
-  useEffect(() => {
-    setTimeout(() => {
-      window.scroll(0, 0);
-    }, 500);
-  }, []);
-
-  // useEffect(() => {
-  //   navScroll(page);
-  // }, [page]);
+  const isHome = !isContact && !isAbout;
 
   const setters = {
-    page,
-    setPage,
     layer,
+    page,
+    getHomePageImage,
     setLayer,
+    setPage,
   };
 
   return (
     <div className="container">
       <div className="desktop">
         <HeaderDesktop {...setters} />
-        {!isContact && !isAbout && <HomeDesktop {...setters} />}
+        {isHome && <HomeDesktop {...setters} />}
         {isContact && <Contact />}
         {isAbout && <About />}
       </div>
-
-      {/* <div className="mobile textCenter">
-        <HeaderMobile page={page} func={setPage} />
-
-        {page === "home" && (
-          <HomeMobile func={setPage} layer={layer} setLayer={setLayer} />
-        )}
-
-        {isWork && (
-          <>
-            <ProfileDetailsMobile page={page} func={setPage} />
-            <ProfileImages page={page} func={setPage} isMobile={true} />
-          </>
-        )}
-
-        {isContact && <Contact isMobile={true} />}
-
-        {isAbout && <About isMobile={true} />}
-
-        {isTestimonials && <About isMobile={true} />}
-      </div> */}
     </div>
   );
 }

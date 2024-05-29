@@ -6,10 +6,9 @@ import holiday from "../views/holiday/holiday";
 import vegas from "../views/vegas/vegas";
 import kay from "../views/kay/kay";
 import branded from "../views/branded/branded";
-import { scrollPastHeader, pageArr } from "../Utilities";
-
-const desktopHomeImages = "images/home/desktop/";
-const mobileHomeImages = "images/home/mobile/";
+import womenheart from "../views/womenheart/womenheart";
+import harlem from "../views/harlem/harlem";
+import { getHomePageImage } from "../App";
 
 const imageTags = {
   0: {
@@ -21,7 +20,7 @@ const imageTags = {
   1: {
     a: "kay",
     b: "markle",
-    c: "wed",
+    c: "womenheart",
   },
   // art direction
   3: {
@@ -47,7 +46,7 @@ const titles = {
   1: {
     a: "KAY CREATIONS",
     b: "MARKLE TRICK SHOTS",
-    c: "WED BY ED",
+    c: "WOMENHEART",
   },
   // art direction
   3: {
@@ -97,14 +96,14 @@ const RenderPage = ({ page }) => {
     case "markle":
       return markle;
 
-    case "wed":
-      return <></>;
+    case "womenheart":
+      return womenheart;
 
     case "branded":
       return branded;
 
     case "harlem":
-      return <></>;
+      return harlem;
 
     case "vegas":
       return vegas;
@@ -117,6 +116,9 @@ const RenderPage = ({ page }) => {
 
     case "spring":
       return spring;
+
+    default:
+      return kay;
   }
 };
 
@@ -134,7 +136,7 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
             }
           }}
         >
-          <img src={`${desktopHomeImages}${imageTags[layer].a}.png`} alt="" />
+          <img src={getHomePageImage(imageTags[layer].a, true)} alt="" />
           <span style={{ width: spanWidth[layer].a || "initial" }}>
             {titles[layer].a}
           </span>
@@ -149,7 +151,7 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
             }
           }}
         >
-          <img src={`${desktopHomeImages}${imageTags[layer].b}.png`} alt="" />
+          <img src={getHomePageImage(imageTags[layer].b, true)} alt="" />
           <span style={{ width: spanWidth[layer].b || "initial" }}>
             {titles[layer].b}
           </span>
@@ -166,7 +168,7 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
             }
           }}
         >
-          <img src={`${desktopHomeImages}${imageTags[layer].c}.png`} alt="" />
+          <img src={getHomePageImage(imageTags[layer].c, true)} alt="" />
           <span style={{ width: spanWidth[layer].c || "initial" }}>
             {titles[layer].c}
           </span>
@@ -178,78 +180,78 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
   );
 };
 
-export const HomeMobile = ({ layer, setLayer }) => {
-  //   const [mobilePage, setMobilePage] = useState("");
-  const [fadeState, setFadeState] = useState("fade-in");
-  const [fadeTransition, setFadeTransition] = useState("null");
-  const [activeIndex, setActiveIndex] = useState(-1);
-  const FADE_DURATION = 1000;
-  const handleClick = (index) => {
-    if (index === activeIndex) {
-      // setLayer(index);
-      // window.scrollTo(0, 0);
-    } else {
-      const timeout = setTimeout(() => {
-        setFadeTransition(null);
-        //setFadeState("fade-in");
-      }, FADE_DURATION);
-      clearTimeout(fadeTransition);
-      setFadeState(`fade-out`);
-      setFadeTransition(timeout);
-      setActiveIndex(index);
-    }
-  };
+// export const HomeMobile = ({ layer, setLayer }) => {
+//   //   const [mobilePage, setMobilePage] = useState("");
+//   const [fadeState, setFadeState] = useState("fade-in");
+//   const [fadeTransition, setFadeTransition] = useState("null");
+//   const [activeIndex, setActiveIndex] = useState(-1);
+//   const FADE_DURATION = 1000;
+//   const handleClick = (index) => {
+//     if (index === activeIndex) {
+//       // setLayer(index);
+//       // window.scrollTo(0, 0);
+//     } else {
+//       const timeout = setTimeout(() => {
+//         setFadeTransition(null);
+//         //setFadeState("fade-in");
+//       }, FADE_DURATION);
+//       clearTimeout(fadeTransition);
+//       setFadeState(`fade-out`);
+//       setFadeTransition(timeout);
+//       setActiveIndex(index);
+//     }
+//   };
 
-  return (
-    <div className="mobile-img-div">
-      <div
-        id="zoneA"
-        className={`overlay-div ${1 === activeIndex && fadeState}`}
-        style={{ transitionDuration: `${FADE_DURATION}ms` }}
-        onClick={() => handleClick(1)}
-      >
-        <img
-          src={`${desktopHomeImages}${imageTags[layer].a}.png`}
-          alt=""
-          onClick={() => setLayer(1)}
-        />
-        <span style={{ width: spanWidth[layer].a || "initial" }}>
-          {titles[layer].a}
-        </span>
-      </div>
-      <div
-        id="zoneB"
-        className={`overlay-div ${2 === activeIndex && fadeState}`}
-        style={{ transitionDuration: `${FADE_DURATION}ms` }}
-        onClick={() => handleClick(1)}
-      >
-        <img
-          src={`${desktopHomeImages}${imageTags[layer].b}.png`}
-          alt=""
-          onClick={() => setLayer(2)}
-        />
-        <span style={{ width: spanWidth[layer].b || "initial" }}>
-          {titles[layer].b}
-        </span>
-      </div>
-      <div
-        id="zoneC"
-        className={`overlay-div ${3 === activeIndex && fadeState}`}
-        style={{ transitionDuration: `${FADE_DURATION}ms` }}
-        onClick={() => handleClick(1)}
-      >
-        <img
-          src={`${desktopHomeImages}${imageTags[layer].c}.png`}
-          alt=""
-          onClick={() => setLayer(3)}
-        />
-        <span style={{ width: spanWidth[layer].c || "initial" }}>
-          {titles[layer].c}
-        </span>
-      </div>
-      <div className="line"></div>
-    </div>
-  );
-};
+//   return (
+//     <div className="mobile-img-div">
+//       <div
+//         id="zoneA"
+//         className={`overlay-div ${1 === activeIndex && fadeState}`}
+//         style={{ transitionDuration: `${FADE_DURATION}ms` }}
+//         onClick={() => handleClick(1)}
+//       >
+//         <img
+//           src={`${desktopHomeImages}${imageTags[layer].a}.png`}
+//           alt=""
+//           onClick={() => setLayer(1)}
+//         />
+//         <span style={{ width: spanWidth[layer].a || "initial" }}>
+//           {titles[layer].a}
+//         </span>
+//       </div>
+//       <div
+//         id="zoneB"
+//         className={`overlay-div ${2 === activeIndex && fadeState}`}
+//         style={{ transitionDuration: `${FADE_DURATION}ms` }}
+//         onClick={() => handleClick(1)}
+//       >
+//         <img
+//           src={`${desktopHomeImages}${imageTags[layer].b}.png`}
+//           alt=""
+//           onClick={() => setLayer(2)}
+//         />
+//         <span style={{ width: spanWidth[layer].b || "initial" }}>
+//           {titles[layer].b}
+//         </span>
+//       </div>
+//       <div
+//         id="zoneC"
+//         className={`overlay-div ${3 === activeIndex && fadeState}`}
+//         style={{ transitionDuration: `${FADE_DURATION}ms` }}
+//         onClick={() => handleClick(1)}
+//       >
+//         <img
+//           src={`${desktopHomeImages}${imageTags[layer].c}.png`}
+//           alt=""
+//           onClick={() => setLayer(3)}
+//         />
+//         <span style={{ width: spanWidth[layer].c || "initial" }}>
+//           {titles[layer].c}
+//         </span>
+//       </div>
+//       <div className="line"></div>
+//     </div>
+//   );
+// };
 
-export default { HomeDesktop, HomeMobile };
+export default { HomeDesktop };

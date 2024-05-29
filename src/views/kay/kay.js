@@ -1,4 +1,3 @@
-import { ReactComponent as KaySVG } from "../../views/kay/kay.svg";
 import kay from "../../views/kay/kay.gif";
 
 export default (
@@ -6,6 +5,6 @@ export default (
     <section id="kay-gif">
       <img src={kay} alt="kay" />
     </section>
-    <KaySVG />
+    <img src="http://www.eifertdesign.com/images/kay.svg" alt="kay" />
   </div>
 );
