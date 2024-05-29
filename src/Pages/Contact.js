@@ -78,13 +78,13 @@ export default ({ isMobile }) => {
         <div class="footer">
           <nav>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src="images/contact/icon-linkedin.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-linkedin.png" />
             </a>
             <a href="http://www.facebook.com/" target="_blank">
-              <img src="images/contact/icon-facebook.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-facebook.png" />
             </a>
             <a href="https://www.instagram.com" target="_blank">
-              <img src="images/contact/icon-instagram.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-instagram.png" />
             </a>
           </nav>
           <small>{`Copyright © ${new Date().getFullYear()}, All rights reserved.`}</small>
@@ -167,13 +167,13 @@ export default ({ isMobile }) => {
         <div class="footer">
           <nav>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src="images/contact/icon-linkedin.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-linkedin.png" />
             </a>
             <a href="http://www.facebook.com/" target="_blank">
-              <img src="images/contact/icon-facebook.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-facebook.png" />
             </a>
             <a href="https://www.instagram.com" target="_blank">
-              <img src="images/contact/icon-instagram.png" />
+              <img src="http://www.eifertdesign.com/images/contact/icon-instagram.png" />
             </a>
           </nav>
           <small>{`Copyright © ${new Date().getFullYear()}, All rights reserved.`}</small>

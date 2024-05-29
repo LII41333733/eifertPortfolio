@@ -155,7 +155,7 @@
   position: absolute;
 }
 
-#spring1-img {
+#spring1-gif img {
   height: 55rem;
 }
 
@@ -292,7 +292,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 11rem;
+  margin-top: 12rem;
 }
 
 #left-column,
@@ -384,7 +384,7 @@ polygon {
   color: #3d3c2a;
   margin: 0;
   position: absolute;
-  right: 13rem;
+  left: 54%;
   top: 4.5rem;
 }
 
@@ -405,11 +405,8 @@ a {
   text-align: center;
   overflow: hidden;
   top: 0;
-  width: 1500px;
-}
-
-.header img {
-  margin-left: -10rem;
+  width: 100%;
+  left: 0;
 }
 
 #navList,
@@ -847,7 +844,7 @@ float: left; */
   padding: 0% 11% 0% 0%;
   max-height: 340px;
   width: 350px;
-  background: url(../public/images/about/bg-article-top.png);
+  background: url(http://www.eifertdesign.com/images/about/bg-article-top.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
@@ -875,7 +872,8 @@ float: left; */
   margin: 0% auto;
   padding: 10% 23% 12% 24%;
   width: 95%;
-  background: url(../public/images/about/bg-article-bottom.png) no-repeat;
+  background: url(http://www.eifertdesign.com/images/about/bg-article-bottom.png)
+    no-repeat;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
@@ -1064,9 +1062,6 @@ nav img:hover {
 }
 
 @media (max-width: 991px) {
-  .desktop {
-    display: none !important;
-  }
   .mobile {
     display: block !important;
     width: 375px;
@@ -1118,18 +1113,6 @@ nav img:hover {
     transform: scale(0.6);
     left: -60px;
     top: 0px;
-    /*
-    margin: 0% auto;
-    padding: 0% 11% 0% 0%;
-    display: block;
-    max-height: 340px;
-    width: 350px;
-    background: url('/images/about/bg-article-top.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    position: absolute;
-     */
   }
   .article-inner {
     transform: scale(1);
