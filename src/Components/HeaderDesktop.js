@@ -1,6 +1,10 @@
 import React from "react";
 import { navScroll } from "../Utilities";
 import { SOURCE_IMAGES_DESKTOP } from "../App";
+const scrollTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
   return (
     <>
@@ -8,7 +12,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
         <img
           onClick={() => {
             setPage("home");
-            // resetDesktop(false);
+            scrollTop();
             setLayer(0);
           }}
           className="logo"
@@ -20,7 +24,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
             className="cursor"
             onClick={() => {
               setPage("home");
-              // resetDesktop(true);
+              scrollTop();
               setLayer(0);
             }}
           >
@@ -30,7 +34,7 @@ export default function HeaderDesktop({ page, setPage, layer, setLayer }) {
             className="cursor"
             onClick={() => {
               setPage("about");
-              // navScroll("about");
+              scrollTop();
             }}
           >
             about

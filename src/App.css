@@ -139,8 +139,8 @@
 
 #spring-gif {
   z-index: 5;
-  top: 340.4rem;
-  left: -0.2rem;
+  top: 336.4rem;
+  left: 122.3px;
   position: absolute;
 }
 
@@ -148,18 +148,51 @@
   border: 1px solid darkgray;
 }
 
+#spring1-gif {
+  z-index: 5;
+  top: 390.4rem;
+  left: -4.5rem;
+  position: absolute;
+}
+
+#spring1-img {
+  height: 55rem;
+}
+
+#spring2-gif {
+  z-index: 5;
+  top: 465.4rem;
+  left: 23.6rem;
+  position: absolute;
+}
+
+#spring2-gif img {
+  height: 40rem;
+}
+
 #spring-svg #video1 {
   z-index: 5;
-  top: 1037rem;
-  left: 35.8rem;
+  top: 1228rem;
+  left: 46rem;
   position: absolute;
 }
 
 #spring-svg #video2 {
   z-index: 5;
-  top: 484rem;
-  left: -3rem;
+  top: 675rem;
+  left: 7.1rem;
   position: absolute;
+}
+
+#spring-svg #video3 {
+  z-index: 5;
+  top: 530rem;
+  left: 9rem;
+  position: absolute;
+}
+
+#video3 video {
+  height: 40rem;
 }
 
 /** Kay **/
@@ -188,15 +221,15 @@
 
 #vegas-svg #video1 {
   z-index: 5;
-  top: 146rem;
-  left: 37rem;
+  top: 143.5rem;
+  left: 42.7rem;
   position: absolute;
 }
 
 #vegas-svg #video2 {
   z-index: 5;
-  top: 146rem;
-  left: 3rem;
+  top: 143.5rem;
+  left: 8.6rem;
   position: absolute;
 }
 
@@ -204,22 +237,22 @@
 
 #branded-svg #video1 {
   z-index: 5;
-  top: 345rem;
-  left: 4rem;
+  top: 342rem;
+  left: 10.4rem;
   position: absolute;
 }
 
 #branded-svg #video2 {
   z-index: 5;
-  top: 345rem;
-  left: 4rem;
+  top: 560rem;
+  left: 10.5rem;
   position: absolute;
 }
 
 #branded-svg #video3 {
   z-index: 5;
-  top: 345rem;
-  left: 4rem;
+  top: 780rem;
+  left: 10.4rem;
   position: absolute;
 }
 
@@ -227,8 +260,8 @@
 
 #holiday-gif {
   z-index: 5;
-  top: 198rem;
-  left: 1.8rem;
+  top: 192rem;
+  left: 10rem;
   position: absolute;
 }
 
@@ -238,17 +271,19 @@
 
 #holiday-gif1 {
   z-index: 5;
-  top: 978rem;
-  left: 13.8rem;
+  top: 969rem;
+  left: 23.8rem;
   position: absolute;
 }
 
 #holiday-svg #video {
-  left: -1.2rem;
+  left: 8.8rem;
   position: absolute;
-  top: 443rem;
+  top: 434rem;
   z-index: 5;
 }
+
+/** Harlem **/
 
 /** New stuff **/
 
@@ -636,6 +671,10 @@ div[id*="svg"] {
   margin-top: 13rem;
 }
 
+#holiday-svg {
+  margin-top: 8rem;
+}
+
 /* .desktop div:last-child {
   margin-top: 13rem;
 } */
@@ -709,6 +748,10 @@ div[id*="svg"] {
   font-size: 50px;
 }
 
+.contact {
+  margin-top: 11rem;
+}
+
 /* ---------------------------------------- UTILITIES */
 
 .fontSize-4 {
@@ -773,6 +816,7 @@ ul {
 .profileImg {
   height: auto;
   width: 900px;
+  margin-top: 12rem;
 }
 
 .profilePicDiv {
@@ -808,16 +852,16 @@ float: left; */
   background-position: center top;
   background-size: 100%;
   position: absolute;
-  top: 230px;
-  left: 110px;
+  top: 333px;
+  left: 301px;
 }
 
 .article p {
   display: block;
   /* margin: 0% auto; */
-  margin-left: -40px;
+  margin-left: -30px;
   padding: 0% 0% 6% 0%;
-  width: 137%;
+  width: 122.7%;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -830,7 +874,7 @@ float: left; */
   display: block;
   margin: 0% auto;
   padding: 10% 23% 12% 24%;
-  width: 83%;
+  width: 95%;
   background: url(../public/images/about/bg-article-bottom.png) no-repeat;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1015,6 +1059,7 @@ nav img:hover {
 }
 
 .footer {
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
