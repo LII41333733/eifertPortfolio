@@ -1,5 +1,3 @@
-import { ReactComponent as VegasSVG } from "../../views/vegas/vegas.svg";
-
 export default (
   <div id="vegas-svg">
     <section id="video1">
