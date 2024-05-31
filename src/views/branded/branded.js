@@ -1,5 +1,3 @@
-import { ReactComponent as BrandedSVG } from "../../views/branded/branded.svg";
-
 export default (
   <div id="branded-svg">
     <section id="video1">
