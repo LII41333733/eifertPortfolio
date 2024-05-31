@@ -19,6 +19,6 @@ export default (
     <section id="holiday-gif1">
       <img src={holidayGif1} alt="Holiday Gif1" />
     </section>
-    <HolidaySVG />
+    <img src="http://www.eifertdesign.com/images/holiday.svg" alt="holiday" />
   </div>
 );

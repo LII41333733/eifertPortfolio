@@ -1,7 +1,5 @@
 import heroGif from "../../views/summer/heroGif.gif";
 import summerGif from "../../views/summer/summerGif.gif";
-// import leftVideo from "../../views/summer/Swim.mp4";
-// import rightVideo from "../../views/summer/Fashion.mp4";
 
 export default (
   <div id="summer-svg">

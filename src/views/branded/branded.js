@@ -29,6 +29,6 @@ export default (
         Your browser does not support the video tag.
       </video>
     </section>
-    <BrandedSVG />
+    <img src="http://www.eifertdesign.com/images/branded.svg" alt="branded" />
   </div>
 );

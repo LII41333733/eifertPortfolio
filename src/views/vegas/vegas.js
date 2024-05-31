@@ -20,6 +20,6 @@ export default (
         Your browser does not support the video tag.
       </video>
     </section>
-    <VegasSVG />
+    <img src="http://www.eifertdesign.com/images/vegas.svg" alt="vegas" />
   </div>
 );
