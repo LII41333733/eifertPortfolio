@@ -1,4 +1,3 @@
-import { ReactComponent as HolidaySVG } from "../../views/holiday/holiday.svg";
 import holidayGif from "../../views/holiday/holiday.gif";
 import holidayGif1 from "../../views/holiday/holiday1.gif";
 
