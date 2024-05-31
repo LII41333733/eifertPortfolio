@@ -435,6 +435,7 @@ polygon {
   cursor: pointer;
   position: relative;
   left: -3rem;
+  z-index: 11;
 }
 
 #navList {

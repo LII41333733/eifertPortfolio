@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HeaderDesktop } from "./Components";
 import "./App.css";
+import "./hamburger.css";
 import { HomeDesktop } from "./Pages/Home";
 import { Contact, About } from "./Pages";
 

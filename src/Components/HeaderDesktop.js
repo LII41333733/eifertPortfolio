@@ -12,10 +12,12 @@ export default function HeaderDesktop({
   setLayer,
   isMobile,
 }) {
+  const [showMenu, setShowMenu] = React.useState(false);
+
   if (isMobile) {
     return (
       <>
-        <div className={"header"}>
+        <div className={"header header-mobile"}>
           <img
             onClick={() => {
               setPage("home");
@@ -26,6 +28,16 @@ export default function HeaderDesktop({
             src={`${SOURCE_IMAGES_DESKTOP}/logo.svg`}
             alt="logo"
           />
+          <div
+            id="hamburger"
+            onClick={() => {
+              setShowMenu((x) => !x);
+            }}
+          >
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+          </div>
           {/* <div id="navList">
             <span
               className="cursor"
@@ -50,6 +62,37 @@ export default function HeaderDesktop({
               contact
             </span>
           </div> */}
+          {
+            <div
+              id={`hamburger-menu`}
+              className={`hamburger-menu ${showMenu ? "visible" : ""}`}
+            >
+              <div id="hamburger-nav">
+                <span
+                  className="cursor"
+                  onClick={() => {
+                    setPage("home");
+                    scrollTop();
+                    setLayer(0);
+                  }}
+                >
+                  work
+                </span>
+                <span
+                  className="cursor"
+                  onClick={() => {
+                    setPage("about");
+                    scrollTop();
+                  }}
+                >
+                  about
+                </span>
+                <span className="cursor" onClick={() => setPage("contact")}>
+                  contact
+                </span>
+              </div>
+            </div>
+          }
         </div>
       </>
     );
