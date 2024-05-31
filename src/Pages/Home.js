@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import markle from "../views/markle/markle";
-import summer from "../views/summer/summer";
-import spring from "../views/spring/spring";
-import holiday from "../views/holiday/holiday";
-import vegas from "../views/vegas/vegas";
-import kay from "../views/kay/kay";
-import branded from "../views/branded/branded";
-import womenheart from "../views/womenheart/womenheart";
-import harlem from "../views/harlem/harlem";
+import Markle from "../views/markle/markle";
+import Summer from "../views/summer/summer";
+import Spring from "../views/spring/spring";
+import Holiday from "../views/holiday/holiday";
+import Vegas from "../views/vegas/vegas";
+import Kay from "../views/kay/kay";
+import Branded from "../views/branded/branded";
+import Womenheart from "../views/womenheart/womenheart";
+import Harlem from "../views/harlem/harlem";
 import { getHomePageImage } from "../App";
+import Desktop from "../Components/Desktop";
+import Mobile from "../Components/Mobile";
 
-const imageTags = {
+const desktopImageTags = {
   0: {
     a: "case",
     b: "illustrations",
@@ -36,7 +38,33 @@ const imageTags = {
   },
 };
 
-const titles = {
+const mobileImageTags = {
+  0: {
+    a: "case",
+    b: "illustrations",
+    c: "art",
+  },
+  // case studies
+  1: {
+    a: "kay",
+    b: "markle",
+    c: "womenheart",
+  },
+  // art direction
+  3: {
+    a: "summer",
+    b: "holiday",
+    c: "spring",
+  },
+  // illustrations
+  2: {
+    a: "branded",
+    b: "harlem",
+    c: "vegas",
+  },
+};
+
+const desktopTitles = {
   0: {
     a: "BRANDING",
     b: "ILLUSTRATIONS + MORE",
@@ -62,46 +90,49 @@ const titles = {
   },
 };
 
-const spanWidth = {
+const mobileTitles = {
   0: {
-    a: "",
-    b: "8.7rem",
-    c: "",
+    a: "BRANDING",
+    b: "ILLUSTRATIONS + MORE",
+    c: "ART DIRECTION",
   },
   // case studies
   1: {
-    a: "",
-    b: "",
-    c: "",
+    a: "KAY CREATIONS",
+    b: "MARKLE TRICK SHOTS",
+    c: "WOMENHEART",
   },
   // art direction
   3: {
-    a: "14rem",
-    b: "14rem",
-    c: "13rem",
+    a: "BURLINGTON SUMMER CAMPAIGN",
+    b: "BURLINGTON HOLIDAY CAMPAIGN",
+    c: "BURLINGTON SPRING CAMPAIGN",
   },
   // illustrations
   2: {
-    a: "15rem",
-    b: "15rem",
-    c: "12rem",
+    a: "BURLINGTON BRANDED TV SPOTS",
+    b: "HARLEM ILLUSTRATIONS",
+    c: "BURLINGTON VEGAS CAMPAIGN",
   },
 };
 
-export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
+export const HomeDesktop = ({ page, setPage, layer, setLayer, isMobile }) => {
+  const imageTags = isMobile ? mobileImageTags : desktopImageTags;
+  const titles = isMobile ? mobileTitles : desktopTitles;
   const urls = React.useMemo(
     () => [
-      getHomePageImage(imageTags[layer].a, true),
-      getHomePageImage(imageTags[layer].b, true),
-      getHomePageImage(imageTags[layer].c, true),
+      getHomePageImage(imageTags[layer].a, isMobile),
+      getHomePageImage(imageTags[layer].b, isMobile),
+      getHomePageImage(imageTags[layer].c, isMobile),
     ],
-    [layer]
+    [layer, isMobile]
   );
 
-  const [loadedImages, setLoadedImages] = useState([]);
+  const [loadedImages, setLoadedImages] = React.useState([]);
 
   React.useEffect(() => {
     const loadImages = async () => {
+      console.log(urls);
       const promises = urls.map((url) => {
         return new Promise((resolve) => {
           const img = new Image();
@@ -116,78 +147,34 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
     };
 
     loadImages();
-  }, [urls, layer]);
+  }, [urls, layer, isMobile]);
 
   return page === "home" ? (
     loadedImages.length !== urls.length ? (
       <></>
+    ) : isMobile ? (
+      <Mobile
+        titles={titles}
+        urls={urls}
+        loadedImages={loadedImages}
+        layer={layer}
+        setLayer={setLayer}
+        imageTags={imageTags}
+        setPage={setPage}
+      />
     ) : (
-      <div id="desktop-body">
-        <div id="left-column">
-          <div
-            id="zoneA"
-            onClick={() => {
-              if (layer === 0) {
-                setLayer(1);
-              } else {
-                setPage(imageTags[layer].a);
-              }
-            }}
-          >
-            <img
-              src={urls[0]}
-              className={loadedImages.includes(urls[0]) ? "loaded" : ""}
-              alt=""
-            />
-            <span style={{ width: spanWidth[layer].a || "initial" }}>
-              {titles[layer].a}
-            </span>
-          </div>
-          <div
-            id="zoneB"
-            onClick={() => {
-              if (layer === 0) {
-                setLayer(2);
-              } else {
-                setPage(imageTags[layer].b);
-              }
-            }}
-          >
-            <img
-              src={urls[1]}
-              className={loadedImages.includes(urls[1]) ? "loaded" : ""}
-              alt=""
-            />
-            <span style={{ width: spanWidth[layer].b || "initial" }}>
-              {titles[layer].b}
-            </span>
-          </div>
-        </div>
-        <div id="right-column">
-          <div
-            id="zoneC"
-            onClick={() => {
-              if (layer === 0) {
-                setLayer(3);
-              } else {
-                setPage(imageTags[layer].c);
-              }
-            }}
-          >
-            <img
-              src={urls[2]}
-              className={loadedImages.includes(urls[2]) ? "loaded" : ""}
-              alt=""
-            />
-            <span style={{ width: spanWidth[layer].c || "initial" }}>
-              {titles[layer].c}
-            </span>
-          </div>
-        </div>
-      </div>
+      <Desktop
+        titles={titles}
+        urls={urls}
+        loadedImages={loadedImages}
+        layer={layer}
+        setLayer={setLayer}
+        imageTags={imageTags}
+        setPage={setPage}
+      />
     )
   ) : (
-    <RenderPage page={page} />
+    <RenderPage page={page} isMobile={isMobile} />
   );
 };
 
@@ -214,37 +201,37 @@ export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
 //   );
 // };
 
-const RenderPage = ({ page }) => {
+const RenderPage = ({ page, isMobile }) => {
   switch (page) {
     case "kay":
-      return kay;
+      return <Kay isMobile={isMobile} />;
 
     case "markle":
-      return markle;
+      return <Markle isMobile={isMobile} />;
 
     case "womenheart":
-      return womenheart;
+      return <Womenheart isMobile={isMobile} />;
 
     case "branded":
-      return branded;
+      return <Branded isMobile={isMobile} />;
 
     case "harlem":
-      return harlem;
+      return <Harlem isMobile={isMobile} />;
 
     case "vegas":
-      return vegas;
+      return <Vegas isMobile={isMobile} />;
 
     case "summer":
-      return summer;
+      return <Summer isMobile={isMobile} />;
 
     case "holiday":
-      return holiday;
+      return <Holiday isMobile={isMobile} />;
 
     case "spring":
-      return spring;
+      return <Spring isMobile={isMobile} />;
 
     default:
-      return kay;
+      return <Kay isMobile={isMobile} />;
   }
 };
 
@@ -279,7 +266,7 @@ const RenderPage = ({ page }) => {
 //         onClick={() => handleClick(1)}
 //       >
 //         <img
-//           src={`${desktopHomeImages}${imageTags[layer].a}.png`}
+//           src={`${desktopHomeImages}${desktopImageTags[layer].a}.png`}
 //           alt=""
 //           onClick={() => setLayer(1)}
 //         />
@@ -294,7 +281,7 @@ const RenderPage = ({ page }) => {
 //         onClick={() => handleClick(1)}
 //       >
 //         <img
-//           src={`${desktopHomeImages}${imageTags[layer].b}.png`}
+//           src={`${desktopHomeImages}${desktopImageTags[layer].b}.png`}
 //           alt=""
 //           onClick={() => setLayer(2)}
 //         />
@@ -309,7 +296,7 @@ const RenderPage = ({ page }) => {
 //         onClick={() => handleClick(1)}
 //       >
 //         <img
-//           src={`${desktopHomeImages}${imageTags[layer].c}.png`}
+//           src={`${desktopHomeImages}${desktopImageTags[layer].c}.png`}
 //           alt=""
 //           onClick={() => setLayer(3)}
 //         />

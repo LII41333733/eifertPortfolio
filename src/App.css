@@ -288,9 +288,7 @@
   z-index: 5;
 }
 
-/** Harlem **/
-
-/** New stuff **/
+/** Desktop **/
 
 #desktop-body {
   width: 1365px;
@@ -342,10 +340,6 @@
   text-align: center;
 }
 
-/* #desktop-body #zoneB span {
-  width: 8.7rem;
-} */
-
 #desktop-body #zoneA img:hover,
 #desktop-body #zoneB img:hover,
 #desktop-body #zoneC img:hover {
@@ -356,9 +350,64 @@
   margin-bottom: 6px;
 }
 
-#desktop-body #zoneC {
-  /* height: 610px; */
+/****/
+
+/** Mobile **/
+
+#mobile-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6rem;
 }
+
+#left-column,
+#right-column {
+  width: 50%;
+  height: auto;
+}
+
+#mobile-body #zoneA,
+#mobile-body #zoneB,
+#mobile-body #zoneC {
+  background-color: #f1f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobile-body #zoneA img,
+#mobile-body #zoneB img,
+#mobile-body #zoneC img {
+  width: 100%;
+  /* opacity: 0; */
+  /* transition: opacity 0.5s ease-in-out; */
+  position: relative;
+  z-index: 9;
+}
+
+#mobile-body #zoneA img.loaded,
+#mobile-body #zoneB img.loaded,
+#mobile-body #zoneC img.loaded {
+  opacity: 1;
+}
+
+#mobile-body #zoneA span,
+#mobile-body #zoneB span,
+#mobile-body #zoneC span {
+  position: absolute;
+  font-family: "Montserrat";
+  z-index: 1;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* #mobile-body #zoneA img:hover,
+#mobile-body #zoneB img:hover,
+#mobile-body #zoneC img:hover {
+  opacity: 0;
+} */
 
 /****/
 
@@ -381,9 +430,11 @@ polygon {
 }
 
 .mobileLogo {
-  height: 175px;
+  height: 95px;
   width: auto;
   cursor: pointer;
+  position: relative;
+  left: -3rem;
 }
 
 #navList {
