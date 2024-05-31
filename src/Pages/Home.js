@@ -38,7 +38,7 @@ const imageTags = {
 
 const titles = {
   0: {
-    a: "BRAND IDENTITY",
+    a: "BRANDING",
     b: "ILLUSTRATIONS + MORE",
     c: "ART DIRECTION",
   },
@@ -88,6 +88,132 @@ const spanWidth = {
   },
 };
 
+export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
+  const urls = React.useMemo(
+    () => [
+      getHomePageImage(imageTags[layer].a, true),
+      getHomePageImage(imageTags[layer].b, true),
+      getHomePageImage(imageTags[layer].c, true),
+    ],
+    [layer]
+  );
+
+  const [loadedImages, setLoadedImages] = useState([]);
+
+  React.useEffect(() => {
+    const loadImages = async () => {
+      const promises = urls.map((url) => {
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.src = url;
+          img.alt = "";
+          img.onload = () => resolve(url);
+        });
+      });
+
+      const loaded = await Promise.all(promises);
+      setLoadedImages(loaded);
+    };
+
+    loadImages();
+  }, [urls, layer]);
+
+  return page === "home" ? (
+    loadedImages.length !== urls.length ? (
+      <></>
+    ) : (
+      <div id="desktop-body">
+        <div id="left-column">
+          <div
+            id="zoneA"
+            onClick={() => {
+              if (layer === 0) {
+                setLayer(1);
+              } else {
+                setPage(imageTags[layer].a);
+              }
+            }}
+          >
+            <img
+              src={urls[0]}
+              className={loadedImages.includes(urls[0]) ? "loaded" : ""}
+              alt=""
+            />
+            <span style={{ width: spanWidth[layer].a || "initial" }}>
+              {titles[layer].a}
+            </span>
+          </div>
+          <div
+            id="zoneB"
+            onClick={() => {
+              if (layer === 0) {
+                setLayer(2);
+              } else {
+                setPage(imageTags[layer].b);
+              }
+            }}
+          >
+            <img
+              src={urls[1]}
+              className={loadedImages.includes(urls[1]) ? "loaded" : ""}
+              alt=""
+            />
+            <span style={{ width: spanWidth[layer].b || "initial" }}>
+              {titles[layer].b}
+            </span>
+          </div>
+        </div>
+        <div id="right-column">
+          <div
+            id="zoneC"
+            onClick={() => {
+              if (layer === 0) {
+                setLayer(3);
+              } else {
+                setPage(imageTags[layer].c);
+              }
+            }}
+          >
+            <img
+              src={urls[2]}
+              className={loadedImages.includes(urls[2]) ? "loaded" : ""}
+              alt=""
+            />
+            <span style={{ width: spanWidth[layer].c || "initial" }}>
+              {titles[layer].c}
+            </span>
+          </div>
+        </div>
+      </div>
+    )
+  ) : (
+    <RenderPage page={page} />
+  );
+};
+
+// const RenderLoader = ({ page }) => {
+//     const [loaded, setLoaded] = useState(false);
+//     const [elementsLoaded, setElementsLoaded] = useState(0);
+//   const containerRef = React.useRef(null);
+
+//   React.useEffect(() => {
+//     const images = containerRef.current.querySelectorAll("img");
+//     const videos = containerRef.current.querySelectorAll("video");
+//     const svg = containerRef.current.querySelectorAll("svg");
+//     const totalElements = images.length + videos.length + svg.length;
+
+//     if (elementsLoaded === totalElements) {
+//       setLoaded(true);
+//     }
+//   }, [elementsLoaded]);
+
+//   return (
+//     <div ref={containerRef}>
+//       <RenderPage page={page} />
+//     </div>
+//   );
+// };
+
 const RenderPage = ({ page }) => {
   switch (page) {
     case "kay":
@@ -120,64 +246,6 @@ const RenderPage = ({ page }) => {
     default:
       return kay;
   }
-};
-
-export const HomeDesktop = ({ page, setPage, layer, setLayer }) => {
-  return page === "home" ? (
-    <div id="desktop-body">
-      <div id="left-column">
-        <div
-          id="zoneA"
-          onClick={() => {
-            if (layer === 0) {
-              setLayer(1);
-            } else {
-              setPage(imageTags[layer].a);
-            }
-          }}
-        >
-          <img src={getHomePageImage(imageTags[layer].a, true)} alt="" />
-          <span style={{ width: spanWidth[layer].a || "initial" }}>
-            {titles[layer].a}
-          </span>
-        </div>
-        <div
-          id="zoneB"
-          onClick={() => {
-            if (layer === 0) {
-              setLayer(2);
-            } else {
-              setPage(imageTags[layer].b);
-            }
-          }}
-        >
-          <img src={getHomePageImage(imageTags[layer].b, true)} alt="" />
-          <span style={{ width: spanWidth[layer].b || "initial" }}>
-            {titles[layer].b}
-          </span>
-        </div>
-      </div>
-      <div id="right-column">
-        <div
-          id="zoneC"
-          onClick={() => {
-            if (layer === 0) {
-              setLayer(3);
-            } else {
-              setPage(imageTags[layer].c);
-            }
-          }}
-        >
-          <img src={getHomePageImage(imageTags[layer].c, true)} alt="" />
-          <span style={{ width: spanWidth[layer].c || "initial" }}>
-            {titles[layer].c}
-          </span>
-        </div>
-      </div>
-    </div>
-  ) : (
-    <RenderPage page={page} />
-  );
 };
 
 // export const HomeMobile = ({ layer, setLayer }) => {
