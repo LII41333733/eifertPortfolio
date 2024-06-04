@@ -1,8 +1,9 @@
+import { getSource } from "../../utils";
 import spring from "../../views/spring/spring.gif";
 
-export default (
+export default ({ isMobile }) => (
   <div id="spring-svg">
-    <section id="spring-gif">
+    {/* <section id="spring-gif">
       <img src={spring} alt="Spring" />
     </section>
     <section id="spring1-gif">
@@ -37,7 +38,14 @@ export default (
         />
         Your browser does not support the video tag.
       </video>
-    </section>
-    <img src="http://www.eifertdesign.com/images/spring.svg" alt="spring" />
+    </section> */}
+    <img
+      src={
+        isMobile
+          ? `${getSource()}/images/mobile/spring/spring.svg`
+          : `${getSource()}/images/spring.svg`
+      }
+      alt="spring"
+    />
   </div>
 );

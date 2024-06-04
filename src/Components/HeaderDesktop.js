@@ -1,18 +1,21 @@
 import React from "react";
-import { navScroll } from "../Utilities";
-import { SOURCE_IMAGES_DESKTOP } from "../App";
-const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+import { useNavigate } from "react-router-dom";
+import { PATH_ABOUT, PATH_CONTACT, PATH_HOME, getImages } from "../utils";
 
-export default function HeaderDesktop({
-  page,
-  setPage,
-  layer,
-  setLayer,
-  isMobile,
-}) {
+export default function HeaderDesktop(props) {
+  console.log(props);
+  const {
+    page,
+    setPage,
+    layer,
+    setLayer,
+    isMobile,
+    descriptionIndex,
+    setDescriptionIndex,
+  } = props;
+  const navigate = useNavigate();
   const [showMenu, setShowMenu] = React.useState(false);
+  const logoSrc = `${getImages()}/logo.svg`;
 
   if (isMobile) {
     return (
@@ -20,12 +23,10 @@ export default function HeaderDesktop({
         <div className={"header header-mobile"}>
           <img
             onClick={() => {
-              setPage("home");
-              scrollTop();
-              setLayer(0);
+              navigate(PATH_HOME);
             }}
             className="mobileLogo"
-            src={`${SOURCE_IMAGES_DESKTOP}/logo.svg`}
+            src={logoSrc}
             alt="logo"
           />
           <div
@@ -38,30 +39,6 @@ export default function HeaderDesktop({
             <div className="hamburger-line"></div>
             <div className="hamburger-line"></div>
           </div>
-          {/* <div id="navList">
-            <span
-              className="cursor"
-              onClick={() => {
-                setPage("home");
-                scrollTop();
-                setLayer(0);
-              }}
-            >
-              work
-            </span>
-            <span
-              className="cursor"
-              onClick={() => {
-                setPage("about");
-                scrollTop();
-              }}
-            >
-              about
-            </span>
-            <span className="cursor" onClick={() => setPage("contact")}>
-              contact
-            </span>
-          </div> */}
           {
             <div
               id={`hamburger-menu`}
@@ -71,9 +48,7 @@ export default function HeaderDesktop({
                 <span
                   className="cursor"
                   onClick={() => {
-                    setPage("home");
-                    scrollTop();
-                    setLayer(0);
+                    navigate(PATH_HOME);
                   }}
                 >
                   work
@@ -81,13 +56,12 @@ export default function HeaderDesktop({
                 <span
                   className="cursor"
                   onClick={() => {
-                    setPage("about");
-                    scrollTop();
+                    navigate(PATH_ABOUT);
                   }}
                 >
                   about
                 </span>
-                <span className="cursor" onClick={() => setPage("contact")}>
+                <span className="cursor" onClick={() => navigate(PATH_CONTACT)}>
                   contact
                 </span>
               </div>
@@ -103,21 +77,17 @@ export default function HeaderDesktop({
       <div className={"header"}>
         <img
           onClick={() => {
-            setPage("home");
-            scrollTop();
-            setLayer(0);
+            navigate(PATH_HOME);
           }}
           className="logo"
-          src={`${SOURCE_IMAGES_DESKTOP}/logo.svg`}
+          src={logoSrc}
           alt="logo"
         />
         <div id="navList">
           <span
             className="cursor"
             onClick={() => {
-              setPage("home");
-              scrollTop();
-              setLayer(0);
+              navigate(PATH_HOME);
             }}
           >
             work
@@ -125,13 +95,17 @@ export default function HeaderDesktop({
           <span
             className="cursor"
             onClick={() => {
-              setPage("about");
-              scrollTop();
+              navigate(PATH_ABOUT);
             }}
           >
             about
           </span>
-          <span className="cursor" onClick={() => setPage("contact")}>
+          <span
+            className="cursor"
+            onClick={() => {
+              navigate(PATH_CONTACT);
+            }}
+          >
             contact
           </span>
         </div>

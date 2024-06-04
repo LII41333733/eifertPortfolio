@@ -1,6 +1,7 @@
 import React from "react";
+import { getImages } from "../utils";
 
-export default ({ isMobile }) => {
+const Contact = ({ isMobile }) => {
   return !isMobile ? (
     <>
       <div className="row bgGrey contact">
@@ -78,13 +79,13 @@ export default ({ isMobile }) => {
         <div class="footer">
           <nav>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-linkedin.png" />
+              <img src={`${getImages()}/icon-linkedin.png`} />
             </a>
             <a href="http://www.facebook.com/" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-facebook.png" />
+              <img src={`${getImages()}/icon-facebook.png`} />
             </a>
             <a href="https://www.instagram.com" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-instagram.png" />
+              <img src={`${getImages()}/icon-instagram.png`} />
             </a>
           </nav>
           <small>{`Copyright © ${new Date().getFullYear()}, All rights reserved.`}</small>
@@ -166,14 +167,22 @@ export default ({ isMobile }) => {
       <div className="row">
         <div class="footer">
           <nav>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-linkedin.png" />
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={`${getImages()}/icon-linkedin.png`} alt="" />
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-facebook.png" />
+            <a href="http://www.facebook.com/" target="_blank" rel="noreferrer">
+              <img src={`${getImages()}/icon-facebook.png`} alt="" />
             </a>
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="http://www.eifertdesign.com/images/contact/icon-instagram.png" />
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={`${getImages()}/icon-instagram.png`} alt="" />
             </a>
           </nav>
           <small>{`Copyright © ${new Date().getFullYear()}, All rights reserved.`}</small>
@@ -182,3 +191,5 @@ export default ({ isMobile }) => {
     </>
   );
 };
+
+export default Contact;

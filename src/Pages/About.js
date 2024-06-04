@@ -1,11 +1,14 @@
 import React from "react";
+import { getImagesByPlatform } from "../utils";
 
-export default () => {
+const About = ({ isMobile }) => {
   return (
     <img
       id="about-page"
-      src="http://www.eifertdesign.com/images/about.svg"
+      src={`${getImagesByPlatform(isMobile)}/about.svg`}
       alt="about"
     />
   );
 };
+
+export default About;

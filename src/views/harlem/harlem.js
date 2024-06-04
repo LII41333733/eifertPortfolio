@@ -1,5 +1,7 @@
-export default (
+const harlem = ({ imagePath }) => (
   <div id="harlem-svg">
-    <img src="http://www.eifertdesign.com/images/harlem.svg" alt="harlem" />
+    <img src={`${imagePath}/harlem.svg`} alt="harlem" />
   </div>
 );
+
+export default harlem;

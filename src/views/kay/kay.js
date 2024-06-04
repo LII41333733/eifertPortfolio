@@ -1,10 +1,10 @@
-import kay from "../../views/kay/kay.gif";
-
-export default (
+const kay = ({ imagePath }) => (
   <div id="kay-svg">
     <section id="kay-gif">
-      <img src={kay} alt="kay" />
+      <img src={`${imagePath}/kay.gif`} alt="kay" />
     </section>
-    <img src="http://www.eifertdesign.com/images/kay.svg" alt="kay" />
+    <img src={`${imagePath}/kay.svg`} alt="kay" />
   </div>
 );
+
+export default kay;

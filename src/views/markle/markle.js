@@ -1,7 +1,4 @@
-import poolColorsGif from "../../views/markle/pool_colors.gif";
-import markleLogo from "../../views/markle/markle_logo.gif";
-
-export default (
+const markle = ({ imagePath }) => (
   <div id="markle-svg">
     <section className="markle-text">
       <p>
@@ -44,10 +41,10 @@ export default (
       </p>
     </section>
     <section id="pool-colors">
-      <img src={poolColorsGif} alt="Pool Colors" />
+      <img src={`${imagePath}/pool_colors.gif`} alt="Pool Colors" />
     </section>
     <section id="markle-logo">
-      <img src={markleLogo} alt="Markle Logo" />
+      <img src={`${imagePath}/markle_logo.gif`} alt="Markle Logo" />
     </section>
     <section id="commercial">
       <iframe
@@ -71,6 +68,8 @@ export default (
         allowFullScreen
       ></iframe>
     </section>
-    <img src="http://www.eifertdesign.com/images/markle.svg" alt="markle" />
+    <img src={`${imagePath}/markle.svg`} alt="markle" />{" "}
   </div>
 );
+
+export default markle;

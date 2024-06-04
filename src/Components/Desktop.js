@@ -1,3 +1,8 @@
+import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+import { convertIdToPage } from "../utils";
+
 const spanWidth = {
   0: {
     a: "",
@@ -24,8 +29,33 @@ const spanWidth = {
   },
 };
 
+const titles = {
+  0: {
+    a: "BRANDING",
+    b: "ILLUSTRATIONS + MORE",
+    c: "ART DIRECTION",
+  },
+  // case studies
+  1: {
+    a: "KAY CREATIONS",
+    b: "MARKLE TRICK SHOTS",
+    c: "WOMENHEART",
+  },
+  // illustrations
+  2: {
+    a: "BURLINGTON BRANDED TV SPOTS",
+    b: "HARLEM ILLUSTRATIONS",
+    c: "BURLINGTON VEGAS CAMPAIGN",
+  },
+  // art direction
+  3: {
+    a: "BURLINGTON SUMMER CAMPAIGN",
+    b: "BURLINGTON HOLIDAY CAMPAIGN",
+    c: "BURLINGTON SPRING CAMPAIGN",
+  },
+};
+
 const Desktop = ({
-  titles,
   urls,
   loadedImages,
   layer,
@@ -33,17 +63,14 @@ const Desktop = ({
   imageTags,
   setPage,
 }) => {
+  const navigate = useNavigate();
   return (
     <div id="desktop-body">
       <div id="left-column">
         <div
           id="zoneA"
           onClick={() => {
-            if (layer === 0) {
-              setLayer(1);
-            } else {
-              setPage(imageTags[layer].a);
-            }
+            navigate(`/${convertIdToPage(imageTags[layer].a)}`);
           }}
         >
           <img
@@ -58,11 +85,7 @@ const Desktop = ({
         <div
           id="zoneB"
           onClick={() => {
-            if (layer === 0) {
-              setLayer(2);
-            } else {
-              setPage(imageTags[layer].b);
-            }
+            navigate(`/${convertIdToPage(imageTags[layer].b)}`);
           }}
         >
           <img
@@ -79,11 +102,7 @@ const Desktop = ({
         <div
           id="zoneC"
           onClick={() => {
-            if (layer === 0) {
-              setLayer(3);
-            } else {
-              setPage(imageTags[layer].c);
-            }
+            navigate(`/${convertIdToPage(imageTags[layer].c)}`);
           }}
         >
           <img

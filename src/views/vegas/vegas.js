@@ -1,6 +1,8 @@
-export default (
+import { getSource } from "../../utils";
+
+export default ({ isMobile }) => (
   <div id="vegas-svg">
-    <section id="video1">
+    {/* <section id="video1">
       <video controls>
         <source
           src="http://www.eifertdesign.com/videos/vegas1.mp4"
@@ -17,7 +19,14 @@ export default (
         />
         Your browser does not support the video tag.
       </video>
-    </section>
-    <img src="http://www.eifertdesign.com/images/vegas.svg" alt="vegas" />
+    </section> */}
+    <img
+      src={
+        isMobile
+          ? `${getSource()}/images/mobile/vegas/vegas.svg`
+          : `${getSource()}/images/vegas.svg`
+      }
+      alt="vegas"
+    />{" "}
   </div>
 );
