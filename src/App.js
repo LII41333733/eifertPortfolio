@@ -106,7 +106,9 @@ function App() {
         <Route path="/kay" element={<Kay imagePath={`${imagePath}/kay`} />} />
         <Route
           path="/markle"
-          element={<Markle imagePath={`${imagePath}/markle`} />}
+          element={
+            <Markle imagePath={`${imagePath}/markle`} isMobile={isMobile} />
+          }
         />
         <Route
           path="/womenheart"
@@ -126,7 +128,9 @@ function App() {
         />
         <Route
           path="/summer"
-          element={<Summer imagePath={`${imagePath}/summer`} />}
+          element={
+            <Summer imagePath={`${imagePath}/summer`} isMobile={isMobile} />
+          }
         />
         <Route
           path="/holiday"

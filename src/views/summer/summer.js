@@ -1,6 +1,4 @@
-import { getSource } from "../../utils";
-
-export default ({ imagePath }) => (
+const summer = ({ imagePath, isMobile }) => (
   <div id="summer-svg">
     <section id="hero">
       <img src={`${imagePath}/heroGif.gif`} alt="Hero Gif" />
@@ -11,6 +9,11 @@ export default ({ imagePath }) => (
     <section id="summer-swim">
       <img src={`${imagePath}/summer_swim.gif`} alt="Summer Swim Gif" />
     </section>
+    {isMobile && (
+      <section id="summer-social">
+        <img src={`${imagePath}/summer_social.gif`} alt="Summer Social Gif" />
+      </section>
+    )}
     <section id="video">
       <video controls>
         <source src={`${imagePath}/summer1.mp4`} type="video/mp4" />
@@ -29,8 +32,12 @@ export default ({ imagePath }) => (
         Your browser does not support the video tag.
       </video>
     </section>
-    <img src={`${imagePath}/summer1.svg`} alt="summer1" />
-    <img className="email" src={`${imagePath}/summer2.svg`} alt="summer2" />
+    <img src={`${imagePath}/summer.svg`} alt="summer" />
+    {!isMobile && (
+      <img className="email" src={`${imagePath}/summer1.svg`} alt="summer1" />
+    )}
     <img src={`${imagePath}/summer.gif`} alt="summer" />
   </div>
 );
+
+export default summer;

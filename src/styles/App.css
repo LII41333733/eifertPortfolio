@@ -36,10 +36,29 @@
   font-size: 1.1rem;
 }
 
+.mobile #markle-svg .markle-text {
+  font-family: "Montserrat";
+  position: absolute;
+  top: 19rem;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
 #markle-svg #pool-colors {
   position: absolute;
   top: 93rem;
   left: 14rem;
+}
+
+.mobile #markle-svg #pool-colors {
+  position: absolute;
+  top: 74rem;
+  left: unset;
+}
+
+.mobile #pool-colors img {
+  width: 325px;
 }
 
 #markle-svg #markle-logo {
@@ -47,6 +66,17 @@
   top: 516.8rem;
   z-index: 5;
   left: 58.3rem;
+}
+
+.mobile #markle-svg #markle-logo {
+  position: absolute;
+  top: 235rem;
+  z-index: 5;
+  left: 2.6rem;
+}
+
+.mobile #markle-svg #markle-logo img {
+  height: 7rem;
 }
 
 #markle-svg #commercial {
@@ -61,6 +91,25 @@
   z-index: 5;
   top: 796rem;
   left: 13rem;
+}
+
+.mobile #markle-svg #commercial {
+  position: absolute;
+  z-index: 5;
+  top: 317rem;
+  left: unset;
+}
+
+.mobile #markle-svg #video {
+  position: absolute;
+  z-index: 5;
+  top: 332.5rem;
+  left: unset;
+}
+
+.mobile #markle-svg #commercial video,
+.mobile #markle-svg #video video {
+  width: 325px;
 }
 
 /** Summer **/
@@ -78,6 +127,19 @@
   height: 60rem;
 }
 
+.mobile #summer-svg #hero {
+  position: absolute;
+  top: 15rem;
+  left: unset;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 5;
+}
+
+.mobile #hero img {
+  height: 26rem;
+}
+
 #summer-svg #summer {
   position: absolute;
   top: 146rem;
@@ -91,11 +153,32 @@
   height: 15rem;
 }
 
+.mobile #summer-svg #summer {
+  position: absolute;
+  top: 135rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 5;
+  left: 0.3rem;
+}
+
+.mobile #summer img {
+  height: 21rem;
+}
+
+#summer-svg #summer-social {
+  position: absolute;
+  top: 877rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 5;
+  left: unset;
+}
+
 #summer-svg .email {
   position: absolute;
-  bottom: 183.24rem;
+  top: 723rem;
   padding: 0;
-  /* font-size: 1.1rem; */
   z-index: 10;
   left: 2.1rem;
   height: 102rem;
@@ -114,10 +197,30 @@
   height: 96.1rem;
 }
 
+.mobile #summer-svg #summer-swim {
+  position: absolute;
+  top: 757.4rem;
+  padding: 0;
+  font-size: 1.1rem;
+  z-index: 15;
+  left: unset;
+}
+
+.mobile #summer-swim img {
+  height: 78rem;
+}
+
 #summer-svg #video {
   z-index: 5;
   top: 437.8rem;
   left: 8rem;
+  position: absolute;
+}
+
+.mobile #summer-svg #video {
+  z-index: 5;
+  top: 397.3rem;
+  left: unset;
   position: absolute;
 }
 
@@ -135,6 +238,20 @@
   position: absolute;
 }
 
+.mobile #summer-svg #left-video {
+  z-index: 5;
+  top: 914rem;
+  left: 0.65rem;
+  position: absolute;
+}
+
+.mobile #summer-svg #right-video {
+  z-index: 5;
+  top: 947rem;
+  left: unset;
+  position: absolute;
+}
+
 /** Spring **/
 
 #spring-gif {
@@ -144,8 +261,19 @@
   position: absolute;
 }
 
+.mobile #spring-gif {
+  z-index: 5;
+  top: 220.7rem;
+  left: 1rem;
+  position: absolute;
+}
+
 #spring-gif img {
   border: 1px solid darkgray;
+}
+
+.mobile #spring-gif img {
+  height: 11.6rem;
 }
 
 #spring1-gif {
@@ -159,6 +287,17 @@
   height: 55rem;
 }
 
+.mobile #spring1-gif {
+  z-index: 5;
+  top: 243rem;
+  left: 0rem;
+  position: absolute;
+}
+
+.mobile #spring1-gif img {
+  height: 13.3rem;
+}
+
 #spring2-gif {
   z-index: 5;
   top: 465.4rem;
@@ -168,6 +307,28 @@
 
 #spring2-gif img {
   height: 40rem;
+}
+
+.mobile #spring2-gif {
+  z-index: 5;
+  top: 263rem;
+  left: unset;
+  position: absolute;
+}
+
+.mobile #spring2-gif img {
+  height: 10rem;
+}
+
+.desktop #spring3-gif {
+  display: none;
+}
+
+.mobile #spring3-gif {
+  z-index: 5;
+  top: 934rem;
+  left: unset;
+  position: absolute;
 }
 
 #spring-svg #video1 {
@@ -191,8 +352,33 @@
   position: absolute;
 }
 
+.mobile #spring-svg #video1 {
+  z-index: 5;
+  top: 282rem;
+  left: unset;
+  position: absolute;
+}
+
+.mobile #spring-svg #video2 {
+  z-index: 5;
+  top: 392rem;
+  left: unset;
+  position: absolute;
+}
+
+.mobile #spring-svg #video3 {
+  z-index: 5;
+  top: 962rem;
+  left: unset;
+  position: absolute;
+}
+
 #video3 video {
   height: 40rem;
+}
+
+.mobile #video3 video {
+  height: 21rem;
 }
 
 /** Kay **/
@@ -202,6 +388,20 @@
   top: 16rem;
   left: 3.7rem;
   position: absolute;
+}
+
+.mobile #kay-gif {
+  top: 1rem;
+  left: unset;
+  width: 325px;
+}
+
+.mobile #kay-gif img {
+  z-index: 5;
+  top: 1rem;
+  position: unset;
+  width: 325px;
+  height: auto;
 }
 
 /** WomenHeart **/
@@ -242,6 +442,18 @@
   top: 143.5rem;
   left: 8.6rem;
   position: absolute;
+}
+
+.mobile #vegas-svg #video1 {
+  z-index: 5;
+  top: 125rem;
+  left: unset;
+}
+
+.mobile #vegas-svg #video2 {
+  z-index: 5;
+  top: 140rem;
+  left: unset;
 }
 
 /** Branded **/
@@ -367,6 +579,12 @@
 #right-column {
   width: 50%;
   height: auto;
+}
+
+#zoneA,
+#zoneB,
+#zoneC {
+  cursor: pointer;
 }
 
 #desktop-body #zoneA,

@@ -1,4 +1,4 @@
-const markle = ({ imagePath }) => (
+const markle = ({ imagePath, isMobile }) => (
   <div id="markle-svg">
     <section className="markle-text">
       <p>
@@ -47,26 +47,40 @@ const markle = ({ imagePath }) => (
       <img src={`${imagePath}/markle_logo.gif`} alt="Markle Logo" />
     </section>
     <section id="commercial">
-      <iframe
-        width="1000"
-        height="500"
-        src="https://www.youtube.com/embed/7zuLQrwesvw"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      {isMobile ? (
+        <video controls>
+          <source src={`${imagePath}/nautilus.mp4`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <iframe
+          width="1000"
+          height="500"
+          src="https://www.youtube.com/embed/7zuLQrwesvw"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      )}
     </section>
     <section id="video">
-      <iframe
-        width="1000"
-        height="500"
-        src="https://www.youtube.com/embed/usRbyM-MtPI"
-        title="Trick Shots"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      {isMobile ? (
+        <video controls>
+          <source src={`${imagePath}/video.mp4`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <iframe
+          width="1000"
+          height="500"
+          src="https://www.youtube.com/embed/usRbyM-MtPI"
+          title="Trick Shots"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      )}
     </section>
     <img src={`${imagePath}/markle.svg`} alt="markle" />{" "}
   </div>
