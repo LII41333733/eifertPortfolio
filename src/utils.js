@@ -15,7 +15,7 @@ export const PAGE_ART = "art";
 export const PAGE_CASE = "case";
 export const PAGE_ILLUSTRATIONS = "illustrations";
 
-const ENV = "DEV"; // PROD
+const ENV = "PROD"; // PROD
 export const SOURCE = ENV === "DEV" ? "" : "http://www.eifertdesign.com";
 
 export const getSource = () => SOURCE;
