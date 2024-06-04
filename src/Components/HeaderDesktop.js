@@ -23,6 +23,7 @@ export default function HeaderDesktop(props) {
         <div className={"header header-mobile"}>
           <img
             onClick={() => {
+              setShowMenu(false);
               navigate(PATH_HOME);
             }}
             className="mobileLogo"
@@ -48,6 +49,7 @@ export default function HeaderDesktop(props) {
                 <span
                   className="cursor"
                   onClick={() => {
+                    setShowMenu(false);
                     navigate(PATH_HOME);
                   }}
                 >
@@ -56,12 +58,19 @@ export default function HeaderDesktop(props) {
                 <span
                   className="cursor"
                   onClick={() => {
+                    setShowMenu(false);
                     navigate(PATH_ABOUT);
                   }}
                 >
                   about
                 </span>
-                <span className="cursor" onClick={() => navigate(PATH_CONTACT)}>
+                <span
+                  className="cursor"
+                  onClick={() => {
+                    setShowMenu(false);
+                    navigate(PATH_CONTACT);
+                  }}
+                >
                   contact
                 </span>
               </div>

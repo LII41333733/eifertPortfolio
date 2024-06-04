@@ -33,7 +33,10 @@ const HeaderMobile = ({ page, func }) => {
       >
         <ul className={burgerExpanded ? "navMenuDisplayed" : "navMenuHidden"}>
           <li
-            onClick={() => func("home")}
+            onClick={() => {
+              setBurgerExpanded(false);
+              func("home");
+            }}
             className={`mobileNavItem rockwell ${
               page !== "home" && "fontWeightLighter"
             }`}
@@ -41,7 +44,10 @@ const HeaderMobile = ({ page, func }) => {
             Work
           </li>
           <li
-            onClick={() => func("contact")}
+            onClick={() => {
+              setBurgerExpanded(false);
+              func("contact");
+            }}
             className={`mobileNavItem rockwell ${
               page !== "contact" && "fontWeightLighter"
             }`}

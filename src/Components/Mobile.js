@@ -54,6 +54,14 @@ const titles = {
   },
 };
 
+const Icon = () => {
+  return (
+    <div className="overlay-icon-container">
+      <div className="overlay-icon">+</div>
+    </div>
+  );
+};
+
 const Mobile = ({
   urls,
   loadedImages,
@@ -94,6 +102,7 @@ const Mobile = ({
         <span style={{ width: spanWidth[layer].a || "initial" }}>
           {titles[layer].a}
         </span>
+        <Icon />
       </div>
       <div
         id="zoneB"
@@ -117,6 +126,7 @@ const Mobile = ({
         <span style={{ width: spanWidth[layer].b || "initial" }}>
           {titles[layer].b}
         </span>
+        <Icon />
       </div>
       <div
         id="zoneC"
@@ -140,6 +150,7 @@ const Mobile = ({
         <span style={{ width: spanWidth[layer].c || "initial" }}>
           {titles[layer].c}
         </span>
+        <Icon />
       </div>
     </div>
   );

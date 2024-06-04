@@ -14,6 +14,11 @@
   top: 100px;
 }
 
+.mobile #about-page {
+  position: relative;
+  top: 40px;
+}
+
 #vegas-svg,
 #markle-svg,
 #summer-svg {
@@ -565,6 +570,29 @@
   z-index: 5;
 }
 
+.mobile .row.bgGrey {
+  margin-top: 5rem;
+}
+
+.overlay-icon-container {
+  position: absolute;
+  top: 11.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+}
+
+.overlay-icon {
+  height: 2.8rem;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
 /** Desktop **/
 
 #desktop-body {
@@ -654,6 +682,7 @@
 #mobile-body #zoneA,
 #mobile-body #zoneB,
 #mobile-body #zoneC {
+  position: relative;
   background-color: #f1f2f2;
   display: flex;
   align-items: center;
