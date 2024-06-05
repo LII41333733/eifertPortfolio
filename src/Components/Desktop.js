@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { startTransition, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 import { convertIdToPage } from "../utils";
@@ -70,7 +70,9 @@ const Desktop = ({
         <div
           id="zoneA"
           onClick={() => {
-            navigate(`/${convertIdToPage(imageTags[layer].a)}`);
+            startTransition(() => {
+              navigate(`/${convertIdToPage(imageTags[layer].a)}`);
+            });
           }}
         >
           <img
@@ -85,7 +87,9 @@ const Desktop = ({
         <div
           id="zoneB"
           onClick={() => {
-            navigate(`/${convertIdToPage(imageTags[layer].b)}`);
+            startTransition(() => {
+              navigate(`/${convertIdToPage(imageTags[layer].b)}`);
+            });
           }}
         >
           <img
@@ -102,7 +106,9 @@ const Desktop = ({
         <div
           id="zoneC"
           onClick={() => {
-            navigate(`/${convertIdToPage(imageTags[layer].c)}`);
+            startTransition(() => {
+              navigate(`/${convertIdToPage(imageTags[layer].c)}`);
+            });
           }}
         >
           <img

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Routes, Route, Outlet, useLocation } from "react-router-dom";
 import Markle from "./views/markle/markle";
-import Summer from "./views/summer/summer";
+// import Summer from "./views/summer/summer";
 import Spring from "./views/spring/spring";
 import Holiday from "./views/holiday/holiday";
 import Vegas from "./views/vegas/vegas";
@@ -91,58 +91,65 @@ function App() {
     }
   }, [location, isMobile]);
 
+  const Summer = lazy(() => import("./views/summer/summer"));
+
+  const SummerWrapper = () => (
+    <Suspense fallback={<div>Loading Summer...</div>}>
+      <Summer imagePath={`${imagePath}/summer`} isMobile={isMobile} />
+    </Suspense>
+  );
+
   return (
-    <Routes>
-      <Route path="/" element={<Layout {...setters} />}>
-        <Route index element={<HomeDesktop {...setters} />} />
-        <Route path="/branding" element={<HomeDesktop {...setters} />} />
-        <Route path="/art-direction" element={<HomeDesktop {...setters} />} />
-        <Route
-          path="/illustrations-and-more"
-          element={<HomeDesktop {...setters} />}
-        />
-        <Route path="/contact" element={<Contact isMobile={isMobile} />} />
-        <Route path="/about" element={<About isMobile={isMobile} />} />
-        <Route path="/kay" element={<Kay imagePath={`${imagePath}/kay`} />} />
-        <Route
-          path="/markle"
-          element={
-            <Markle imagePath={`${imagePath}/markle`} isMobile={isMobile} />
-          }
-        />
-        <Route
-          path="/womenheart"
-          element={<Womenheart imagePath={`${imagePath}/womenheart`} />}
-        />
-        <Route
-          path="/branded"
-          element={<Branded imagePath={`${imagePath}/branded`} />}
-        />
-        <Route
-          path="/harlem"
-          element={<Harlem imagePath={`${imagePath}/harlem`} />}
-        />
-        <Route
-          path="/vegas"
-          element={<Vegas imagePath={`${imagePath}/vegas`} />}
-        />
-        <Route
-          path="/summer"
-          element={
-            <Summer imagePath={`${imagePath}/summer`} isMobile={isMobile} />
-          }
-        />
-        <Route
-          path="/holiday"
-          element={<Holiday imagePath={`${imagePath}/holiday`} />}
-        />
-        <Route
-          path="/spring"
-          element={<Spring imagePath={`${imagePath}/spring`} />}
-        />
-        <Route path="*" element={<Layout {...setters} />} />
-      </Route>
-    </Routes>
+    <>
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      <Routes>
+        <Route path="/" element={<Layout {...setters} />}>
+          <Route index element={<HomeDesktop {...setters} />} />
+          <Route path="/branding" element={<HomeDesktop {...setters} />} />
+          <Route path="/art-direction" element={<HomeDesktop {...setters} />} />
+          <Route
+            path="/illustrations-and-more"
+            element={<HomeDesktop {...setters} />}
+          />
+          <Route path="/contact" element={<Contact isMobile={isMobile} />} />
+          <Route path="/about" element={<About isMobile={isMobile} />} />
+          <Route path="/kay" element={<Kay imagePath={`${imagePath}/kay`} />} />
+          <Route
+            path="/markle"
+            element={
+              <Markle imagePath={`${imagePath}/markle`} isMobile={isMobile} />
+            }
+          />
+          <Route
+            path="/womenheart"
+            element={<Womenheart imagePath={`${imagePath}/womenheart`} />}
+          />
+          <Route
+            path="/branded"
+            element={<Branded imagePath={`${imagePath}/branded`} />}
+          />
+          <Route
+            path="/harlem"
+            element={<Harlem imagePath={`${imagePath}/harlem`} />}
+          />
+          <Route
+            path="/vegas"
+            element={<Vegas imagePath={`${imagePath}/vegas`} />}
+          />
+          <Route path="/summer" element={<SummerWrapper />} />
+          <Route
+            path="/holiday"
+            element={<Holiday imagePath={`${imagePath}/holiday`} />}
+          />
+          <Route
+            path="/spring"
+            element={<Spring imagePath={`${imagePath}/spring`} />}
+          />
+          <Route path="*" element={<Layout {...setters} />} />
+        </Route>
+      </Routes>
+      {/* </Suspense> */}
+    </>
   );
 }
 

@@ -580,7 +580,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   padding: 1rem;
   height: 0.5rem;
   width: 0.5rem;
@@ -591,6 +590,16 @@
   height: 2.8rem;
   font-size: 1.8rem;
   font-weight: 100;
+}
+
+#mobile-body #zoneA .overlay-icon img,
+#mobile-body #zoneB .overlay-icon img,
+#mobile-body #zoneC .overlay-icon img {
+  opacity: 1;
+  height: 2rem;
+  width: 2rem;
+  top: 15px;
+  z-index: 2;
 }
 
 /** Desktop **/
@@ -717,7 +726,6 @@
 
 #mobile-body .zone {
   height: 286.6px;
-  /* margin-bottom: 0.5rem; */
 }
 
 #mobile-body #zoneA img.show-description,
@@ -756,7 +764,6 @@ polygon {
 }
 
 #navList {
-  /* visibility: hidden; */
   font-family: "Montserrat";
   font-weight: bold;
   display: flex;
@@ -808,6 +815,7 @@ svg {
   overflow: visible;
   zoom: 1;
   width: 100%;
+  height: auto;
   position: relative;
 }
 
@@ -959,12 +967,6 @@ svg line {
   padding: 10px;
 }
 
-.control-left {
-}
-
-.control-right {
-}
-
 .profile-name {
   font-size: 35px;
   font-family: "Rockwell";
@@ -974,14 +976,6 @@ svg line {
   font-size: 35px;
   font-family: "Rockwell";
 }
-
-/* .profile-img-div {
-  height: 4000px;
-  width: 540px;
-  display: inline-block;
-  border: 1px solid #c1c1c3;
-  margin: 25px;
-} */
 
 .profile-img-container-desktop {
   position: absolute;
@@ -1052,13 +1046,13 @@ div[id*="svg"] {
 
 .mobile div[id*="svg"] {
   margin-top: 4rem;
-
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
+  zoom: 1;
 }
 
 #holiday-svg {
@@ -1068,10 +1062,6 @@ div[id*="svg"] {
 .mobile #holiday-svg {
   margin-top: 4.5rem;
 }
-
-/* .desktop div:last-child {
-  margin-top: 13rem;
-} */
 
 .mobile {
   display: none;
@@ -1241,7 +1231,7 @@ float: left; */
   padding: 0% 11% 0% 0%;
   max-height: 340px;
   width: 350px;
-  background: url(http://www.eifertdesign.com/images/about/bg-article-top.png);
+  background: url(https://www.eifertdesign.com/images/about/bg-article-top.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
@@ -1269,7 +1259,7 @@ float: left; */
   margin: 0% auto;
   padding: 10% 23% 12% 24%;
   width: 95%;
-  background: url(http://www.eifertdesign.com/images/about/bg-article-bottom.png)
+  background: url(https://www.eifertdesign.com/images/about/bg-article-bottom.png)
     no-repeat;
   background-repeat: no-repeat;
   background-position: center bottom;

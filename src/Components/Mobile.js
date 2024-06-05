@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { convertIdToPage } from "../utils";
+import { convertIdToPage, getImages } from "../utils";
 
 const spanWidth = {
   0: {
@@ -57,7 +57,9 @@ const titles = {
 const Icon = () => {
   return (
     <div className="overlay-icon-container">
-      <div className="overlay-icon">+</div>
+      <div className="overlay-icon">
+        <img src={`${getImages()}/arrow.png`} />
+      </div>
     </div>
   );
 };
