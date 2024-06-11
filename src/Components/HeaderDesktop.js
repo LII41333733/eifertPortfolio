@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { PATH_ABOUT, PATH_CONTACT, PATH_HOME, getImages } from "../utils";
 
 export default function HeaderDesktop(props) {
-  console.log(props);
   const {
     page,
     setPage,

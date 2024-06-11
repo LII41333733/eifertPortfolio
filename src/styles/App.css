@@ -9,6 +9,10 @@
   src: url(/public/fonts/Rockwell/RockwellStd.otf);
 }
 
+.hidden {
+  display: none;
+}
+
 #about-page {
   position: relative;
   top: 100px;
@@ -53,7 +57,7 @@
   font-family: "Montserrat";
   position: absolute;
   top: 6.6%;
-  padding: 0 8%;
+  padding: 0 4.1%;
   font-size: 0.7rem;
   line-height: 1.4rem;
 }
@@ -185,7 +189,7 @@
 
 #summer-svg #summer-social {
   position: absolute;
-  top: 877rem;
+  top: 87.1%;
   padding: 0;
   font-size: 1.1rem;
   z-index: 5;
@@ -216,7 +220,7 @@
 
 .mobile #summer-svg #summer-swim {
   position: absolute;
-  top: 757.4rem;
+  top: 75.27%;
   padding: 0;
   font-size: 1.1rem;
   z-index: 15;
@@ -236,7 +240,7 @@
 
 .mobile #summer-svg #video {
   z-index: 5;
-  top: 397.3rem;
+  top: 39.7%;
   left: unset;
   position: absolute;
 }
@@ -257,14 +261,14 @@
 
 .mobile #summer-svg #left-video {
   z-index: 5;
-  top: 914rem;
+  top: 90.7%;
   left: 0.65rem;
   position: absolute;
 }
 
 .mobile #summer-svg #right-video {
   z-index: 5;
-  top: 947rem;
+  top: 94%;
   left: unset;
   position: absolute;
 }
@@ -280,7 +284,7 @@
 
 .mobile #spring-gif {
   z-index: 5;
-  top: 220.7rem;
+  top: 21.58%;
   left: 1rem;
   position: absolute;
 }
@@ -295,7 +299,7 @@
 
 #spring1-gif {
   z-index: 5;
-  top: 390.4rem;
+  top: 393rem;
   left: -4.5rem;
   position: absolute;
 }
@@ -306,7 +310,7 @@
 
 .mobile #spring1-gif {
   z-index: 5;
-  top: 243rem;
+  top: 23.6%;
   left: 0rem;
   position: absolute;
 }
@@ -328,7 +332,7 @@
 
 .mobile #spring2-gif {
   z-index: 5;
-  top: 263rem;
+  top: 25.4%;
   left: unset;
   position: absolute;
 }
@@ -343,7 +347,7 @@
 
 .mobile #spring3-gif {
   z-index: 5;
-  top: 934rem;
+  top: 90%;
   left: unset;
   position: absolute;
 }
@@ -371,21 +375,21 @@
 
 .mobile #spring-svg #video1 {
   z-index: 5;
-  top: 282rem;
+  top: 27.1%;
   left: unset;
   position: absolute;
 }
 
 .mobile #spring-svg #video2 {
   z-index: 5;
-  top: 392rem;
+  top: 38%;
   left: unset;
   position: absolute;
 }
 
 .mobile #spring-svg #video3 {
   z-index: 5;
-  top: 962rem;
+  top: 92.5%;
   left: unset;
   position: absolute;
 }
@@ -394,7 +398,7 @@
   height: 40rem;
 }
 
-#spring-svg .mobile #video3 video {
+.mobile #spring-svg #video3 video {
   height: 21rem;
 }
 
@@ -436,7 +440,7 @@
 
 .mobile #womenheart-gif {
   z-index: 5;
-  top: 342rem;
+  top: 99.3%;
   left: unset;
   position: absolute;
 }
@@ -463,13 +467,13 @@
 
 .mobile #vegas-svg #video1 {
   z-index: 5;
-  top: 125rem;
+  top: 24%;
   left: unset;
 }
 
 .mobile #vegas-svg #video2 {
   z-index: 5;
-  top: 140rem;
+  top: 27%;
   left: unset;
 }
 
@@ -691,7 +695,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 4.5rem;
+  margin-top: 19%;
 }
 
 #left-column,
