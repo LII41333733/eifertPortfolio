@@ -4,7 +4,7 @@ export const MediaLoader = (pageRef) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (pageRef.current) {
+    if (pageRef.current && loading) {
       const media = pageRef.current.querySelectorAll("img, svg, video");
       const allMedia = Array.from(media);
 
@@ -28,6 +28,12 @@ export const MediaLoader = (pageRef) => {
         });
       };
     }
+  }, [pageRef]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }, [pageRef]);
 
   return { loading };

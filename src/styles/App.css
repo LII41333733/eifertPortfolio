@@ -10,7 +10,12 @@
 }
 
 .loading-container {
-  visibility: hidden;
+  opacity: 0;
+}
+
+.loaded-container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .desktop .loading-gif {

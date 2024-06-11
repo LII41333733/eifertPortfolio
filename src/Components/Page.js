@@ -20,7 +20,10 @@ const Page = ({ path, Component, isMobile }) => {
       ) : (
         <></>
       )}
-      <div className={loading ? "loading-container" : ""} ref={pageRef}>
+      <div
+        className={loading ? "loading-container" : "loaded-container"}
+        ref={pageRef}
+      >
         <Component isMobile={isMobile} imagePath={`${imagePath}${path}`} />
       </div>
     </>
