@@ -26,6 +26,10 @@
   top: 20px;
 }
 
+.mobile #markle-svg {
+  top: 0;
+}
+
 /** Markle **/
 
 #markle-svg a {
@@ -36,18 +40,26 @@
 #markle-svg .markle-text {
   font-family: "Montserrat";
   position: absolute;
-  top: 51rem;
-  padding: 0;
+  top: 53rem;
+  padding: 0 5rem;
   font-size: 1.1rem;
+}
+
+#markle-svg .markle-text p {
+  margin-bottom: 1rem;
 }
 
 .mobile #markle-svg .markle-text {
   font-family: "Montserrat";
   position: absolute;
-  top: 19rem;
-  padding: 0;
-  font-size: 0.8rem;
+  top: 6.6%;
+  padding: 0 8%;
+  font-size: 0.7rem;
   line-height: 1.4rem;
+}
+
+.mobile #markle-svg .markle-text p {
+  margin-bottom: 3%;
 }
 
 #markle-svg #pool-colors {
@@ -58,7 +70,7 @@
 
 .mobile #markle-svg #pool-colors {
   position: absolute;
-  top: 74rem;
+  top: 22.2%;
   left: unset;
 }
 
@@ -75,9 +87,9 @@
 
 .mobile #markle-svg #markle-logo {
   position: absolute;
-  top: 235rem;
+  top: 68.3%;
   z-index: 5;
-  left: 2.6rem;
+  left: 11.1%;
 }
 
 .mobile #markle-svg #markle-logo img {
@@ -101,14 +113,14 @@
 .mobile #markle-svg #commercial {
   position: absolute;
   z-index: 5;
-  top: 317rem;
+  top: 91.9%;
   left: unset;
 }
 
 .mobile #markle-svg #video {
   position: absolute;
   z-index: 5;
-  top: 332.5rem;
+  top: 96.2%;
   left: unset;
 }
 
@@ -378,11 +390,11 @@
   position: absolute;
 }
 
-#video3 video {
+#spring-svg #video3 video {
   height: 40rem;
 }
 
-.mobile #video3 video {
+#spring-svg .mobile #video3 video {
   height: 21rem;
 }
 
@@ -396,7 +408,7 @@
 }
 
 .mobile #kay-gif {
-  top: 1rem;
+  top: 2.6%;
   left: unset;
   width: 325px;
 }
@@ -496,7 +508,7 @@
 
 .mobile #branded-svg #video1 {
   z-index: 5;
-  top: 188rem;
+  top: 39%;
   position: absolute;
   width: 100%;
   height: auto;
@@ -504,7 +516,7 @@
 
 .mobile #branded-svg #video2 {
   z-index: 5;
-  top: 311rem;
+  top: 64%;
   position: absolute;
   width: 100%;
   height: auto;
@@ -512,7 +524,7 @@
 
 .mobile #branded-svg #video3 {
   z-index: 5;
-  top: 429rem;
+  top: 88%;
   position: absolute;
   width: 100%;
   height: auto;
@@ -529,7 +541,7 @@
 
 .mobile #holiday-gif {
   z-index: 5;
-  top: 122rem;
+  top: 13.3%;
   position: absolute;
   left: unset;
 }
@@ -551,7 +563,7 @@
 
 .mobile #holiday-gif1 {
   z-index: 5;
-  top: 899rem;
+  top: 95.3%;
   left: unset;
   position: absolute;
 }
@@ -566,7 +578,7 @@
 .mobile #holiday-svg #video {
   left: unset;
   position: absolute;
-  top: 327rem;
+  top: 34.9%;
   z-index: 5;
 }
 
@@ -1045,7 +1057,7 @@ div[id*="svg"] {
 }
 
 .mobile div[id*="svg"] {
-  margin-top: 4rem;
+  margin-top: unset;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1069,7 +1081,7 @@ div[id*="svg"] {
 }
 
 .mobile #holiday-svg {
-  margin-top: 4.5rem;
+  margin-top: unset;
 }
 
 .mobile {
