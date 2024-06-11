@@ -9,8 +9,21 @@
   src: url(/public/fonts/Rockwell/RockwellStd.otf);
 }
 
-.hidden {
-  display: none;
+.loading-container {
+  visibility: hidden;
+}
+
+.desktop .loading-gif {
+  position: absolute;
+  top: 50%;
+  max-width: 700px;
+  left: 28%;
+}
+
+.mobile .loading-gif {
+  position: relative;
+  top: 20px;
+  max-width: 350px;
 }
 
 #about-page {

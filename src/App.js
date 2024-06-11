@@ -29,13 +29,13 @@ import {
 } from "./utils";
 import { isMobile } from "react-device-detect";
 import { MediaLoader } from "./Components/hooks/MediaLoader";
+import Page from "./Components/Page";
 
 function App() {
   const [layer, setLayer] = React.useState(0);
   const [page, setPage] = useState("home");
   const [descriptionIndex, setDescriptionIndex] = React.useState(-1);
   const platform = getPlatform(isMobile);
-  const imagePath = getImagesByPlatform(isMobile);
   let location = useLocation();
 
   const setters = {
@@ -104,42 +104,61 @@ function App() {
         />
         <Route path="/contact" element={<Contact isMobile={isMobile} />} />
         <Route path="/about" element={<About isMobile={isMobile} />} />
-        <Route path="/kay" element={<Kay imagePath={`${imagePath}/kay`} />} />
+
+        {/* <Route path="/kay" element={<Kay imagePath={`${imagePath}/kay`} />} /> */}
+        <Route
+          path="/kay"
+          element={<Page path="/kay" Component={Kay} isMobile={isMobile} />}
+        />
         <Route
           path="/markle"
           element={
-            <Markle imagePath={`${imagePath}/markle`} isMobile={isMobile} />
+            <Page path="/markle" Component={Markle} isMobile={isMobile} />
           }
         />
         <Route
           path="/womenheart"
-          element={<Womenheart imagePath={`${imagePath}/womenheart`} />}
+          element={
+            <Page
+              path="/womenheart"
+              Component={Womenheart}
+              isMobile={isMobile}
+            />
+          }
         />
         <Route
           path="/branded"
-          element={<Branded imagePath={`${imagePath}/branded`} />}
+          element={
+            <Page path="/branded" Component={Branded} isMobile={isMobile} />
+          }
         />
         <Route
           path="/harlem"
-          element={<Harlem imagePath={`${imagePath}/harlem`} />}
+          element={
+            <Page path="/harlem" Component={Harlem} isMobile={isMobile} />
+          }
         />
         <Route
           path="/vegas"
-          element={<Vegas imagePath={`${imagePath}/vegas`} />}
+          element={<Page path="/vegas" Component={Vegas} isMobile={isMobile} />}
         />
         <Route
           path="/summer"
           element={
-            <Summer imagePath={`${imagePath}/summer`} isMobile={isMobile} />
+            <Page path="/summer" Component={Summer} isMobile={isMobile} />
           }
         />
         <Route
           path="/holiday"
-          element={<Holiday imagePath={`${imagePath}/holiday`} />}
+          element={
+            <Page path="/holiday" Component={Holiday} isMobile={isMobile} />
+          }
         />
         <Route
           path="/spring"
-          element={<Spring imagePath={`${imagePath}/spring`} />}
+          element={
+            <Page path="/spring" Component={Spring} isMobile={isMobile} />
+          }
         />
         <Route path="*" element={<Layout {...setters} />} />
       </Route>
@@ -150,6 +169,8 @@ function App() {
 export default App;
 
 const Layout = (setters) => {
+  let location = useLocation();
+
   useEffect(() => {
     document.title = "Eifert Design";
   }, []);
@@ -160,6 +181,20 @@ const Layout = (setters) => {
       if (ham) ham.style.visibility = "visible";
     }, 1000);
   }, []);
+
+  // useEffect(() => {
+  //   if (!loading && pageRef.current) {
+  //     const container = pageRef.current.querySelector(".header + div");
+
+  //     if (container) {
+  //       container.style.visibility = "visible";
+  //     }
+  //   }
+  // }, [loading]);
+
+  // React.useEffect(() => {
+  //   resetMedia();
+  // }, [location]);
 
   return (
     <div className="container">
