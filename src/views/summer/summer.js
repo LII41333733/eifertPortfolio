@@ -36,7 +36,7 @@ const summer = ({ imagePath, isMobile }) => (
     {!isMobile && (
       <img className="email" src={`${imagePath}/summer1.svg`} alt="summer1" />
     )}
-    <img src={`${imagePath}/summer.gif`} alt="summer" />
+    {/* <img src={`${imagePath}/summer.gif`} alt="summer" /> */}
   </div>
 );
 
