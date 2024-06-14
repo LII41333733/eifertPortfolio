@@ -30,11 +30,5 @@ export const MediaLoader = (pageRef) => {
     }
   }, [pageRef]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, [pageRef]);
-
   return { loading };
 };

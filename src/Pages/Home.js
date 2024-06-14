@@ -80,6 +80,7 @@ const HomeDesktop = ({
 
   React.useEffect(() => {
     const loadImages = async () => {
+      setLoadedImages([]);
       const promises = urls.map((url) => {
         return new Promise((resolve) => {
           const img = new Image();

@@ -1,11 +1,10 @@
 #hamburger {
   width: 3rem;
   height: 2rem;
-  border: 2px solid #231f204d;
   border-radius: 5px;
   position: absolute;
   z-index: 99;
-  top: 1.9rem;
+  top: 22%;
   right: 8%;
   align-items: center;
   display: flex;

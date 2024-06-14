@@ -65,6 +65,7 @@
   top: 53rem;
   padding: 0 5rem;
   font-size: 1.1rem;
+  z-index: 9;
 }
 
 #markle-svg .markle-text p {
@@ -458,13 +459,14 @@
 
 .mobile #womenheart-gif {
   z-index: 5;
-  top: 99.3%;
+  top: 86.7%;
   left: unset;
   position: absolute;
 }
 
 .mobile #womenheart-gif img {
-  height: unset;
+  height: auto;
+  width: 65%;
 }
 
 /** Vegas **/
@@ -1207,7 +1209,7 @@ ul {
 }
 
 .rockwell {
-  font-family: "Rockwell";
+  font-family: "Montserrat";
 }
 
 .textCenter {
@@ -1344,7 +1346,7 @@ float: left; */
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #f9ef20;
+  color: white;
 }
 
 .protocol {
@@ -1367,9 +1369,9 @@ float: left; */
   width: 47px;
   height: 47px;
   display: block;
-  color: #f9ef20;
+  color: white;
   font-size: 1rem;
-  font-family: "Rockwell";
+  font-family: "Montserrat";
   font-weight: 400;
   background-color: #444;
   -webkit-border-radius: 50%;
@@ -1398,7 +1400,7 @@ float: left; */
 
 .cta {
   display: block;
-  margin: 0% auto;
+  margin: 2% auto;
   padding: 2% 2%;
   width: 100%;
   max-width: 30%;

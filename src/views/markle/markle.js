@@ -19,7 +19,11 @@ const markle = ({ imagePath, isMobile }) => (
         top 5 in the world. He has also claimed the title of masse world
         champion at the WPA World Championship in Las Vegas, Nevada and was
         featured in TV spots such as the{" "}
-        <a href="https://www.youtube.com/watch?v=7zuLQrwesvw">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/watch?v=7zuLQrwesvw"
+        >
           2019 Lincoln Nautilus Commercial
         </a>{" "}
         where his trick shots were compared to their vehicle’s modern safety
@@ -27,7 +31,13 @@ const markle = ({ imagePath, isMobile }) => (
       </p>
       <p>
         In addition, Steve’s{" "}
-        <a href="https://www.youtube.com/watch?v=usRbyM-MtPI">trick shots</a>{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/watch?v=usRbyM-MtPI"
+        >
+          trick shots
+        </a>{" "}
         have been featured on many national television networks including FOX,
         NBC, ABC, Discovery, MTV, SYFY, Nickelodeon, and ESPN. Over the years,
         his amazing trick shot videos have racked up millions of views making
