@@ -1,4 +1,4 @@
-const spring = ({ imagePath }) => (
+const spring = ({ imagePath, isMobile }) => (
   <div id="spring-svg">
     <section id="spring-gif">
       <img src={`${imagePath}/spring.gif`} alt="Spring" />
@@ -15,9 +15,11 @@ const spring = ({ imagePath }) => (
         Your browser does not support the video tag.
       </video>
     </section>
-    <section id="spring3-gif">
-      <img src={`${imagePath}/spring3.gif`} alt="Spring" />
-    </section>
+    {isMobile && (
+      <section id="spring3-gif">
+        <img src={`${imagePath}/spring3.gif`} alt="Spring" />
+      </section>
+    )}
     <section id="video2">
       <video controls>
         <source src={`${imagePath}/spring2.mp4`} type="video/mp4" />
