@@ -18,7 +18,7 @@ const markle = ({ imagePath, isMobile }) => (
         selected to compete on Team USA and the youngest to be ranked within the
         top 5 in the world. He has also claimed the title of masse world
         champion at the WPA World Championship in Las Vegas, Nevada and was
-        featured in TV spots such as the{" "}
+        featured in TV spots such as the
         <a
           target="_blank"
           rel="noreferrer"
