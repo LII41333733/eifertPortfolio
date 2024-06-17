@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export const MediaLoader = (pageRef) => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (pageRef.current && loading) {

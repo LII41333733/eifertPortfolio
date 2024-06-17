@@ -10,23 +10,23 @@ const Page = ({ path, Component, isMobile }) => {
   const { loading } = MediaLoader(pageRef);
 
   return (
-    <>
-      {loading ? (
-        <img
-          className="loading-gif"
-          src="/images/loading-gif.gif"
-          alt="loading"
-        />
-      ) : (
-        <></>
-      )}
-      <div
-        className={loading ? "loading-container" : "loaded-container"}
-        ref={pageRef}
-      >
-        <Component isMobile={isMobile} imagePath={`${imagePath}${path}`} />
-      </div>
-    </>
+    // <>
+    //   {loading ? (
+    //     <img
+    //       className="loading-gif"
+    //       src="/images/loading-gif.gif"
+    //       alt="loading"
+    //     />
+    //   ) : (
+    //     <></>
+    //   )}
+    // </>
+    <div
+      className={loading ? "loading-container" : "loaded-container"}
+      ref={pageRef}
+    >
+      <Component isMobile={isMobile} imagePath={`${imagePath}${path}`} />
+    </div>
   );
 };
 
