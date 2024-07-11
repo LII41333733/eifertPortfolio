@@ -67,11 +67,28 @@ const HomeDesktop = ({
 }) => {
   const imageTags = isMobile ? mobileImageTags : desktopImageTags;
 
+  // const gif = !isMobile && (
+  //   imageTags[layer].c === 'art' ||
+  //   imageTags[layer].c === 'art' ||
+  //   imageTags[layer].c === 'art' ||
+  // );
+
+  console.log(imageTags[layer].a);
+
   const urls = React.useMemo(
     () => [
-      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].a}.png`,
-      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].b}.png`,
-      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].c}.png`,
+      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].a}.${
+        (isMobile && imageTags[layer].a === "art") ||
+        imageTags[layer].a === "branded"
+          ? "gif"
+          : "png"
+      }`,
+      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].b}.${
+        imageTags[layer].b === "markle" ? "gif" : "png"
+      }`,
+      `${getImagesByPlatform(isMobile)}/home/${imageTags[layer].c}.${
+        !isMobile && imageTags[layer].c === "art" ? "gif" : "png"
+      }`,
     ],
     [layer, imageTags, isMobile]
   );

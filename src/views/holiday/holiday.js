@@ -3,7 +3,11 @@ import { getSource } from "../../utils";
 const holiday = ({ imagePath }) => (
   <div id="holiday-svg">
     <section id="video">
-      <video controls>
+      <video
+        controls
+        width="360px"
+        poster={`/images/mobile/placeholders/holiday.png`}
+      >
         <source src={`${imagePath}/holiday1.mp4`} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

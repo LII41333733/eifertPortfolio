@@ -706,6 +706,10 @@
   margin-bottom: 6px;
 }
 
+#desktop-body #zoneB {
+  height: 50%;
+}
+
 /****/
 
 /** Mobile **/

@@ -39,19 +39,31 @@ const Summer = ({ imagePath, isMobile }) => {
             </section>
           )}
           <section id="video">
-            <video controls>
+            <video
+              controls
+              width="360px"
+              poster={`/images/mobile/placeholders/paid.png`}
+            >
               <source src={`${imagePath}/summer1.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </section>
           <section id="left-video">
-            <video controls>
+            <video
+              controls
+              width="360px"
+              poster={`/images/mobile/placeholders/swim.png`}
+            >
               <source src={`${imagePath}/summer2.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </section>
           <section id="right-video">
-            <video controls>
+            <video
+              controls
+              width="360px"
+              poster={`/images/mobile/placeholders/fashion.png`}
+            >
               <source src={`${imagePath}/summer3.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

@@ -58,7 +58,11 @@ const markle = ({ imagePath, isMobile }) => (
     </section>
     <section id="commercial">
       {isMobile ? (
-        <video controls>
+        <video
+          controls
+          width="360px"
+          poster={`/images/mobile/placeholders/nautilus.png`}
+        >
           <source src={`${imagePath}/nautilus.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -76,7 +80,7 @@ const markle = ({ imagePath, isMobile }) => (
     </section>
     <section id="video">
       {isMobile ? (
-        <video controls>
+        <video controls poster={`/images/mobile/placeholders/trick.png`}>
           <source src={`${imagePath}/video.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

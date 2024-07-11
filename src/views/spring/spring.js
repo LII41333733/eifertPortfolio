@@ -10,7 +10,11 @@ const spring = ({ imagePath, isMobile }) => (
       <img src={`${imagePath}/spring2.gif`} alt="Spring" />
     </section>
     <section id="video1">
-      <video controls>
+      <video
+        controls
+        width="360px"
+        poster={`/images/mobile/placeholders/home.png`}
+      >
         <source src={`${imagePath}/spring1.mp4`} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -21,13 +25,21 @@ const spring = ({ imagePath, isMobile }) => (
       </section>
     )}
     <section id="video2">
-      <video controls>
+      <video
+        controls
+        width="360px"
+        poster={`/images/mobile/placeholders/social.png`}
+      >
         <source src={`${imagePath}/spring2.mp4`} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </section>
     <section id="video3">
-      <video controls>
+      <video
+        controls
+        width="100%"
+        poster={`/images/mobile/placeholders/spring.png`}
+      >
         <source src={`${imagePath}/spring3.mp4`} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
