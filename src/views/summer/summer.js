@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-import useLoadTracker from "../../Components/hooks/useLoadTracker";
 
 const Summer = ({ imagePath, isMobile }) => {
   const [elements, setElements] = useState([]);

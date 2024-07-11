@@ -1,10 +1,22 @@
-const womenheart = ({ imagePath }) => (
-  <div id="womenheart-svg">
-    <section id="womenheart-gif">
-      <img src={`${imagePath}/womenheart.gif`} alt="womenheart" />
-    </section>
-    <img src={`${imagePath}/womenheart.svg`} alt="womenheart" />
-  </div>
-);
+import React from "react";
 
-export default womenheart;
+const Womenheart = ({ imagePath }) => {
+  const [handleRest, setHandleRest] = React.useState(false);
+
+  return (
+    <div id="womenheart-svg">
+      <img
+        src={`${imagePath}/womenheart.svg`}
+        alt="womenheart"
+        onLoad={() => setHandleRest(true)}
+      />
+      {handleRest && (
+        <section id="womenheart-gif">
+          <img src={`${imagePath}/womenheart.gif`} alt="womenheart" />
+        </section>
+      )}
+    </div>
+  );
+};
+
+export default Womenheart;
